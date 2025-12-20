@@ -20,6 +20,9 @@ const neonColors = {
 // Global variables
 let allData = null;
 let charts = {};
+let currentPage = 1;
+const rowsPerPage = 15;
+let filteredLinksGlobal = [];
 
 // Initialize dashboard
 async function initDashboard() {
@@ -483,11 +486,12 @@ function createHeatmap() {
 }
 
 // Populate broken links table
-function populateTable(filterLocale = 'all', searchTerm = '') {
+function populateTable(filterLocale = 'all', searchTerm = '', page = 1) {
     const tbody = document.getElementById('tableBody');
+    const pagination = document.getElementById('pagination');
     tbody.innerHTML = '';
 
-    let filteredLinks = allData.brokenLinksList;
+    let filteredLinks = [...allData.brokenLinksList];
 
     // Filter by locale
     if (filterLocale !== 'all') {
@@ -501,12 +505,40 @@ function populateTable(filterLocale = 'all', searchTerm = '') {
         );
     }
 
+    // Sorting Priority: 500, 4xx, 999, Network Error/Others
+    filteredLinks.sort((a, b) => {
+        const getPriority = (link) => {
+            const code = link.statusCode;
+            if (code === 500) return 1;
+            if (typeof code === 'number' && code >= 400 && code < 500) return 2;
+            if (code === 999) return 3;
+            if (link.errorType === 'Network Error') return 4;
+            return 5;
+        };
+
+        const priorityA = getPriority(a);
+        const priorityB = getPriority(b);
+
+        if (priorityA !== priorityB) return priorityA - priorityB;
+        return a.url.localeCompare(b.url); // Secondary sort by URL
+    });
+
+    filteredLinksGlobal = filteredLinks;
+    currentPage = page;
+
     if (filteredLinks.length === 0) {
         tbody.innerHTML = '<tr><td colspan="5" class="loading">No broken links found</td></tr>';
+        pagination.innerHTML = '';
         return;
     }
 
-    filteredLinks.forEach(link => {
+    // Pagination logic
+    const totalPages = Math.ceil(filteredLinks.length / rowsPerPage);
+    const startIndex = (page - 1) * rowsPerPage;
+    const endIndex = startIndex + rowsPerPage;
+    const paginatedLinks = filteredLinks.slice(startIndex, endIndex);
+
+    paginatedLinks.forEach(link => {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${link.url}</td>
@@ -517,6 +549,62 @@ function populateTable(filterLocale = 'all', searchTerm = '') {
         `;
         tbody.appendChild(row);
     });
+
+    renderPagination(totalPages, page);
+}
+
+// Render pagination controls
+function renderPagination(totalPages, currentPage) {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+
+    if (totalPages <= 1) return;
+
+    // Previous Button
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'pagination-btn';
+    prevBtn.textContent = 'Prev';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.onclick = () => {
+        const locale = document.getElementById('localeFilter').value;
+        const searchTerm = document.getElementById('searchBox').value;
+        populateTable(locale, searchTerm, currentPage - 1);
+    };
+    pagination.appendChild(prevBtn);
+
+    // Page Numbers (limited)
+    const startPage = Math.max(1, currentPage - 2);
+    const endPage = Math.min(totalPages, startPage + 4);
+
+    for (let i = startPage; i <= endPage; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = `pagination-btn ${i === currentPage ? 'active' : ''}`;
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => {
+            const locale = document.getElementById('localeFilter').value;
+            const searchTerm = document.getElementById('searchBox').value;
+            populateTable(locale, searchTerm, i);
+        };
+        pagination.appendChild(pageBtn);
+    }
+
+    // Next Button
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'pagination-btn';
+    nextBtn.textContent = 'Next';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.onclick = () => {
+        const locale = document.getElementById('localeFilter').value;
+        const searchTerm = document.getElementById('searchBox').value;
+        populateTable(locale, searchTerm, currentPage + 1);
+    };
+    pagination.appendChild(nextBtn);
+
+    // Info
+    const info = document.createElement('span');
+    info.className = 'pagination-info';
+    info.textContent = `Page ${currentPage} of ${totalPages}`;
+    pagination.appendChild(info);
 }
 
 // Handle filter changes

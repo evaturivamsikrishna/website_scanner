@@ -185,7 +185,8 @@ body {
     font-weight: 500;
 }
 
-select, input[type="text"] {
+select,
+input[type="text"] {
     background: var(--bg-secondary);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
@@ -196,11 +197,13 @@ select, input[type="text"] {
     outline: none;
 }
 
-select:hover, input[type="text"]:hover {
+select:hover,
+input[type="text"]:hover {
     border-color: var(--neon-blue);
 }
 
-select:focus, input[type="text"]:focus {
+select:focus,
+input[type="text"]:focus {
     border-color: var(--neon-blue);
     box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
 }
@@ -429,6 +432,53 @@ tbody tr:hover {
     text-align: center;
     padding: 2rem;
     color: var(--text-secondary);
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    min-width: 40px;
+    text-align: center;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    border-color: var(--neon-blue);
+    background: var(--bg-hover);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.pagination-btn.active {
+    background: var(--neon-blue);
+    color: var(--bg-primary);
+    border-color: var(--neon-blue);
+    font-weight: 700;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0 1rem;
 }
 
 /* Responsive Design */
