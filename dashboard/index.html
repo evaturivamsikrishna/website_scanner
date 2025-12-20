@@ -72,12 +72,6 @@
                 </select>
             </div>
 
-            <div class="filter-group">
-                <label for="errorFilter">Error Type:</label>
-                <select id="errorFilter">
-                    <option value="all">All Errors</option>
-                </select>
-            </div>
 
             <div class="filter-group">
                 <label for="dateRange">Last Runs:</label>
@@ -131,6 +125,9 @@
             <div class="table-header">
                 <h2>Broken Links Details</h2>
                 <div class="table-controls">
+                    <select id="errorFilter">
+                        <option value="all">All Errors</option>
+                    </select>
                     <input type="text" id="searchBox" placeholder="Search URLs...">
                 </div>
             </div>
@@ -138,13 +135,16 @@
                 <table id="brokenLinksTable">
                     <thead>
                         <tr>
-                            <th>URL</th>
-                            <th>Locale</th>
-                            <th>Status Code</th>
-                            <th>Error Type</th>
-                            <th class="extra-info">Source Page</th>
-                            <th class="extra-info">Section (Text)</th>
-                            <th>Last Checked</th>
+                            <th class="sortable" data-sort="url">URL <span class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="locale">Locale <span class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="statusCode">Status Code <span class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="errorType">Error Type <span class="sort-icon"></span></th>
+                            <th class="sortable extra-info" data-sort="source">Source Page <span
+                                    class="sort-icon"></span></th>
+                            <th class="sortable extra-info" data-sort="text">Section (Text) <span
+                                    class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="lastChecked">Last Checked <span class="sort-icon"></span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">

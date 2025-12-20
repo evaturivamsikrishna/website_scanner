@@ -23,6 +23,7 @@ let charts = {};
 let currentPage = 1;
 const rowsPerPage = 15;
 let filteredLinksGlobal = [];
+let currentSort = { column: null, direction: 'asc' };
 
 // Initialize dashboard
 async function initDashboard() {
@@ -540,23 +541,46 @@ function populateTable(filterLocale = 'all', searchTerm = '', errorType = 'all',
         );
     }
 
-    // Sorting Priority: 500, 4xx, 999, Network Error/Others
-    filteredLinks.sort((a, b) => {
-        const getPriority = (link) => {
-            const code = link.statusCode;
-            if (code === 500) return 1;
-            if (typeof code === 'number' && code >= 400 && code < 500) return 2;
-            if (code === 999) return 3;
-            if (link.errorType === 'Network Error') return 4;
-            return 5;
-        };
+    // Sorting
+    if (currentSort.column) {
+        filteredLinks.sort((a, b) => {
+            let valA = a[currentSort.column];
+            let valB = b[currentSort.column];
 
-        const priorityA = getPriority(a);
-        const priorityB = getPriority(b);
+            // Handle numeric status codes
+            if (currentSort.column === 'statusCode') {
+                valA = parseInt(valA) || 0;
+                valB = parseInt(valB) || 0;
+            } else {
+                valA = String(valA || '').toLowerCase();
+                valB = String(valB || '').toLowerCase();
+            }
 
-        if (priorityA !== priorityB) return priorityA - priorityB;
-        return a.url.localeCompare(b.url); // Secondary sort by URL
-    });
+            if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
+            if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
+            return 0;
+        });
+    } else {
+        // Default Sorting Priority: 500, 4xx, 999, Network Error/Others
+        filteredLinks.sort((a, b) => {
+            const getPriority = (link) => {
+                const code = link.statusCode;
+                if (code === 500) return 1;
+                if (typeof code === 'number' && code >= 400 && code < 500) return 2;
+                if (code === 999) return 3;
+                if (link.errorType === 'Network Error') return 4;
+                return 5;
+            };
+
+            const priorityA = getPriority(a);
+            const priorityB = getPriority(b);
+
+            if (priorityA !== priorityB) return priorityA - priorityB;
+            return a.url.localeCompare(b.url); // Secondary sort by URL
+        });
+    }
+
+    updateSortIndicators();
 
     filteredLinksGlobal = filteredLinks;
     currentPage = page;
@@ -654,45 +678,51 @@ function handleFilterChange() {
     // Update Table
     populateTable(locale, searchTerm, errorType);
 
-    // Update Charts based on locale and error
-    updateChartsByFilter(locale, errorType);
+    // Update Charts based on filters
+    updateChartsByFilter(locale, errorType, searchTerm);
 
     // Update Trend Chart based on number of runs
     updateTrendByRuns(days);
 }
 
 // Update charts when filters change
-function updateChartsByFilter(locale, errorType) {
-    let filteredLinks = [...allData.brokenLinksList];
+function updateChartsByFilter(locale, errorType, searchTerm) {
+    // 1. Filter links for Error Distribution and Response Time (respects ALL filters)
+    let linksForDist = [...allData.brokenLinksList];
+    if (locale !== 'all') linksForDist = linksForDist.filter(l => l.locale === locale);
+    if (errorType !== 'all') linksForDist = linksForDist.filter(l =>
+        l.errorType === errorType || String(l.statusCode) === errorType
+    );
+    if (searchTerm) linksForDist = linksForDist.filter(l =>
+        l.url.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-    if (locale !== 'all') {
-        filteredLinks = filteredLinks.filter(link => link.locale === locale);
-    }
-
-    if (errorType !== 'all') {
-        filteredLinks = filteredLinks.filter(link =>
-            link.errorType === errorType || String(link.statusCode) === errorType
-        );
-    }
+    // 2. Filter links for Locale Bar Chart (respects Error Type and Search Term, but NOT Locale filter)
+    let linksForLocaleChart = [...allData.brokenLinksList];
+    if (errorType !== 'all') linksForLocaleChart = linksForLocaleChart.filter(l =>
+        l.errorType === errorType || String(l.statusCode) === errorType
+    );
+    if (searchTerm) linksForLocaleChart = linksForLocaleChart.filter(l =>
+        l.url.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     // Recalculate distributions
     const errorDist = {};
     const timeDist = { "<1s": 0, "1-3s": 0, "3-5s": 0, ">5s": 0 };
-    const localeStats = {};
 
-    filteredLinks.forEach(link => {
-        // Error Dist
+    linksForDist.forEach(link => {
         const code = String(link.statusCode);
         errorDist[code] = (errorDist[code] || 0) + 1;
 
-        // Time Dist
         const latency = link.latency || 0;
         if (latency < 1000) timeDist["<1s"]++;
         else if (latency < 3000) timeDist["1-3s"]++;
         else if (latency < 5000) timeDist["3-5s"]++;
         else timeDist[">5s"]++;
+    });
 
-        // Locale Stats for bar chart
+    const localeStats = {};
+    linksForLocaleChart.forEach(link => {
         localeStats[link.locale] = (localeStats[link.locale] || 0) + 1;
     });
 
@@ -764,10 +794,50 @@ function formatDate(dateString) {
     return date.toLocaleDateString('en-US', options);
 }
 
+// Update sort indicators in table headers
+function updateSortIndicators() {
+    document.querySelectorAll('th.sortable').forEach(th => {
+        th.classList.remove('sort-asc', 'sort-desc');
+        if (th.dataset.sort === currentSort.column) {
+            th.classList.add(currentSort.direction === 'asc' ? 'sort-asc' : 'sort-desc');
+        }
+    });
+}
+
 // Event listeners
 document.getElementById('localeFilter').addEventListener('change', handleFilterChange);
 document.getElementById('searchBox').addEventListener('input', handleFilterChange);
+document.getElementById('errorFilter').addEventListener('change', handleFilterChange);
 document.getElementById('dateRange').addEventListener('change', () => {
+    handleFilterChange();
+});
+
+// Table header sorting listeners
+document.querySelectorAll('th.sortable').forEach(th => {
+    th.addEventListener('click', () => {
+        const column = th.dataset.sort;
+        if (currentSort.column === column) {
+            currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            currentSort.column = column;
+            currentSort.direction = 'asc';
+        }
+
+        const locale = document.getElementById('localeFilter').value;
+        const searchTerm = document.getElementById('searchBox').value;
+        const errorType = document.getElementById('errorFilter').value;
+        populateTable(locale, searchTerm, errorType, 1);
+    });
+});
+
+// Clear all filters
+document.getElementById('clearFilters').addEventListener('click', () => {
+    document.getElementById('localeFilter').value = 'all';
+    document.getElementById('errorFilter').value = 'all';
+    document.getElementById('searchBox').value = '';
+    document.getElementById('dateRange').value = '50';
+
+    currentSort = { column: null, direction: 'asc' };
     handleFilterChange();
 });
 
