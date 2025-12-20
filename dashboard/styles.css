@@ -377,21 +377,23 @@ thead {
 }
 
 th {
-    padding: 0.85rem;
+    background: #1e2533;
+    padding: 0.8rem 1rem;
     text-align: left;
     font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: var(--text-muted);
     font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     border-bottom: 1px solid var(--border-color);
 }
 
 td {
-    padding: 0.85rem;
+    padding: 0.8rem 1rem;
     border-bottom: 1px solid var(--border-color);
+    font-size: 0.75rem;
     color: var(--text-primary);
-    font-size: 0.9rem;
+    vertical-align: middle;
 }
 
 tbody tr {

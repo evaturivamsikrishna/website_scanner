@@ -23,7 +23,6 @@ let charts = {};
 let currentPage = 1;
 const rowsPerPage = 15;
 let filteredLinksGlobal = [];
-let showDetails = false;
 
 // Initialize dashboard
 async function initDashboard() {
@@ -544,14 +543,13 @@ function populateTable(filterLocale = 'all', searchTerm = '', page = 1) {
 
     paginatedLinks.forEach(link => {
         const row = document.createElement('tr');
-        const showClass = showDetails ? 'show' : '';
         row.innerHTML = `
             <td class="url-cell" title="${link.url}">${link.url}</td>
             <td>${link.locale}</td>
             <td><span class="status-badge status-${link.statusCode}">${link.statusCode}</span></td>
             <td>${link.errorType}</td>
-            <td class="hidden-col extra-info ${showClass}">${link.source || 'N/A'}</td>
-            <td class="hidden-col extra-info ${showClass}">${link.text || 'N/A'}</td>
+            <td class="extra-info">${link.source || 'N/A'}</td>
+            <td class="extra-info">${link.text || 'N/A'}</td>
             <td>${formatDate(link.lastChecked)}</td>
         `;
         tbody.appendChild(row);
@@ -715,24 +713,6 @@ document.getElementById('localeFilter').addEventListener('change', handleFilterC
 document.getElementById('searchBox').addEventListener('input', handleFilterChange);
 document.getElementById('dateRange').addEventListener('change', () => {
     handleFilterChange();
-});
-
-// Toggle details button
-document.getElementById('toggleDetails').addEventListener('click', () => {
-    showDetails = !showDetails;
-    const btn = document.getElementById('toggleDetails');
-    btn.textContent = showDetails ? 'Hide Extra Columns' : 'Show Extra Columns';
-
-    // Toggle visibility of header columns
-    document.querySelectorAll('.extra-info').forEach(el => {
-        if (showDetails) el.classList.add('show');
-        else el.classList.remove('show');
-    });
-
-    // Refresh table to update rows
-    const locale = document.getElementById('localeFilter').value;
-    const searchTerm = document.getElementById('searchBox').value;
-    populateTable(locale, searchTerm, currentPage);
 });
 
 // Initialize dashboard when DOM is loaded
