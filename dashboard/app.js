@@ -26,6 +26,7 @@ let filteredLinksGlobal = [];
 
 // Initialize dashboard
 async function initDashboard() {
+    Chart.register(ChartDataLabels);
     try {
         // Load data from JSON file
         const response = await fetch('data/results.json');
