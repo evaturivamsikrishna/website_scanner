@@ -569,3 +569,20 @@ tbody tr:hover {
 .metric-value {
     text-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
 }
+.clear-filters-btn {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.clear-filters-btn:hover {
+    background: var(--neon-blue);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
