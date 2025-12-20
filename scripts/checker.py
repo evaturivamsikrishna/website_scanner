@@ -90,15 +90,40 @@ async def main():
         # Filter out None results (successes or ignored errors)
         broken_links = [r for r in results if r is not None]
 
+    # Load existing data to preserve history
+    existing_data = {}
+    if os.path.exists(OUTPUT_JSON):
+        try:
+            with open(OUTPUT_JSON, 'r') as f:
+                existing_data = json.load(f)
+        except:
+            pass
+
     # Prepare dashboard data
+    current_time = datetime.now().isoformat()
+    total_runs = existing_data.get("totalRuns", 0) + 1
+    
     dashboard_data = {
-        "lastUpdated": datetime.now().isoformat(),
+        "lastUpdated": current_time,
+        "totalRuns": total_runs,
         "totalUrls": len(all_tasks),
         "brokenLinks": len(broken_links),
         "successRate": ((len(all_tasks) - len(broken_links)) / len(all_tasks)) * 100 if all_tasks else 100,
         "brokenLinksList": broken_links,
-        "locales": [] # We'll aggregate this
+        "locales": [],
+        "trends": existing_data.get("trends", [])
     }
+
+    # Add current run to trends
+    dashboard_data["trends"].append({
+        "date": current_time,
+        "brokenLinks": len(broken_links),
+        "totalUrls": len(all_tasks)
+    })
+    
+    # Keep only last 90 days of trends (assuming 2 runs per day = 180 entries)
+    if len(dashboard_data["trends"]) > 200:
+        dashboard_data["trends"] = dashboard_data["trends"][-200:]
 
     # Aggregate locale stats
     locales_stats = {}
@@ -126,19 +151,24 @@ async def main():
         error_dist[code] = error_dist.get(code, 0) + 1
     dashboard_data["errorDistribution"] = error_dist
 
-    # Response time distribution (placeholder or real if we track it for all)
-    # For now, just a simple bucket for broken links
+    # Response time distribution
     dashboard_data["responseTimeDistribution"] = {
         "<1s": 0,
         "1-3s": 0,
         "3-5s": 0,
         ">5s": 0
     }
+    for link in broken_links:
+        latency = link.get('latency', 0)
+        if latency < 1000: dashboard_data["responseTimeDistribution"]["<1s"] += 1
+        elif latency < 3000: dashboard_data["responseTimeDistribution"]["1-3s"] += 1
+        elif latency < 5000: dashboard_data["responseTimeDistribution"]["3-5s"] += 1
+        else: dashboard_data["responseTimeDistribution"][">5s"] += 1
 
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(dashboard_data, f, indent=2)
 
-    print(f"✅ Check completed. Found {len(broken_links)} broken links.")
+    print(f"✅ Check completed. Total Runs: {total_runs}")
     print(f"📊 Results saved to {OUTPUT_JSON}")
 
 if __name__ == "__main__":

@@ -148,6 +148,9 @@ function updateMetrics() {
     document.getElementById('successRate').textContent = allData.successRate.toFixed(1) + '%';
     document.getElementById('brokenLinks').textContent = allData.brokenLinks.toLocaleString();
     document.getElementById('activeLocales').textContent = allData.locales.length;
+    if (document.getElementById('totalRuns')) {
+        document.getElementById('totalRuns').textContent = (allData.totalRuns || 0).toLocaleString();
+    }
 }
 
 // Populate locale filter dropdown
@@ -611,7 +614,80 @@ function renderPagination(totalPages, currentPage) {
 function handleFilterChange() {
     const locale = document.getElementById('localeFilter').value;
     const searchTerm = document.getElementById('searchBox').value;
+    const days = parseInt(document.getElementById('dateRange').value);
+
+    // Update Table
     populateTable(locale, searchTerm);
+
+    // Update Charts based on locale
+    updateChartsByLocale(locale);
+
+    // Update Trend Chart based on date range
+    updateTrendByDate(days);
+}
+
+// Update charts when locale filter changes
+function updateChartsByLocale(locale) {
+    if (locale === 'all') {
+        createCharts();
+        createHeatmap();
+        return;
+    }
+
+    // Filter data for specific locale
+    const localeData = allData.locales.find(l => l.name === locale);
+    if (!localeData) return;
+
+    // Filter broken links for this locale to update error distribution
+    const localeLinks = allData.brokenLinksList.filter(link => link.locale === locale);
+
+    const errorDist = {};
+    const timeDist = { "<1s": 0, "1-3s": 0, "3-5s": 0, ">5s": 0 };
+
+    localeLinks.forEach(link => {
+        const code = str(link.statusCode);
+        errorDist[code] = (errorDist[code] || 0) + 1;
+
+        const latency = link.latency || 0;
+        if (latency < 1000) timeDist["<1s"]++;
+        else if (latency < 3000) timeDist["1-3s"]++;
+        else if (latency < 5000) timeDist["3-5s"]++;
+        else timeDist[">5s"]++;
+    });
+
+    // Update charts with filtered data
+    updateErrorChart(errorDist);
+    updateResponseTimeChart(timeDist);
+}
+
+// Update trend chart based on date range
+function updateTrendByDate(days) {
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - days);
+
+    const filteredTrends = allData.trends.filter(t => new Date(t.date) >= cutoffDate);
+
+    if (charts.trend) {
+        charts.trend.data.labels = filteredTrends.map(t => formatDate(t.date));
+        charts.trend.data.datasets[0].data = filteredTrends.map(t => t.brokenLinks);
+        charts.trend.update();
+    }
+}
+
+function updateErrorChart(dist) {
+    if (charts.error) {
+        charts.error.data.labels = Object.keys(dist);
+        charts.error.data.datasets[0].data = Object.values(dist);
+        charts.error.update();
+    }
+}
+
+function updateResponseTimeChart(dist) {
+    if (charts.responseTime) {
+        charts.responseTime.data.labels = Object.keys(dist);
+        charts.responseTime.data.datasets[0].data = Object.values(dist);
+        charts.responseTime.update();
+    }
 }
 
 // Filter by locale from heatmap click
