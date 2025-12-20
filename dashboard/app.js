@@ -657,8 +657,8 @@ function handleFilterChange() {
     // Update Charts based on locale and error
     updateChartsByFilter(locale, errorType);
 
-    // Update Trend Chart based on date range
-    updateTrendByDate(days);
+    // Update Trend Chart based on number of runs
+    updateTrendByRuns(days);
 }
 
 // Update charts when filters change
@@ -714,15 +714,19 @@ function updateLocaleChartFiltered(stats) {
 }
 
 
-// Update trend chart based on date range
-function updateTrendByDate(days) {
-    const cutoffDate = new Date();
-    cutoffDate.setDate(cutoffDate.getDate() - days);
+// Update trend chart based on number of runs
+function updateTrendByRuns(count) {
+    let filteredTrends = [...allData.trends];
 
-    const filteredTrends = allData.trends.filter(t => new Date(t.date) >= cutoffDate);
+    if (count > 0) {
+        filteredTrends = filteredTrends.slice(-count);
+    }
 
     if (charts.trend) {
-        charts.trend.data.labels = filteredTrends.map(t => formatDate(t.date));
+        charts.trend.data.labels = filteredTrends.map((t, i) => {
+            const runNum = allData.totalRuns ? (allData.totalRuns - filteredTrends.length + i + 1) : (i + 1);
+            return `Run #${runNum} (${formatDate(t.date)})`;
+        });
         charts.trend.data.datasets[0].data = filteredTrends.map(t => t.brokenLinks);
         charts.trend.update();
     }
