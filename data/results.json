@@ -1,0 +1,453 @@
+{
+  "lastUpdated": "2025-12-20T04:23:08.382833",
+  "totalUrls": 7391,
+  "brokenLinks": 34,
+  "successRate": 99.53998105804357,
+  "brokenLinksList": [
+    {
+      "url": "https://press.kwalee.com/uk-game-developer-kwalee-pledging-profits-from-hit-title-teacher-simulator-to-help-tackle-child-food-poverty",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:53.798604",
+      "latency": 1219.3665504455566,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://surreynewwritersfest.com/buy-tickets/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:56.279809",
+      "latency": 3700.176239013672,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://kwalee.com/ko-kr/blog/can-roguelikes-teach-us-what-indie-gamers-really-want",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:04.796832",
+      "latency": 12216.149091720581,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/VoidwroughtGame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-20T04:22:59.194240",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/our-ceo-earned-a-fellowship",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:01.833370",
+      "latency": 9251.87611579895,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/our-expansion-continues-with-the-launch-of-kwalee-china",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:02.098206",
+      "latency": 9515.020608901978,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.techspot.com/news/97572-mount-blade-ii-mod-uses-chatgpt-procedurally-generate.html",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:59.146176",
+      "latency": 6561.871528625488,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/the-precinct-e86840?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:55.283001",
+      "latency": 2696.7244148254395,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/what-are-creative-wednesdays/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:02.183581",
+      "latency": 9596.72999382019,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.kwalee.dropstuff&hl=en_US",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:59.348341",
+      "latency": 6759.693145751953,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://openai.com/blog/chatgpt/",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:58.366432",
+      "latency": 5774.382591247559,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/embracing-remote-work/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:04.155696",
+      "latency": 11557.769298553467,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/women-in-games-with-jen-flannery",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:03.093289",
+      "latency": 10491.461992263794,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/what-are-creative-wednesdays",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:03.149161",
+      "latency": 10547.256708145142,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/kwaleegaming",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-20T04:22:59.265061",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/kwalee",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-20T04:22:59.337923",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/space-chef-3f1010?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=space-chef",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:57.269728",
+      "latency": 4663.283824920654,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/publishing/how-do-i-market-test-my-mobile-game",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:05.992014",
+      "latency": 13382.030963897705,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.kwalee.dreambuildsolitaire",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:59.894235",
+      "latency": 7283.795356750488,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.achievers.com/press/achievers-survey-finds-without-recognition-expect-employee-attrition-2018/",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:54.356481",
+      "latency": 1745.0299263000488,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/gamedev/all-you-need-to-know-about-hypersims",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:06.129620",
+      "latency": 13516.359567642212,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/industry/ai-in-game-development-and-its-impact",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:06.516568",
+      "latency": 13902.26435661316,
+      "isDeepCheck": true
+    },
+    {
+      "url": "mailto:privacypolicy@kwalee.com",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-20T04:22:52.616702",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/cloud-gaming-market",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:53.905807",
+      "latency": 1288.7475490570068,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/inside-kwalee/what-are-creative-wednesdays/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:03.224713",
+      "latency": 10603.126049041748,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.weforum.org/agenda/2022/08/jobs-work-quit-great-resignation/",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:58.165203",
+      "latency": 5535.354852676392,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/DavidDarling",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-20T04:22:59.969098",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://onespecialday.org.uk/buy-games/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:00.531778",
+      "latency": 7898.399829864502,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/voidwrought-ce8f4b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:58.777359",
+      "latency": 6143.280029296875,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/one-special-day-2020/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:07.138026",
+      "latency": 14498.217344284058,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/robobeat-5f084b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:59.130665",
+      "latency": 6490.816593170166,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://press.kwalee.com/kwalee-hits-1-billion-mobile-game-installs",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:59.292765",
+      "latency": 6651.42560005188,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://open.spotify.com/show/0Sa4kAACed8FPxmpofKPMC",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:22:56.487642",
+      "latency": 3844.4559574127197,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://apps.apple.com/us/app/dream-build-solitaire/id6446602374",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-20T04:23:02.804749",
+      "latency": 10143.132448196411,
+      "isDeepCheck": true
+    }
+  ],
+  "locales": [
+    {
+      "name": "English",
+      "total": 1971,
+      "broken": 34,
+      "successRate": 98.27498731608321
+    },
+    {
+      "name": "espa\u00f1ol de Espa\u00f1a",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "espa\u00f1ol de M\u00e9xico",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "dansk (Danmark)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "Deutsch (Deutschland)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "fran\u00e7ais (France)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "italiano (Italia)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u65e5\u672c\u8a9e (\u65e5\u672c)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "norsk bokm\u00e5l (Norge)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "Nederlands (Nederland)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "portugu\u00eas (Brasil)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "polski (Polska)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "portugu\u00eas europeu",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "svenska (Sverige)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u4e2d\u6587\uff08\u4e2d\u56fd\uff09",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u4e2d\u6587\uff08\u53f0\u7063\uff09",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    }
+  ],
+  "errorDistribution": {
+    "404": 20,
+    "Error": 5,
+    "403": 9
+  },
+  "responseTimeDistribution": {
+    "<1s": 0,
+    "1-3s": 0,
+    "3-5s": 0,
+    ">5s": 0
+  }
+}
