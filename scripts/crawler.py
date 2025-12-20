@@ -24,12 +24,12 @@ async def fetch_links(session, url):
             for a in soup.find_all('a', href=True):
                 href = a['href']
                 full_url = urljoin(url, href)
+                text = a.get_text(strip=True) or "No Text"
                 # Only include links that are part of kwalee.com or external links
-                # We want to check ALL links on the page
-                links.add(full_url)
+                links.add((full_url, text))
             
             print(f"✅ Extracted {len(links)} links from {url}")
-            return list(links)
+            return [{"url": l[0], "source": url, "text": l[1]} for l in links]
     except Exception as e:
         print(f"❌ Error fetching {url}: {e}")
         return []
@@ -56,15 +56,17 @@ async def main():
         for url, links in zip(urls, results):
             all_deep_links[url] = links
 
-    # Flatten and unique
-    unique_links = set()
-    for links in all_deep_links.values():
-        unique_links.update(links)
+    # Deduplicate while preserving source/text (keep the first one found)
+    unique_links = {}
+    for result_list in results:
+        for item in result_list:
+            if item['url'] not in unique_links:
+                unique_links[item['url']] = item
 
     print(f"📊 Total unique links discovered: {len(unique_links)}")
 
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
-        json.dump(list(unique_links), f, indent=2)
+        json.dump(list(unique_links.values()), f, indent=2)
 
 if __name__ == "__main__":
     asyncio.run(main())

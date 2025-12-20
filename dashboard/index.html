@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Checker Dashboard</title>
+    <title>Broken Link Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
@@ -14,7 +14,7 @@
         <!-- Header Section -->
         <header class="header">
             <div class="header-content">
-                <h1>Link Checker Dashboard</h1>
+                <h1>Broken Link Dashboard</h1>
                 <div class="last-updated" id="lastUpdated">Last updated: Loading...</div>
             </div>
         </header>
@@ -122,6 +122,7 @@
             <div class="table-header">
                 <h2>Broken Links Details</h2>
                 <div class="table-controls">
+                    <button id="toggleDetails" class="toggle-details-btn">Show Extra Columns</button>
                     <input type="text" id="searchBox" placeholder="Search URLs...">
                 </div>
             </div>
@@ -133,6 +134,8 @@
                             <th>Locale</th>
                             <th>Status Code</th>
                             <th>Error Type</th>
+                            <th class="hidden-col extra-info">Source Page</th>
+                            <th class="hidden-col extra-info">Section (Text)</th>
                             <th>Last Checked</th>
                         </tr>
                     </thead>

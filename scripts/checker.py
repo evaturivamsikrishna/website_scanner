@@ -14,7 +14,7 @@ CONCURRENCY_LIMIT = 50 # Adjust based on server capacity
 USERNAME = "Kwalee"
 PASSWORD = "eelawk2025"
 
-async def check_url(session, url, locale_name, is_deep_check):
+async def check_url(session, url, locale_name, is_deep_check, source=None, text=None):
     try:
         start_time = time.time()
         async with session.get(url, timeout=15) as response:
@@ -34,7 +34,9 @@ async def check_url(session, url, locale_name, is_deep_check):
                     "errorType": "Client Error" if status < 500 else "Server Error",
                     "lastChecked": datetime.now().isoformat(),
                     "latency": latency,
-                    "isDeepCheck": is_deep_check
+                    "isDeepCheck": is_deep_check,
+                    "source": source,
+                    "text": text
                 }
     except asyncio.TimeoutError:
         # Ignore timeouts as per requirements
@@ -52,7 +54,9 @@ async def check_url(session, url, locale_name, is_deep_check):
             "errorType": "Network Error",
             "lastChecked": datetime.now().isoformat(),
             "latency": 0,
-            "isDeepCheck": is_deep_check
+            "isDeepCheck": is_deep_check,
+            "source": source,
+            "text": text
         }
     return None
 
@@ -75,13 +79,14 @@ async def main():
     
     async with aiohttp.ClientSession(auth=auth, connector=connector) as session:
         # Add English deep links
-        for url in en_links:
-            all_tasks.append(check_url(session, url, "English", True))
+        for item in en_links:
+            all_tasks.append(check_url(session, item['url'], "English", True, item['source'], item['text']))
         
         # Add Locale surface links
         for locale_name, urls in locale_map.items():
             for url in urls:
-                all_tasks.append(check_url(session, url, locale_name, False))
+                # For surface links, the source is the URL itself and text is "Base URL"
+                all_tasks.append(check_url(session, url, locale_name, False, url, "Base URL"))
 
         print(f"🚀 Checking {len(all_tasks)} URLs...")
         
