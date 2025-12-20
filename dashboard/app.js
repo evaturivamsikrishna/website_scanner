@@ -308,12 +308,12 @@ function createLocaleChart() {
     const sortedLocales = [...allData.locales]
         .sort((a, b) => b.broken - a.broken);
 
-    // Generate gradient colors for all bars
+    // Generate distinguishable colors for all bars
+    const colorKeys = Object.keys(neonColors);
     const barColors = sortedLocales.map((locale, index) => {
-        const ratio = index / sortedLocales.length;
-        if (ratio < 0.33) return neonColors.pink;      // High broken count
-        else if (ratio < 0.66) return neonColors.orange; // Medium
-        else return neonColors.blue;                     // Low
+        // Cycle through neon colors for variety
+        const colorKey = colorKeys[index % colorKeys.length];
+        return neonColors[colorKey];
     });
 
     charts.locale = new Chart(ctx, {
