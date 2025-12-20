@@ -1,0 +1,59 @@
+name: Link Checker
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *' # Twice a day
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install aiohttp beautifulsoup4
+
+      - name: Run Crawler (Deep Search)
+        run: python scripts/crawler.py
+
+      - name: Run Locale Mapper
+        run: python scripts/locale_mapper.py
+
+      - name: Run Link Checker
+        run: python scripts/checker.py
+
+      - name: Copy results to dashboard
+        run: cp data/results.json dashboard/data/results.json
+
+      - name: Send Email Notification
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Broken Links Report - ${{ github.event.repository.name }}"
+          to: ${{ secrets.MAIL_TO }}
+          from: "Link Checker Bot"
+          body: |
+            Link checking completed.
+            Total URLs checked: $(jq -r '.totalUrls' data/results.json)
+            Broken links found: $(jq -r '.brokenLinks' data/results.json)
+            
+            View the dashboard: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          attachments: data/results.json
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dashboard

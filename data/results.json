@@ -1,0 +1,463 @@
+{
+  "lastUpdated": "2025-12-19T23:40:19.287470",
+  "totalUrls": 7186,
+  "brokenLinks": 35,
+  "successRate": 99.51294183133872,
+  "brokenLinksList": [
+    {
+      "url": "https://www.kwalee.com/blog/gamedev/rocket-sky-from-prototype-to-hit",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:09.891069",
+      "latency": 5948.478937149048,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://apps.apple.com/us/app/dream-build-solitaire/id6446602374",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:04.447220",
+      "latency": 504.30917739868164,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.tiktok.com/@insinkgame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:08.422782",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/DavidDarling",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:07.452676",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/theprecinctgame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:10.718780",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/robobeat-5f084b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:11.165519",
+      "latency": 7218.837022781372,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/space-chef-3f1010?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=space-chef",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:12.960625",
+      "latency": 9013.844966888428,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/VoidwroughtGame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:14.831082",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.kwalee.com/blog/industry/why-your-game-job-application-is-rejected",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:17.365601",
+      "latency": 13416.983127593994,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/the-precinct-e86840?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:13.284993",
+      "latency": 9335.88695526123,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/statement.csv",
+      "locale": "English",
+      "statusCode": 400,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:11.436656",
+      "latency": 7487.425088882446,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/report-identification-v2.csv",
+      "locale": "English",
+      "statusCode": 400,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:12.679245",
+      "latency": 8729.718923568726,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/kwalee",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.064140",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.tiktok.com/@kwalee.games",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:12.776972",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/categories-name.csv",
+      "locale": "English",
+      "statusCode": 400,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:13.697456",
+      "latency": 9744.883060455322,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/kwaleegaming",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.218377",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.kwalee.dropstuff&hl=en_US",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:13.217431",
+      "latency": 9263.153791427612,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.tiktok.com/@spacechefgame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:13.188485",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/SpaceChefGame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.426017",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/robobeatgame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.843408",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.tiktok.com/@kwaleetiktok",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:13.428315",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://surreynewwritersfest.com/buy-tickets/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:14.135873",
+      "latency": 10174.798727035522,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.techspot.com/news/97572-mount-blade-ii-mod-uses-chatgpt-procedurally-generate.html",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:13.132457",
+      "latency": 9170.983076095581,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/JasonFalcus",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.921037",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://onespecialday.org.uk/buy-games/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:12.220382",
+      "latency": 8255.905151367188,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.kwalee.dreambuildsolitaire",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:15.586991",
+      "latency": 11619.045972824097,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://open.spotify.com/show/0Sa4kAACed8FPxmpofKPMC",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:11.219069",
+      "latency": 7249.768972396851,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/InSinkGame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.916714",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://twitter.com/WildmenderGame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:15.933221",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://store.epicgames.com/en-US/p/voidwrought-ce8f4b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:13.480465",
+      "latency": 9507.742881774902,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.tiktok.com/@kwaleegaming",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:14.096457",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://www.tiktok.com/@robobeatgame",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-19T23:40:14.148839",
+      "latency": 0,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/overall-figures.csv",
+      "locale": "English",
+      "statusCode": 400,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:13.790546",
+      "latency": 9815.656900405884,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/notices.csv",
+      "locale": "English",
+      "statusCode": 400,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:14.312743",
+      "latency": 10337.753057479858,
+      "isDeepCheck": true
+    },
+    {
+      "url": "https://openai.com/blog/chatgpt/",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-19T23:40:10.584331",
+      "latency": 6609.210252761841,
+      "isDeepCheck": true
+    }
+  ],
+  "locales": [
+    {
+      "name": "English",
+      "total": 1766,
+      "broken": 35,
+      "successRate": 98.01812004530012
+    },
+    {
+      "name": "espa\u00f1ol de Espa\u00f1a",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "espa\u00f1ol de M\u00e9xico",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "dansk (Danmark)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "Deutsch (Deutschland)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "fran\u00e7ais (France)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "italiano (Italia)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u65e5\u672c\u8a9e (\u65e5\u672c)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "norsk bokm\u00e5l (Norge)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "Nederlands (Nederland)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "portugu\u00eas (Brasil)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "polski (Polska)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "portugu\u00eas europeu",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "svenska (Sverige)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u4e2d\u6587\uff08\u4e2d\u56fd\uff09",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    },
+    {
+      "name": "\u4e2d\u6587\uff08\u53f0\u7063\uff09",
+      "total": 271,
+      "broken": 0,
+      "successRate": 100.0
+    }
+  ],
+  "errorDistribution": {
+    "404": 8,
+    "Error": 16,
+    "403": 6,
+    "400": 5
+  },
+  "responseTimeDistribution": {
+    "<1s": 0,
+    "1-3s": 0,
+    "3-5s": 0,
+    ">5s": 0
+  }
+}

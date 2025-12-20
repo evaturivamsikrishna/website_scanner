@@ -1,0 +1,86 @@
+[
+    {
+        "href": "/en",
+        "text": "English"
+    },
+    {
+        "href": "/es-es",
+        "text": "español de España"
+    },
+    {
+        "href": "/es-mx",
+        "text": "español de México"
+    },
+    {
+        "href": "/da-dk",
+        "text": "dansk (Danmark)"
+    },
+    {
+        "href": "/de-de",
+        "text": "Deutsch (Deutschland)"
+    },
+    {
+        "href": "/fr-fr",
+        "text": "français (France)"
+    },
+    {
+        "href": "/it-it",
+        "text": "italiano (Italia)"
+    },
+    {
+        "href": "/ja-jp",
+        "text": "日本語 (日本)"
+    },
+    {
+        "href": "/ko-kr",
+        "text": "한국어(대한민국)"
+    },
+    {
+        "href": "/nb-no",
+        "text": "norsk bokmål (Norge)"
+    },
+    {
+        "href": "/nl-nl",
+        "text": "Nederlands (Nederland)"
+    },
+    {
+        "href": "/pt-br",
+        "text": "português (Brasil)"
+    },
+    {
+        "href": "/pl-pl",
+        "text": "polski (Polska)"
+    },
+    {
+        "href": "/pt-pt",
+        "text": "português europeu"
+    },
+    {
+        "href": "/ru-ru",
+        "text": "русский (Россия)"
+    },
+    {
+        "href": "/sv-se",
+        "text": "svenska (Sverige)"
+    },
+    {
+        "href": "/th-th",
+        "text": "ไทย (ไทย)"
+    },
+    {
+        "href": "/tr-tr",
+        "text": "Türkçe (Türkiye)"
+    },
+    {
+        "href": "/uk-ua",
+        "text": "українська (Україна)"
+    },
+    {
+        "href": "/zh-cn",
+        "text": "中文（中国）"
+    },
+    {
+        "href": "/zh-tw",
+        "text": "中文（台灣）"
+    }
+]
