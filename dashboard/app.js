@@ -394,6 +394,17 @@ function createLocaleChart() {
                             ];
                         }
                     }
+                },
+                datalabels: {
+                    color: '#1a1a1a',
+                    anchor: 'end',
+                    align: 'start',
+                    offset: 4,
+                    font: {
+                        weight: 'bold',
+                        size: 10
+                    },
+                    formatter: (value) => value > 0 ? value : ''
                 }
             },
             scales: {
