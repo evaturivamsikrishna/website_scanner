@@ -11,8 +11,6 @@ LOCALE_MAP = "registry/locale_map.json"
 OUTPUT_JSON = "data/results.json"
 CONCURRENCY_LIMIT = 50 # Adjust based on server capacity
 
-USERNAME = "Kwalee"
-PASSWORD = "eelawk2025"
 
 async def check_url(session, url, locale_name, is_deep_check, source=None, text=None):
     try:
@@ -74,10 +72,9 @@ async def main():
 
     all_tasks = []
     
-    auth = aiohttp.BasicAuth(USERNAME, PASSWORD)
     connector = aiohttp.TCPConnector(limit=CONCURRENCY_LIMIT)
     
-    async with aiohttp.ClientSession(auth=auth, connector=connector) as session:
+    async with aiohttp.ClientSession(connector=connector) as session:
         # Add English deep links
         for item in en_links:
             all_tasks.append(check_url(session, item['url'], "English", True, item['source'], item['text']))
