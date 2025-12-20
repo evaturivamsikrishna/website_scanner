@@ -43,6 +43,7 @@ async function initDashboard() {
         }
 
         populateLocaleFilter();
+        populateErrorFilter();
         createCharts();
         createHeatmap();
         populateTable();
@@ -163,6 +164,29 @@ function populateLocaleFilter() {
         const option = document.createElement('option');
         option.value = locale.name;
         option.textContent = `${locale.name} (${locale.broken} broken)`;
+        select.appendChild(option);
+    });
+
+    select.addEventListener('change', handleFilterChange);
+}
+
+// Populate error type filter dropdown
+function populateErrorFilter() {
+    const select = document.getElementById('errorFilter');
+    if (!select) return;
+
+    select.innerHTML = '<option value="all">All Errors</option>';
+
+    const errorTypes = new Set();
+    allData.brokenLinksList.forEach(link => {
+        if (link.errorType) errorTypes.add(link.errorType);
+        if (link.statusCode) errorTypes.add(String(link.statusCode));
+    });
+
+    Array.from(errorTypes).sort().forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
         select.appendChild(option);
     });
 
@@ -490,7 +514,7 @@ function createHeatmap() {
 }
 
 // Populate broken links table
-function populateTable(filterLocale = 'all', searchTerm = '', page = 1) {
+function populateTable(filterLocale = 'all', searchTerm = '', errorType = 'all', page = 1) {
     const tbody = document.getElementById('tableBody');
     const pagination = document.getElementById('pagination');
     tbody.innerHTML = '';
@@ -500,6 +524,13 @@ function populateTable(filterLocale = 'all', searchTerm = '', page = 1) {
     // Filter by locale
     if (filterLocale !== 'all') {
         filteredLinks = filteredLinks.filter(link => link.locale === filterLocale);
+    }
+
+    // Filter by error type
+    if (errorType !== 'all') {
+        filteredLinks = filteredLinks.filter(link =>
+            link.errorType === errorType || String(link.statusCode) === errorType
+        );
     }
 
     // Filter by search term
@@ -617,51 +648,71 @@ function renderPagination(totalPages, currentPage) {
 function handleFilterChange() {
     const locale = document.getElementById('localeFilter').value;
     const searchTerm = document.getElementById('searchBox').value;
+    const errorType = document.getElementById('errorFilter').value;
     const days = parseInt(document.getElementById('dateRange').value);
 
     // Update Table
-    populateTable(locale, searchTerm);
+    populateTable(locale, searchTerm, errorType);
 
-    // Update Charts based on locale
-    updateChartsByLocale(locale);
+    // Update Charts based on locale and error
+    updateChartsByFilter(locale, errorType);
 
     // Update Trend Chart based on date range
     updateTrendByDate(days);
 }
 
-// Update charts when locale filter changes
-function updateChartsByLocale(locale) {
-    if (locale === 'all') {
-        createCharts();
-        createHeatmap();
-        return;
+// Update charts when filters change
+function updateChartsByFilter(locale, errorType) {
+    let filteredLinks = [...allData.brokenLinksList];
+
+    if (locale !== 'all') {
+        filteredLinks = filteredLinks.filter(link => link.locale === locale);
     }
 
-    // Filter data for specific locale
-    const localeData = allData.locales.find(l => l.name === locale);
-    if (!localeData) return;
+    if (errorType !== 'all') {
+        filteredLinks = filteredLinks.filter(link =>
+            link.errorType === errorType || String(link.statusCode) === errorType
+        );
+    }
 
-    // Filter broken links for this locale to update error distribution
-    const localeLinks = allData.brokenLinksList.filter(link => link.locale === locale);
-
+    // Recalculate distributions
     const errorDist = {};
     const timeDist = { "<1s": 0, "1-3s": 0, "3-5s": 0, ">5s": 0 };
+    const localeStats = {};
 
-    localeLinks.forEach(link => {
-        const code = str(link.statusCode);
+    filteredLinks.forEach(link => {
+        // Error Dist
+        const code = String(link.statusCode);
         errorDist[code] = (errorDist[code] || 0) + 1;
 
+        // Time Dist
         const latency = link.latency || 0;
         if (latency < 1000) timeDist["<1s"]++;
         else if (latency < 3000) timeDist["1-3s"]++;
         else if (latency < 5000) timeDist["3-5s"]++;
         else timeDist[">5s"]++;
+
+        // Locale Stats for bar chart
+        localeStats[link.locale] = (localeStats[link.locale] || 0) + 1;
     });
 
-    // Update charts with filtered data
+    // Update charts
     updateErrorChart(errorDist);
     updateResponseTimeChart(timeDist);
+    updateLocaleChartFiltered(localeStats);
 }
+
+function updateLocaleChartFiltered(stats) {
+    if (charts.locale) {
+        // If filtering by a specific locale, we might want to show only that one
+        // or keep all but update counts. Let's update counts for all.
+        const labels = charts.locale.data.labels;
+        const newData = labels.map(label => stats[label] || 0);
+        charts.locale.data.datasets[0].data = newData;
+        charts.locale.update();
+    }
+}
+
 
 // Update trend chart based on date range
 function updateTrendByDate(days) {
