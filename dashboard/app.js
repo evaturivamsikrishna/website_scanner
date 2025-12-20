@@ -324,6 +324,14 @@ function createErrorChart() {
                     titleColor: '#f0f4f8',
                     bodyColor: '#c5d1e0',
                     padding: 12
+                },
+                datalabels: {
+                    color: '#1a1a1a',
+                    font: {
+                        weight: 'bold',
+                        size: 11
+                    },
+                    formatter: (value) => value > 0 ? value : ''
                 }
             }
         }
@@ -460,6 +468,16 @@ function createResponseTimeChart() {
                     titleColor: '#f0f4f8',
                     bodyColor: '#c5d1e0',
                     padding: 12
+                },
+                datalabels: {
+                    color: '#1a1a1a',
+                    anchor: 'center',
+                    align: 'center',
+                    font: {
+                        weight: 'bold',
+                        size: 11
+                    },
+                    formatter: (value) => value > 0 ? value : ''
                 }
             },
             scales: {
