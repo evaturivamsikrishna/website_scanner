@@ -2,15 +2,20 @@ name: Link Checker
 
 on:
   schedule:
-    - cron: '0 */4 * * *'    # Every 4 hours - Comprehensive link check
-    - cron: '0 3 * * *'      # Daily at 3 AM UTC - Registry update
+    - cron: '0 */4 * * *'    # Every 4 hours - Quick check
+    - cron: '0 12 * * *'     # Daily at 12:00 UTC - Locale check
+    - cron: '0 0 */2 * *'    # Every 2 days at midnight - Deep crawl
   workflow_dispatch:
     inputs:
-      update_registry:
-        description: 'Update registry files (crawler + locale mapper)'
+      mode:
+        description: 'Run mode'
         required: false
-        default: false
-        type: boolean
+        default: 'check'
+        type: choice
+        options:
+          - check
+          - locale-check
+          - deep-crawl
 
 permissions:
   contents: write
@@ -42,28 +47,29 @@ jobs:
           curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/en_deep_links.json -o registry/en_deep_links.json || echo "[]" > registry/en_deep_links.json
           curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/locale_map.json -o registry/locale_map.json || echo "{}" > registry/locale_map.json
 
-      - name: Determine if registry update needed
-        id: update_check
+      - name: Determine run mode
+        id: mode
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.update_registry }}" = "true" ]; then
-            echo "update=true" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "0 3 * * *" ]; then
-            echo "update=true" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then
+            echo "mode=locale-check" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 */2 * *" ]; then
+            echo "mode=deep-crawl" >> $GITHUB_OUTPUT
           else
-            echo "update=false" >> $GITHUB_OUTPUT
+            echo "mode=check" >> $GITHUB_OUTPUT
           fi
-          echo "Registry update: $(cat $GITHUB_OUTPUT | grep update | cut -d= -f2)"
+          echo "Selected mode: $(cat $GITHUB_OUTPUT | grep mode | cut -d= -f2)"
 
-      - name: Run Crawler
-        if: steps.update_check.outputs.update == 'true'
+      - name: Run Crawler (Deep Crawl only)
+        if: steps.mode.outputs.mode == 'deep-crawl'
         run: python scripts/crawler.py
 
       - name: Run Locale Mapper
-        if: steps.update_check.outputs.update == 'true'
+        if: steps.mode.outputs.mode == 'locale-check' || steps.mode.outputs.mode == 'deep-crawl'
         run: python scripts/locale_mapper.py
 
       - name: Run Link Checker
-        if: steps.update_check.outputs.update == 'false'
         run: python scripts/checker.py
 
       - name: Copy results to dashboard
