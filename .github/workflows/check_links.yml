@@ -89,7 +89,6 @@ jobs:
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
           html_body: file://data/email_body.html
-          attachments: data/report.png
           convert_markdown: false
 
       - name: Upload Pages Artifact
