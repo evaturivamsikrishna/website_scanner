@@ -73,18 +73,6 @@ jobs:
       - name: Generate Email Content
         run: python scripts/generate_email.py
 
-      - name: Read Email Content
-        id: email
-        run: |
-          HTML_CONTENT=$(cat data/email_body.html)
-          TEXT_CONTENT=$(cat data/email_body.txt)
-          echo "html_content<<EOF" >> $GITHUB_OUTPUT
-          echo "$HTML_CONTENT" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-          echo "text_content<<EOF" >> $GITHUB_OUTPUT
-          echo "$TEXT_CONTENT" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
       - name: Send Email Notification
         if: success()
         uses: dawidd6/action-send-mail@v3
@@ -96,10 +84,10 @@ jobs:
           subject: "🔗 Link Checker Report - ${{ github.event.repository.name }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
-          html_body: ${{ steps.email.outputs.html_content }}
-          body: ${{ steps.email.outputs.text_content }}
-          attachments: data/results.json
+          html_body: file://data/email_body.html
+          body: file://data/email_body.txt
           convert_markdown: false
+          priority: normal
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
