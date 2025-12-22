@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Checker Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f3f4f6;
+            padding: 20px;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .header .timestamp {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .metric-card.error {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .metric-card.success {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+
+        .metric-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: #6b7280;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .metric-card.error .metric-value {
+            color: #dc2626;
+        }
+
+        .metric-card.success .metric-value {
+            color: #16a34a;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #111827;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .info-value {
+            color: #111827;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .chart-placeholder {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+
+        .locale-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .locale-badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .locale-badge.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 30px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #f9fafb;
+            padding: 20px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 12px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .error-summary {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        .error-summary h3 {
+            color: #991b1b;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .error-list {
+            list-style: none;
+            font-size: 13px;
+            color: #7f1d1d;
+        }
+
+        .error-list li {
+            padding: 4px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🔗 Link Checker Report</h1>
+            <div class="timestamp">{{LAST_UPDATED}}</div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Metrics Grid -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">🔗</div>
+                    <div class="metric-label">Total URLs</div>
+                    <div class="metric-value">{{TOTAL_URLS}}</div>
+                </div>
+
+                <div class="metric-card error">
+                    <div class="metric-icon">✗</div>
+                    <div class="metric-label">Broken Links</div>
+                    <div class="metric-value">{{BROKEN_LINKS}}</div>
+                </div>
+
+                <div class="metric-card success">
+                    <div class="metric-icon">✓</div>
+                    <div class="metric-label">Success Rate</div>
+                    <div class="metric-value">{{SUCCESS_RATE}}%</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">🌍</div>
+                    <div class="metric-label">Locales</div>
+                    <div class="metric-value">{{TOTAL_LOCALES}}</div>
+                </div>
+            </div>
+
+            <!-- Run Details -->
+            <div class="section">
+                <h2>Run Details</h2>
+                <div class="info-row">
+                    <span class="info-label">Run Time</span>
+                    <span class="info-value">{{RUN_TIME}}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Repository</span>
+                    <span class="info-value">{{REPO_NAME}}</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Workflow Run</span>
+                    <span class="info-value">#{{RUN_NUMBER}}</span>
+                </div>
+            </div>
+
+            <!-- Error Distribution -->
+            {{#if HAS_ERRORS}}
+            <div class="error-summary">
+                <h3>⚠️ Error Distribution</h3>
+                <ul class="error-list">
+                    {{ERROR_DISTRIBUTION}}
+                </ul>
+            </div>
+            {{/if}}
+
+            <!-- Locales Checked -->
+            <div class="section">
+                <h2>Locales Checked</h2>
+                <div class="locale-list">
+                    {{LOCALE_BADGES}}
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="{{DASHBOARD_URL}}" class="cta-button">
+                📊 View Full Dashboard
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Automated Link Checker · Powered by GitHub Actions</p>
+            <p style="margin-top: 8px;">This is an automated message. Please do not reply.</p>
+        </div>
+    </div>
+</body>
+
+</html>

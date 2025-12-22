@@ -43,6 +43,9 @@ jobs:
       - name: Copy results to dashboard
         run: cp data/results.json dashboard/data/results.json
 
+      - name: Generate Email Content
+        run: python scripts/generate_email.py
+
       - name: Send Email Notification
         if: success()
         uses: dawidd6/action-send-mail@v3
@@ -51,16 +54,13 @@ jobs:
           server_port: 465
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "Broken Links Report - ${{ github.event.repository.name }}"
+          subject: "🔗 Link Checker Report - ${{ github.event.repository.name }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
           to: ${{ secrets.MAIL_TO }}
-          from: "Link Checker Bot"
-          body: |
-            Link checking completed.
-            Total URLs checked: $(jq -r '.totalUrls' data/results.json)
-            Broken links found: $(jq -r '.brokenLinks' data/results.json)
-            
-            View the dashboard: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
+          html_body: ${{ github.workspace }}/data/email_body.html
+          body: ${{ github.workspace }}/data/email_body.txt
           attachments: data/results.json
+          convert_markdown: false
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
