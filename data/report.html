@@ -49,7 +49,14 @@
         .status-bar {
             padding: 30px 40px;
             background: #f9fafb;
-            border-bottom: 4px solid #2563eb;
+
+            border-bottom: 4px solid {
+                    {
+                    STATUS_COLOR
+                }
+            }
+
+            ;
         }
 
         .status-content {
@@ -221,15 +228,15 @@
     <div class="container">
         <div class="header">
             <h1>🔗 Link Checker Report</h1>
-            <p class="subtitle">{{TIMESTAMP}}</p>
+            <p class="subtitle">December 19, 2025 at 23:40 UTC</p>
         </div>
 
         <div class="status-bar">
             <div class="status-content">
-                <div class="status-icon">{{STATUS_EMOJI}}</div>
+                <div class="status-icon">❌</div>
                 <div class="status-text">
-                    <h2>{{STATUS_TEXT}}</h2>
-                    <p>Run #{{RUN_NUMBER}} • {{REPO_NAME}}</p>
+                    <h2>35 broken links need attention</h2>
+                    <p>Run #N/A • website_scanner</p>
                 </div>
             </div>
         </div>
@@ -238,49 +245,57 @@
             <div class="metric-card">
                 <div class="metric-icon">🔗</div>
                 <div class="metric-label">Total URLs</div>
-                <div class="metric-value">{{TOTAL_URLS}}</div>
+                <div class="metric-value">7,186</div>
             </div>
 
             <div class="metric-card error">
                 <div class="metric-icon">✗</div>
                 <div class="metric-label">Broken Links</div>
-                <div class="metric-value">{{BROKEN_LINKS}}</div>
+                <div class="metric-value">35</div>
             </div>
 
             <div class="metric-card success">
                 <div class="metric-icon">✓</div>
                 <div class="metric-label">Success Rate</div>
-                <div class="metric-value">{{SUCCESS_RATE}}%</div>
+                <div class="metric-value">99.5%</div>
             </div>
 
             <div class="metric-card">
                 <div class="metric-icon">🌍</div>
                 <div class="metric-label">Locales</div>
-                <div class="metric-value">{{TOTAL_LOCALES}}</div>
+                <div class="metric-value">21</div>
             </div>
         </div>
 
-        {{ISSUES_HTML}}
+        
+        <div class="issues-section">
+            <div class="issues-box">
+                <div class="issues-title">⚠️ Issues Detected</div>
+                <ul class="issues-list">
+                    <li>Error errors: 16 occurrences</li><li>404 errors: 8 occurrences</li><li>403 errors: 6 occurrences</li><li>1 locale(s) affected</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="run-details">
             <table class="details-table">
                 <tr>
                     <td>Repository</td>
-                    <td>{{REPO_NAME}}</td>
+                    <td>website_scanner</td>
                 </tr>
                 <tr>
                     <td>Workflow Run</td>
-                    <td>#{{RUN_NUMBER}}</td>
+                    <td>#N/A</td>
                 </tr>
                 <tr>
                     <td>Execution Time</td>
-                    <td>{{RUN_TIME}}</td>
+                    <td>23:40 UTC</td>
                 </tr>
             </table>
         </div>
 
         <div class="footer">
-            <a href="{{DASHBOARD_URL}}" class="dashboard-link">📊 View Full Dashboard</a>
+            <a href="https://user.github.io/website_scanner/" class="dashboard-link">📊 View Full Dashboard</a>
             <p>Automated Link Checker · Powered by GitHub Actions</p>
         </div>
     </div>

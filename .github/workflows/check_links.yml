@@ -2,9 +2,9 @@ name: Link Checker
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Link checking every 4 hours
-    - cron: '0 12 * * *' # Daily locale check at 12:00 UTC
-    - cron: '0 0 */2 * *' # Deep crawl every 2 days at midnight UTC
+    - cron: '0 */4 * * *'    # Every 4 hours - Quick check
+    - cron: '0 12 * * *'     # Daily at 12:00 UTC - Locale check
+    - cron: '0 0 */2 * *'    # Every 2 days at midnight - Deep crawl
   workflow_dispatch:
     inputs:
       mode:
@@ -25,43 +25,48 @@ permissions:
 jobs:
   check-links:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
+      
       - name: Install dependencies
-        run: |
-            pip install aiohttp beautifulsoup4 Pillow
-
+        run: pip install aiohttp beautifulsoup4
+      
       - name: Fetch previous results
         run: |
-            mkdir -p data
-            curl -s "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/data/results.json" -o data/results.json || echo "No previous results found"
+          mkdir -p data registry
+          curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/data/results.json -o data/results.json || echo "{}" > data/results.json
+          curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/en_deep_links.json -o registry/en_deep_links.json || echo "[]" > registry/en_deep_links.json
+          curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/locale_map.json -o registry/locale_map.json || echo "{}" > registry/locale_map.json
 
-      - name: Determine Run Mode
+      - name: Determine run mode
         id: mode
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "0 0 */2 * *" ]; then
-            echo "mode=deep-crawl" >> $GITHUB_OUTPUT
           elif [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then
             echo "mode=locale-check" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 */2 * *" ]; then
+            echo "mode=deep-crawl" >> $GITHUB_OUTPUT
           else
             echo "mode=check" >> $GITHUB_OUTPUT
           fi
+          echo "Selected mode: $(cat $GITHUB_OUTPUT | grep mode | cut -d= -f2)"
 
-      - name: Run Crawler (Deep Search)
+      - name: Run Crawler (Deep Crawl only)
         if: steps.mode.outputs.mode == 'deep-crawl'
         run: python scripts/crawler.py
 
       - name: Run Locale Mapper
-        if: steps.mode.outputs.mode == 'deep-crawl' || steps.mode.outputs.mode == 'locale-check'
+        if: steps.mode.outputs.mode == 'locale-check' || steps.mode.outputs.mode == 'deep-crawl'
         run: python scripts/locale_mapper.py
 
       - name: Run Link Checker
@@ -72,61 +77,6 @@ jobs:
 
       - name: Generate Email Content
         run: python scripts/generate_email.py
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Playwright
-        run: |
-          npm install -D playwright
-          npx playwright install chromium
-
-      - name: Take Screenshot with Playwright
-        run: |
-          cat > screenshot.js << 'EOF'
-          const { chromium } = require('playwright');
-          const path = require('path');
-          
-          (async () => {
-            const browser = await chromium.launch();
-            const page = await browser.newPage({
-              viewport: { width: 1200, height: 900 }
-            });
-            
-            await page.goto('file://' + path.join(process.cwd(), 'data', 'report.html'));
-            await page.waitForTimeout(1000);
-            await page.screenshot({
-              path: 'report-screenshot.png',
-              fullPage: true
-            });
-            
-            await browser.close();
-            console.log('Screenshot saved successfully!');
-          })();
-          EOF
-          node screenshot.js
-
-      - name: Prepare Screenshots for Deployment
-        run: |
-          mkdir -p screenshots
-          mv report-screenshot.png screenshots/report-${{ github.run_id }}.png
-          # Copy dashboard files
-          if [ -d "dashboard" ]; then
-            cp -r dashboard/* screenshots/
-          fi
-          # Copy results
-          mkdir -p screenshots/data
-          cp data/results.json screenshots/data/ || true
-          ls -la screenshots/
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: screenshots
-          branch: gh-pages
-          clean: false
 
       - name: Send Email Notification
         if: success()
@@ -141,6 +91,7 @@ jobs:
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
           html_body: file://data/email_body.html
+          body: file://data/email_body.txt
           convert_markdown: false
 
       - name: Upload Pages Artifact
@@ -148,16 +99,6 @@ jobs:
         with:
           path: ./dashboard
 
-  deploy:
-    needs: check-links
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
