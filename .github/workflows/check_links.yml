@@ -2,8 +2,20 @@ name: Link Checker
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Every 4 hours
-  workflow_dispatch: # Manual trigger
+    - cron: '0 */4 * * *' # Link checking every 4 hours
+    - cron: '0 12 * * *' # Daily locale check at 12:00 UTC
+    - cron: '0 0 */2 * *' # Deep crawl every 2 days at midnight UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: false
+        default: 'check'
+        type: choice
+        options:
+          - check
+          - locale-check
+          - deep-crawl
 
 permissions:
   contents: write
@@ -31,10 +43,25 @@ jobs:
             mkdir -p data
             curl -s "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/data/results.json" -o data/results.json || echo "No previous results found"
 
+      - name: Determine Run Mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 */2 * *" ]; then
+            echo "mode=deep-crawl" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then
+            echo "mode=locale-check" >> $GITHUB_OUTPUT
+          else
+            echo "mode=check" >> $GITHUB_OUTPUT
+          fi
+
       - name: Run Crawler (Deep Search)
+        if: steps.mode.outputs.mode == 'deep-crawl'
         run: python scripts/crawler.py
 
       - name: Run Locale Mapper
+        if: steps.mode.outputs.mode == 'deep-crawl' || steps.mode.outputs.mode == 'locale-check'
         run: python scripts/locale_mapper.py
 
       - name: Run Link Checker
@@ -45,6 +72,18 @@ jobs:
 
       - name: Generate Email Content
         run: python scripts/generate_email.py
+
+      - name: Read Email Content
+        id: email
+        run: |
+          HTML_CONTENT=$(cat data/email_body.html)
+          TEXT_CONTENT=$(cat data/email_body.txt)
+          echo "html_content<<EOF" >> $GITHUB_OUTPUT
+          echo "$HTML_CONTENT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "text_content<<EOF" >> $GITHUB_OUTPUT
+          echo "$TEXT_CONTENT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Send Email Notification
         if: success()
@@ -57,8 +96,8 @@ jobs:
           subject: "🔗 Link Checker Report - ${{ github.event.repository.name }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
-          html_body: ${{ github.workspace }}/data/email_body.html
-          body: ${{ github.workspace }}/data/email_body.txt
+          html_body: ${{ steps.email.outputs.html_content }}
+          body: ${{ steps.email.outputs.text_content }}
           attachments: data/results.json
           convert_markdown: false
 
