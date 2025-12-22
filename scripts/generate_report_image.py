@@ -129,55 +129,7 @@ def generate_image_with_pillow():
     print(f"✓ Report image generated: {output_path}")
     return True
 
-def generate_image_fallback():
-    """Generate a simple text-based image as last resort"""
-    try:
-        from PIL import Image, ImageDraw, ImageFont
-    except ImportError:
-        print("⚠️ Pillow not installed, cannot generate fallback image")
-        return False
-    
-    # Create simple image with text
-    width = 800
-    height = 400
-    img = Image.new('RGB', (width, height), (255, 255, 255))
-    draw = ImageDraw.Draw(img)
-    
-    font = ImageFont.load_default()
-    
-    # Read basic stats
-    results_path = Path('data/results.json')
-    with open(results_path, 'r') as f:
-        data = json.load(f)
-    
-    lines = [
-        "Link Checker Report",
-        "",
-        f"Total URLs: {data.get('totalUrls', 0):,}",
-        f"Broken Links: {data.get('brokenLinks', 0)}",
-        f"Success Rate: {data.get('successRate', 0):.1f}%",
-        f"Locales: {len(data.get('locales', []))}",
-        "",
-        "View full dashboard for details"
-    ]
-    
-    y = 50
-    for line in lines:
-        draw.text((50, y), line, fill=(0, 0, 0), font=font)
-        y += 30
-    
-    output_path = Path('data/report.png')
-    img.save(output_path, 'PNG')
-    print(f"✓ Fallback report image generated: {output_path}")
-    return True
-
-def main():
-    print("📊 Generating report image...")
-    
-    # Try to generate with Pillow
-    if not generate_image_with_pillow():
-        # Fallback to simple version
-        generate_image_fallback()
-
 if __name__ == '__main__':
-    main()
+    print("📊 Generating report image...")
+    generate_image_with_pillow()
+
