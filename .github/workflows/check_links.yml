@@ -79,15 +79,14 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
+          secure: true
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "🔗 Link Checker Report - ${{ github.event.repository.name }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
           html_body: file://data/email_body.html
-          body: file://data/email_body.txt
           convert_markdown: false
-          priority: normal
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
