@@ -73,24 +73,45 @@ jobs:
       - name: Generate Email Content
         run: python scripts/generate_email.py
 
-      - name: Take Screenshot with Puppeteer
-        uses: flameddd/screenshots-ci-action@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          url: file://${{ github.workspace }}/data/report.html
-          devices: Desktop Chrome HiDPI
-          noDesktop: false
-          noCommitHashFileName: true
-          fullPage: true
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install -D playwright
+          npx playwright install chromium
+
+      - name: Take Screenshot with Playwright
+        run: |
+          cat > screenshot.js << 'EOF'
+          const { chromium } = require('playwright');
+          const path = require('path');
+          
+          (async () => {
+            const browser = await chromium.launch();
+            const page = await browser.newPage({
+              viewport: { width: 1200, height: 900 }
+            });
+            
+            await page.goto('file://' + path.join(process.cwd(), 'data', 'report.html'));
+            await page.waitForTimeout(1000);
+            await page.screenshot({
+              path: 'report-screenshot.png',
+              fullPage: true
+            });
+            
+            await browser.close();
+            console.log('Screenshot saved successfully!');
+          })();
+          EOF
+          node screenshot.js
 
       - name: Prepare Screenshots for Deployment
         run: |
           mkdir -p screenshots
-          # Find and rename the screenshot
-          if ls *.jpeg 1> /dev/null 2>&1; then
-            mv *.jpeg screenshots/report-${{ github.run_id }}.jpeg
-          elif ls *.png 1> /dev/null 2>&1; then
-            mv *.png screenshots/report-${{ github.run_id }}.png
-          fi
+          mv report-screenshot.png screenshots/report-${{ github.run_id }}.png
           # Copy dashboard files
           if [ -d "dashboard" ]; then
             cp -r dashboard/* screenshots/
