@@ -87,7 +87,7 @@ jobs:
           secure: true
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "🔗 Link Checker Report - ${{ github.event.repository.name }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
+          subject: "🔗 Link Checker Report #${{ github.run_number }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
           html_body: file://data/email_body.html

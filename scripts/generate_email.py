@@ -119,22 +119,35 @@ Automated Link Checker · Powered by GitHub Actions
 ──────────────────────────────────────────────────────────────
 """
     
-    # Build HTML email (minimal, just for formatting)
+    # Build HTML email (minimal, table-based, no divs)
     html_body = f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Link Checker Report</title>
 </head>
-<body style="font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 20px;">
-    <div style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <pre style="margin: 0; font-size: 13px; line-height: 1.6; color: #333; overflow-x: auto;">{text_body}</pre>
-        
-        <div style="margin-top: 30px; text-align: center;">
-            <a href="{dashboard_url}" style="display: inline-block; background: #2563eb; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-right: 10px;">📊 View Dashboard</a>
-            <a href="{workflow_url}" style="display: inline-block; background: #6b7280; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold;">🔍 View Workflow</a>
-        </div>
-    </div>
+<body style="font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 20px; margin: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 800px; margin: 0 auto;">
+        <tr>
+            <td style="background: white; padding: 30px; border-radius: 8px;">
+                <pre style="margin: 0; font-size: 13px; line-height: 1.6; color: #333; overflow-x: auto; font-family: 'Courier New', monospace;">{text_body}</pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-top: 20px; text-align: center;">
+                <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                    <tr>
+                        <td style="padding: 0 5px;">
+                            <a href="{dashboard_url}" style="display: inline-block; background: #2563eb; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold;">📊 View Dashboard</a>
+                        </td>
+                        <td style="padding: 0 5px;">
+                            <a href="{workflow_url}" style="display: inline-block; background: #6b7280; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold;">🔍 View Workflow</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>"""
     
