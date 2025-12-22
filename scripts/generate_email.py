@@ -16,26 +16,35 @@ def format_timestamp(timestamp_str):
         return timestamp_str
 
 def generate_locale_badges(locales):
-    """Generate HTML badges for locales"""
+    """Generate HTML badges for locales - inline styles for email compatibility"""
     badges = []
     for locale in locales:
-        badge_class = 'error' if locale.get('broken', 0) > 0 else ''
-        locale_name = locale.get('name', 'Unknown')
         broken_count = locale.get('broken', 0)
+        locale_name = locale.get('name', 'Unknown')
         
         if broken_count > 0:
-            badges.append(f'<span class="locale-badge {badge_class}">{locale_name} ({broken_count} ✗)</span>')
+            # Error badge - red background
+            badges.append(
+                f'<span style="display: inline-block; background-color: #fee2e2; color: #991b1b; '
+                f'padding: 6px 12px; margin: 4px; border-radius: 16px; font-size: 12px; font-weight: 500;">'
+                f'{locale_name} ({broken_count} ✗)</span>'
+            )
         else:
-            badges.append(f'<span class="locale-badge">{locale_name} ✓</span>')
+            # Success badge - blue background
+            badges.append(
+                f'<span style="display: inline-block; background-color: #e0f2fe; color: #0369a1; '
+                f'padding: 6px 12px; margin: 4px; border-radius: 16px; font-size: 12px; font-weight: 500;">'
+                f'{locale_name} ✓</span>'
+            )
     
     return '\n                    '.join(badges)
 
 def generate_error_distribution(error_dist):
-    """Generate error distribution list"""
+    """Generate error distribution list with inline styles"""
     items = []
     for error_code, count in error_dist.items():
-        items.append(f'<li>{error_code}: {count} occurrences</li>')
-    return '\n                    '.join(items)
+        items.append(f'{error_code}: {count} occurrences<br/>')
+    return ''.join(items)
 
 def main():
     # Read results.json
