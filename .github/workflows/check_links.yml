@@ -78,6 +78,12 @@ jobs:
       - name: Generate Email Content
         run: python scripts/generate_email.py
 
+      - name: Get Broken Links Count
+        id: stats
+        run: |
+          BROKEN=$(jq -r '.brokenLinks' data/results.json)
+          echo "broken_links=$BROKEN" >> $GITHUB_OUTPUT
+
       - name: Send Email Notification
         if: success()
         uses: dawidd6/action-send-mail@v3
@@ -87,7 +93,7 @@ jobs:
           secure: true
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "🔗 Link Checker Report #${{ github.run_number }} - $(jq -r '.brokenLinks' data/results.json) Broken Links"
+          subject: "🔗 Link Checker Report #${{ github.run_number }} - ${{ steps.stats.outputs.broken_links }} Broken Links"
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
           html_body: file://data/email_body.html
