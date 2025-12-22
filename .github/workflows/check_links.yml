@@ -36,7 +36,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-            pip install aiohttp beautifulsoup4
+            pip install aiohttp beautifulsoup4 Pillow
 
       - name: Fetch previous results
         run: |
@@ -73,6 +73,9 @@ jobs:
       - name: Generate Email Content
         run: python scripts/generate_email.py
 
+      - name: Generate Report Image
+        run: python scripts/generate_report_image.py
+
       - name: Send Email Notification
         if: success()
         uses: dawidd6/action-send-mail@v3
@@ -86,6 +89,7 @@ jobs:
           to: ${{ secrets.MAIL_TO }}
           from: "Link Checker Bot <${{ secrets.MAIL_USERNAME }}>"
           html_body: file://data/email_body.html
+          attachments: data/report.png
           convert_markdown: false
 
       - name: Upload Pages Artifact
