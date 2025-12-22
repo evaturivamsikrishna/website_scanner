@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Checker Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .status-bar {
+            padding: 30px 40px;
+            background: #f9fafb;
+
+            border-bottom: 4px solid {
+                    {
+                    STATUS_COLOR
+                }
+            }
+
+            ;
+        }
+
+        .status-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .status-icon {
+            font-size: 48px;
+        }
+
+        .status-text h2 {
+            font-size: 24px;
+            color: #111827;
+            margin-bottom: 5px;
+        }
+
+        .status-text p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .metric-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .metric-card.error {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .metric-card.success {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+
+        .metric-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #6b7280;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .metric-card.error .metric-value {
+            color: #dc2626;
+        }
+
+        .metric-card.success .metric-value {
+            color: #16a34a;
+        }
+
+        .issues-section {
+            padding: 0 40px 40px 40px;
+        }
+
+        .issues-box {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .issues-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #991b1b;
+            margin-bottom: 12px;
+        }
+
+        .issues-list {
+            list-style: none;
+        }
+
+        .issues-list li {
+            color: #7f1d1d;
+            font-size: 14px;
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .issues-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+        .run-details {
+            padding: 0 40px 40px 40px;
+        }
+
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .details-table tr {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .details-table td {
+            padding: 16px 0;
+            font-size: 14px;
+        }
+
+        .details-table td:first-child {
+            color: #6b7280;
+        }
+
+        .details-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 40px;
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        .footer .dashboard-link {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 15px;
+            transition: background 0.2s;
+        }
+
+        .footer .dashboard-link:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔗 Link Checker Report</h1>
+            <p class="subtitle">{{TIMESTAMP}}</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-content">
+                <div class="status-icon">{{STATUS_EMOJI}}</div>
+                <div class="status-text">
+                    <h2>{{STATUS_TEXT}}</h2>
+                    <p>Run #{{RUN_NUMBER}} • {{REPO_NAME}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-icon">🔗</div>
+                <div class="metric-label">Total URLs</div>
+                <div class="metric-value">{{TOTAL_URLS}}</div>
+            </div>
+
+            <div class="metric-card error">
+                <div class="metric-icon">✗</div>
+                <div class="metric-label">Broken Links</div>
+                <div class="metric-value">{{BROKEN_LINKS}}</div>
+            </div>
+
+            <div class="metric-card success">
+                <div class="metric-icon">✓</div>
+                <div class="metric-label">Success Rate</div>
+                <div class="metric-value">{{SUCCESS_RATE}}%</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">🌍</div>
+                <div class="metric-label">Locales</div>
+                <div class="metric-value">{{TOTAL_LOCALES}}</div>
+            </div>
+        </div>
+
+        {{ISSUES_HTML}}
+
+        <div class="run-details">
+            <table class="details-table">
+                <tr>
+                    <td>Repository</td>
+                    <td>{{REPO_NAME}}</td>
+                </tr>
+                <tr>
+                    <td>Workflow Run</td>
+                    <td>#{{RUN_NUMBER}}</td>
+                </tr>
+                <tr>
+                    <td>Execution Time</td>
+                    <td>{{RUN_TIME}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <a href="{{DASHBOARD_URL}}" class="dashboard-link">📊 View Full Dashboard</a>
+            <p>Automated Link Checker · Powered by GitHub Actions</p>
+        </div>
+    </div>
+</body>
+
+</html>

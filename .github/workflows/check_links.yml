@@ -73,8 +73,27 @@ jobs:
       - name: Generate Email Content
         run: python scripts/generate_email.py
 
-      - name: Generate Report Image
-        run: python scripts/generate_report_image.py
+      - name: Take Screenshot with Puppeteer
+        uses: flameddd/screenshots-ci-action@v1
+        with:
+          url: file://${{ github.workspace }}/data/report.html
+          devices: Desktop Chrome HiDPI
+          noDesktop: false
+          noCommitHashFileName: true
+          fullPage: true
+
+      - name: Rename and Move Screenshot
+        run: |
+          mkdir -p screenshots
+          mv *.jpeg screenshots/report-${{ github.run_id }}.png || mv *.png screenshots/report-${{ github.run_id }}.png || true
+          cp dashboard/* screenshots/ || true
+
+      - name: Deploy Screenshot to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: screenshots
+          branch: gh-pages
+          clean: false
 
       - name: Send Email Notification
         if: success()
