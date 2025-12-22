@@ -77,7 +77,13 @@ async def main():
     async with aiohttp.ClientSession(connector=connector) as session:
         # Add English deep links
         for item in en_links:
-            all_tasks.append(check_url(session, item['url'], "English", True, item['source'], item['text']))
+            # Handle both old format (strings) and new format (dicts)
+            if isinstance(item, str):
+                # Old format: just a URL string
+                all_tasks.append(check_url(session, item, "English", True, None, None))
+            else:
+                # New format: dict with url, source, text
+                all_tasks.append(check_url(session, item['url'], "English", True, item.get('source'), item.get('text')))
         
         # Add Locale surface links
         for locale_name, urls in locale_map.items():
