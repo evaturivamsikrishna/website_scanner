@@ -33,8 +33,8 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
                     "lastChecked": datetime.now().isoformat(),
                     "latency": latency,
                     "isDeepCheck": is_deep_check,
-                    "source": source,
-                    "text": text
+                    "source": source if source else url,
+                    "text": text if text else "Unknown"
                 }
     except asyncio.TimeoutError:
         # Ignore timeouts as per requirements
@@ -53,8 +53,8 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
             "lastChecked": datetime.now().isoformat(),
             "latency": 0,
             "isDeepCheck": is_deep_check,
-            "source": source,
-            "text": text
+            "source": source if source else url,
+            "text": text if text else "Unknown"
         }
     return None
 

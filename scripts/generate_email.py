@@ -118,9 +118,11 @@ def generate_simple_email():
     
     broken_links = data.get('brokenLinks', 0)
     
-    # URLs
+    # URLs - try both extensions
     dashboard_url = f"https://{repo_owner}.github.io/{repo_name}/"
     screenshot_url = f"https://{repo_owner}.github.io/{repo_name}/report-{run_id}.png"
+    # Fallback to .jpeg if .png doesn't exist (Puppeteer might output either)
+    screenshot_url_alt = f"https://{repo_owner}.github.io/{repo_name}/report-{run_id}.jpeg"
     workflow_url = f"https://github.com/{repo_full}/actions/runs/{run_id}" if run_id else dashboard_url
     
     # Status

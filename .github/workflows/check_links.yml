@@ -82,13 +82,25 @@ jobs:
           noCommitHashFileName: true
           fullPage: true
 
-      - name: Rename and Move Screenshot
+      - name: Prepare Screenshots for Deployment
         run: |
           mkdir -p screenshots
-          mv *.jpeg screenshots/report-${{ github.run_id }}.png || mv *.png screenshots/report-${{ github.run_id }}.png || true
-          cp dashboard/* screenshots/ || true
+          # Find and rename the screenshot
+          if ls *.jpeg 1> /dev/null 2>&1; then
+            mv *.jpeg screenshots/report-${{ github.run_id }}.jpeg
+          elif ls *.png 1> /dev/null 2>&1; then
+            mv *.png screenshots/report-${{ github.run_id }}.png
+          fi
+          # Copy dashboard files
+          if [ -d "dashboard" ]; then
+            cp -r dashboard/* screenshots/
+          fi
+          # Copy results
+          mkdir -p screenshots/data
+          cp data/results.json screenshots/data/ || true
+          ls -la screenshots/
 
-      - name: Deploy Screenshot to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: screenshots
