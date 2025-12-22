@@ -116,34 +116,81 @@ Automated Link Checker · Powered by GitHub Actions
 ════════════════════════════════════════════════════════════════
 """
     
-    # Build HTML email (minimal, table-based, no divs)
+    # Build HTML email (clean, table-based for email compatibility)
     html_body = f"""<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Link Checker Report</title>
+<meta charset="UTF-8">
+<title>Link Checker Report</title>
 </head>
-<body style="font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 20px; margin: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 800px; margin: 0 auto;">
-        <tr>
-            <td style="background: white; padding: 30px; border-radius: 8px;">
-                <pre style="margin: 0; font-size: 13px; line-height: 1.6; color: #333; overflow-x: auto; font-family: 'Courier New', monospace;">{text_body}</pre>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding-top: 20px; text-align: center;">
-                <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
-                    <tr>
-                        <td style="padding: 0 5px;">
-                            <a href="{dashboard_url}" style="display: inline-block; background: #2563eb; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold;">📊 View Dashboard</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+
+<body style="margin:0;padding:0;background:#f3f4f6;font-family:Arial,Helvetica,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding:20px;">
+
+<table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;overflow:hidden;">
+    
+<tr>
+<td style="padding:20px 24px;border-bottom:1px solid #e5e7eb;">
+<h2 style="margin:0;font-size:18px;">🔗 Link Checker Report</h2>
+<p style="margin:6px 0 0;color:#6b7280;font-size:13px;">
+Workflow #{run_number} · {formatted_time}
+</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:20px 24px;">
+<p style="margin:0;font-weight:bold;">{status}</p>
+</td>
+</tr>
+
+<tr>
+<td style="padding:0 24px 20px;">
+<table width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;">
+<tr><td>Total URLs</td><td align="right">{total_urls:,}</td></tr>
+<tr><td>Broken Links</td><td align="right">{broken_links}</td></tr>
+<tr><td>Success Rate</td><td align="right">{success_rate}%</td></tr>
+<tr><td>Locales Tested</td><td align="right">{total_locales}</td></tr>
+</table>
+</td>
+</tr>
+"""
+
+    # Add error breakdown if there are broken links
+    if broken_links > 0 and error_dist:
+        html_body += """
+<tr>
+<td style="padding:0 24px 20px;">
+<b>Error Breakdown</b>
+<table width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;">
+"""
+        sorted_errors = sorted(error_dist.items(), key=lambda x: x[1], reverse=True)
+        for code, count in sorted_errors:
+            html_body += f"<tr><td>{code}</td><td align='right'>{count}</td></tr>"
+
+        html_body += "</table></td></tr>"
+
+    html_body += f"""
+<tr>
+<td style="padding:20px 24px;border-top:1px solid #e5e7eb;">
+<a href="{dashboard_url}"
+style="display:inline-block;background:#2563eb;color:#ffffff;
+padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:bold;">
+View Dashboard
+</a>
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+</table>
 </body>
-</html>"""
+</html>
+"""
     
     # Write files
     with open('data/email_body.txt', 'w', encoding='utf-8') as f:
