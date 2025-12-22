@@ -20,9 +20,14 @@ const neonColors = {
 // Global variables
 let allData = null;
 let charts = {};
+let currentPage = 1;
+const rowsPerPage = 15;
+let filteredLinksGlobal = [];
+let currentSort = { column: null, direction: 'asc' };
 
 // Initialize dashboard
 async function initDashboard() {
+    Chart.register(ChartDataLabels);
     try {
         // Load data from JSON file
         const response = await fetch('data/results.json');
@@ -39,6 +44,7 @@ async function initDashboard() {
         }
 
         populateLocaleFilter();
+        populateErrorFilter();
         createCharts();
         createHeatmap();
         populateTable();
@@ -145,6 +151,9 @@ function updateMetrics() {
     document.getElementById('successRate').textContent = allData.successRate.toFixed(1) + '%';
     document.getElementById('brokenLinks').textContent = allData.brokenLinks.toLocaleString();
     document.getElementById('activeLocales').textContent = allData.locales.length;
+    if (document.getElementById('totalRuns')) {
+        document.getElementById('totalRuns').textContent = (allData.totalRuns || 0).toLocaleString();
+    }
 }
 
 // Populate locale filter dropdown
@@ -156,6 +165,29 @@ function populateLocaleFilter() {
         const option = document.createElement('option');
         option.value = locale.name;
         option.textContent = `${locale.name} (${locale.broken} broken)`;
+        select.appendChild(option);
+    });
+
+    select.addEventListener('change', handleFilterChange);
+}
+
+// Populate error type filter dropdown
+function populateErrorFilter() {
+    const select = document.getElementById('errorFilter');
+    if (!select) return;
+
+    select.innerHTML = '<option value="all">All Errors</option>';
+
+    const errorTypes = new Set();
+    allData.brokenLinksList.forEach(link => {
+        if (link.errorType) errorTypes.add(link.errorType);
+        if (link.statusCode) errorTypes.add(String(link.statusCode));
+    });
+
+    Array.from(errorTypes).sort().forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
         select.appendChild(option);
     });
 
@@ -292,6 +324,14 @@ function createErrorChart() {
                     titleColor: '#f0f4f8',
                     bodyColor: '#c5d1e0',
                     padding: 12
+                },
+                datalabels: {
+                    color: '#1a1a1a',
+                    font: {
+                        weight: 'bold',
+                        size: 11
+                    },
+                    formatter: (value) => value > 0 ? value : ''
                 }
             }
         }
@@ -308,12 +348,12 @@ function createLocaleChart() {
     const sortedLocales = [...allData.locales]
         .sort((a, b) => b.broken - a.broken);
 
-    // Generate gradient colors for all bars
+    // Generate distinguishable colors for all bars
+    const colorKeys = Object.keys(neonColors);
     const barColors = sortedLocales.map((locale, index) => {
-        const ratio = index / sortedLocales.length;
-        if (ratio < 0.33) return neonColors.pink;      // High broken count
-        else if (ratio < 0.66) return neonColors.orange; // Medium
-        else return neonColors.blue;                     // Low
+        // Cycle through neon colors for variety
+        const colorKey = colorKeys[index % colorKeys.length];
+        return neonColors[colorKey];
     });
 
     charts.locale = new Chart(ctx, {
@@ -354,6 +394,17 @@ function createLocaleChart() {
                             ];
                         }
                     }
+                },
+                datalabels: {
+                    color: '#1a1a1a',
+                    anchor: 'end',
+                    align: 'start',
+                    offset: 4,
+                    font: {
+                        weight: 'bold',
+                        size: 10
+                    },
+                    formatter: (value) => value > 0 ? value : ''
                 }
             },
             scales: {
@@ -428,6 +479,16 @@ function createResponseTimeChart() {
                     titleColor: '#f0f4f8',
                     bodyColor: '#c5d1e0',
                     padding: 12
+                },
+                datalabels: {
+                    color: '#1a1a1a',
+                    anchor: 'center',
+                    align: 'center',
+                    font: {
+                        weight: 'bold',
+                        size: 11
+                    },
+                    formatter: (value) => value > 0 ? value : ''
                 }
             },
             scales: {
@@ -483,15 +544,23 @@ function createHeatmap() {
 }
 
 // Populate broken links table
-function populateTable(filterLocale = 'all', searchTerm = '') {
+function populateTable(filterLocale = 'all', searchTerm = '', errorType = 'all', page = 1) {
     const tbody = document.getElementById('tableBody');
+    const pagination = document.getElementById('pagination');
     tbody.innerHTML = '';
 
-    let filteredLinks = allData.brokenLinksList;
+    let filteredLinks = [...allData.brokenLinksList];
 
     // Filter by locale
     if (filterLocale !== 'all') {
         filteredLinks = filteredLinks.filter(link => link.locale === filterLocale);
+    }
+
+    // Filter by error type
+    if (errorType !== 'all') {
+        filteredLinks = filteredLinks.filter(link =>
+            link.errorType === errorType || String(link.statusCode) === errorType
+        );
     }
 
     // Filter by search term
@@ -501,29 +570,241 @@ function populateTable(filterLocale = 'all', searchTerm = '') {
         );
     }
 
+    // Sorting
+    if (currentSort.column) {
+        filteredLinks.sort((a, b) => {
+            let valA = a[currentSort.column];
+            let valB = b[currentSort.column];
+
+            // Handle numeric status codes
+            if (currentSort.column === 'statusCode') {
+                valA = parseInt(valA) || 0;
+                valB = parseInt(valB) || 0;
+            } else {
+                valA = String(valA || '').toLowerCase();
+                valB = String(valB || '').toLowerCase();
+            }
+
+            if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
+            if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
+            return 0;
+        });
+    } else {
+        // Default Sorting Priority: 500, 4xx, 999, Network Error/Others
+        filteredLinks.sort((a, b) => {
+            const getPriority = (link) => {
+                const code = link.statusCode;
+                if (code === 500) return 1;
+                if (typeof code === 'number' && code >= 400 && code < 500) return 2;
+                if (code === 999) return 3;
+                if (link.errorType === 'Network Error') return 4;
+                return 5;
+            };
+
+            const priorityA = getPriority(a);
+            const priorityB = getPriority(b);
+
+            if (priorityA !== priorityB) return priorityA - priorityB;
+            return a.url.localeCompare(b.url); // Secondary sort by URL
+        });
+    }
+
+    updateSortIndicators();
+
+    filteredLinksGlobal = filteredLinks;
+    currentPage = page;
+
     if (filteredLinks.length === 0) {
         tbody.innerHTML = '<tr><td colspan="5" class="loading">No broken links found</td></tr>';
+        pagination.innerHTML = '';
         return;
     }
 
-    filteredLinks.forEach(link => {
+    // Pagination logic
+    const totalPages = Math.ceil(filteredLinks.length / rowsPerPage);
+    const startIndex = (page - 1) * rowsPerPage;
+    const endIndex = startIndex + rowsPerPage;
+    const paginatedLinks = filteredLinks.slice(startIndex, endIndex);
+
+    paginatedLinks.forEach(link => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${link.url}</td>
+            <td class="url-cell" title="${link.url}">${link.url}</td>
             <td>${link.locale}</td>
             <td><span class="status-badge status-${link.statusCode}">${link.statusCode}</span></td>
             <td>${link.errorType}</td>
+            <td class="extra-info">${link.source || 'N/A'}</td>
+            <td class="extra-info">${link.text || 'N/A'}</td>
             <td>${formatDate(link.lastChecked)}</td>
         `;
         tbody.appendChild(row);
     });
+
+    renderPagination(totalPages, page);
+}
+
+// Render pagination controls
+function renderPagination(totalPages, currentPage) {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+
+    if (totalPages <= 1) return;
+
+    // Previous Button
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'pagination-btn';
+    prevBtn.textContent = 'Prev';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.onclick = () => {
+        const locale = document.getElementById('localeFilter').value;
+        const searchTerm = document.getElementById('searchBox').value;
+        populateTable(locale, searchTerm, currentPage - 1);
+    };
+    pagination.appendChild(prevBtn);
+
+    // Page Numbers (limited)
+    const startPage = Math.max(1, currentPage - 2);
+    const endPage = Math.min(totalPages, startPage + 4);
+
+    for (let i = startPage; i <= endPage; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = `pagination-btn ${i === currentPage ? 'active' : ''}`;
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => {
+            const locale = document.getElementById('localeFilter').value;
+            const searchTerm = document.getElementById('searchBox').value;
+            populateTable(locale, searchTerm, i);
+        };
+        pagination.appendChild(pageBtn);
+    }
+
+    // Next Button
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'pagination-btn';
+    nextBtn.textContent = 'Next';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.onclick = () => {
+        const locale = document.getElementById('localeFilter').value;
+        const searchTerm = document.getElementById('searchBox').value;
+        populateTable(locale, searchTerm, currentPage + 1);
+    };
+    pagination.appendChild(nextBtn);
+
+    // Info
+    const info = document.createElement('span');
+    info.className = 'pagination-info';
+    info.textContent = `Page ${currentPage} of ${totalPages}`;
+    pagination.appendChild(info);
 }
 
 // Handle filter changes
 function handleFilterChange() {
     const locale = document.getElementById('localeFilter').value;
     const searchTerm = document.getElementById('searchBox').value;
-    populateTable(locale, searchTerm);
+    const errorType = document.getElementById('errorFilter').value;
+    const days = parseInt(document.getElementById('dateRange').value);
+
+    // Update Table
+    populateTable(locale, searchTerm, errorType);
+
+    // Update Charts based on filters
+    updateChartsByFilter(locale, errorType, searchTerm);
+
+    // Update Trend Chart based on number of runs
+    updateTrendByRuns(days);
+}
+
+// Update charts when filters change
+function updateChartsByFilter(locale, errorType, searchTerm) {
+    // 1. Filter links for Error Distribution and Response Time (respects ALL filters)
+    let linksForDist = [...allData.brokenLinksList];
+    if (locale !== 'all') linksForDist = linksForDist.filter(l => l.locale === locale);
+    if (errorType !== 'all') linksForDist = linksForDist.filter(l =>
+        l.errorType === errorType || String(l.statusCode) === errorType
+    );
+    if (searchTerm) linksForDist = linksForDist.filter(l =>
+        l.url.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // 2. Filter links for Locale Bar Chart (respects Error Type and Search Term, but NOT Locale filter)
+    let linksForLocaleChart = [...allData.brokenLinksList];
+    if (errorType !== 'all') linksForLocaleChart = linksForLocaleChart.filter(l =>
+        l.errorType === errorType || String(l.statusCode) === errorType
+    );
+    if (searchTerm) linksForLocaleChart = linksForLocaleChart.filter(l =>
+        l.url.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // Recalculate distributions
+    const errorDist = {};
+    const timeDist = { "<1s": 0, "1-3s": 0, "3-5s": 0, ">5s": 0 };
+
+    linksForDist.forEach(link => {
+        const code = String(link.statusCode);
+        errorDist[code] = (errorDist[code] || 0) + 1;
+
+        const latency = link.latency || 0;
+        if (latency < 1000) timeDist["<1s"]++;
+        else if (latency < 3000) timeDist["1-3s"]++;
+        else if (latency < 5000) timeDist["3-5s"]++;
+        else timeDist[">5s"]++;
+    });
+
+    const localeStats = {};
+    linksForLocaleChart.forEach(link => {
+        localeStats[link.locale] = (localeStats[link.locale] || 0) + 1;
+    });
+
+    // Update charts
+    updateErrorChart(errorDist);
+    updateResponseTimeChart(timeDist);
+    updateLocaleChartFiltered(localeStats);
+}
+
+function updateLocaleChartFiltered(stats) {
+    if (charts.locale) {
+        // If filtering by a specific locale, we might want to show only that one
+        // or keep all but update counts. Let's update counts for all.
+        const labels = charts.locale.data.labels;
+        const newData = labels.map(label => stats[label] || 0);
+        charts.locale.data.datasets[0].data = newData;
+        charts.locale.update();
+    }
+}
+
+
+// Update trend chart based on number of runs
+function updateTrendByRuns(count) {
+    let filteredTrends = [...allData.trends];
+
+    if (count > 0) {
+        filteredTrends = filteredTrends.slice(-count);
+    }
+
+    if (charts.trend) {
+        charts.trend.data.labels = filteredTrends.map((t, i) => {
+            const runNum = allData.totalRuns ? (allData.totalRuns - filteredTrends.length + i + 1) : (i + 1);
+            return `Run #${runNum} (${formatDate(t.date)})`;
+        });
+        charts.trend.data.datasets[0].data = filteredTrends.map(t => t.brokenLinks);
+        charts.trend.update();
+    }
+}
+
+function updateErrorChart(dist) {
+    if (charts.error) {
+        charts.error.data.labels = Object.keys(dist);
+        charts.error.data.datasets[0].data = Object.values(dist);
+        charts.error.update();
+    }
+}
+
+function updateResponseTimeChart(dist) {
+    if (charts.responseTime) {
+        charts.responseTime.data.labels = Object.keys(dist);
+        charts.responseTime.data.datasets[0].data = Object.values(dist);
+        charts.responseTime.update();
+    }
 }
 
 // Filter by locale from heatmap click
@@ -542,12 +823,51 @@ function formatDate(dateString) {
     return date.toLocaleDateString('en-US', options);
 }
 
+// Update sort indicators in table headers
+function updateSortIndicators() {
+    document.querySelectorAll('th.sortable').forEach(th => {
+        th.classList.remove('sort-asc', 'sort-desc');
+        if (th.dataset.sort === currentSort.column) {
+            th.classList.add(currentSort.direction === 'asc' ? 'sort-asc' : 'sort-desc');
+        }
+    });
+}
+
 // Event listeners
 document.getElementById('localeFilter').addEventListener('change', handleFilterChange);
 document.getElementById('searchBox').addEventListener('input', handleFilterChange);
+document.getElementById('errorFilter').addEventListener('change', handleFilterChange);
 document.getElementById('dateRange').addEventListener('change', () => {
-    // Reload data based on date range
-    console.log('Date range changed');
+    handleFilterChange();
+});
+
+// Table header sorting listeners
+document.querySelectorAll('th.sortable').forEach(th => {
+    th.addEventListener('click', () => {
+        const column = th.dataset.sort;
+        if (currentSort.column === column) {
+            currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            currentSort.column = column;
+            currentSort.direction = 'asc';
+        }
+
+        const locale = document.getElementById('localeFilter').value;
+        const searchTerm = document.getElementById('searchBox').value;
+        const errorType = document.getElementById('errorFilter').value;
+        populateTable(locale, searchTerm, errorType, 1);
+    });
+});
+
+// Clear all filters
+document.getElementById('clearFilters').addEventListener('click', () => {
+    document.getElementById('localeFilter').value = 'all';
+    document.getElementById('errorFilter').value = 'all';
+    document.getElementById('searchBox').value = '';
+    document.getElementById('dateRange').value = '50';
+
+    currentSort = { column: null, direction: 'asc' };
+    handleFilterChange();
 });
 
 // Initialize dashboard when DOM is loaded

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Checker Dashboard</title>
+    <title>Broken Link Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
 </head>
+
 <body>
     <div class="container">
         <!-- Header Section -->
         <header class="header">
             <div class="header-content">
-                <h1>Link Checker Dashboard</h1>
+                <h1>Broken Link Dashboard</h1>
                 <div class="last-updated" id="lastUpdated">Last updated: Loading...</div>
             </div>
         </header>
@@ -50,6 +53,14 @@
                     <div class="metric-value" id="activeLocales">0</div>
                 </div>
             </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">🔄</div>
+                <div class="metric-content">
+                    <div class="metric-label">Total Runs</div>
+                    <div class="metric-value" id="totalRuns">0</div>
+                </div>
+            </div>
         </section>
 
         <!-- Filters Section -->
@@ -61,14 +72,20 @@
                 </select>
             </div>
 
+
             <div class="filter-group">
-                <label for="dateRange">Date Range:</label>
+                <label for="dateRange">Last Runs:</label>
                 <select id="dateRange">
-                    <option value="7">Last 7 Days</option>
-                    <option value="14">Last 14 Days</option>
-                    <option value="30" selected>Last 30 Days</option>
-                    <option value="90">Last 90 Days</option>
+                    <option value="10">Last 10 Runs</option>
+                    <option value="25">Last 25 Runs</option>
+                    <option value="50" selected>Last 50 Runs</option>
+                    <option value="100">Last 100 Runs</option>
+                    <option value="0">All Runs</option>
                 </select>
+            </div>
+
+            <div class="filter-group">
+                <button id="clearFilters" class="clear-filters-btn">Clear All Filters</button>
             </div>
         </section>
 
@@ -112,6 +129,9 @@
             <div class="table-header">
                 <h2>Broken Links Details</h2>
                 <div class="table-controls">
+                    <select id="errorFilter">
+                        <option value="all">All Errors</option>
+                    </select>
                     <input type="text" id="searchBox" placeholder="Search URLs...">
                 </div>
             </div>
@@ -119,11 +139,16 @@
                 <table id="brokenLinksTable">
                     <thead>
                         <tr>
-                            <th>URL</th>
-                            <th>Locale</th>
-                            <th>Status Code</th>
-                            <th>Error Type</th>
-                            <th>Last Checked</th>
+                            <th class="sortable" data-sort="url">URL <span class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="locale">Locale <span class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="statusCode">Status Code <span class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="errorType">Error Type <span class="sort-icon"></span></th>
+                            <th class="sortable extra-info" data-sort="source">Source Page <span
+                                    class="sort-icon"></span></th>
+                            <th class="sortable extra-info" data-sort="text">Section (Text) <span
+                                    class="sort-icon"></span></th>
+                            <th class="sortable" data-sort="lastChecked">Last Checked <span class="sort-icon"></span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -133,9 +158,13 @@
                     </tbody>
                 </table>
             </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be injected here -->
+            </div>
         </section>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>

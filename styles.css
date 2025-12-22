@@ -185,7 +185,8 @@ body {
     font-weight: 500;
 }
 
-select, input[type="text"] {
+select,
+input[type="text"] {
     background: var(--bg-secondary);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
@@ -196,11 +197,13 @@ select, input[type="text"] {
     outline: none;
 }
 
-select:hover, input[type="text"]:hover {
+select:hover,
+input[type="text"]:hover {
     border-color: var(--neon-blue);
 }
 
-select:focus, input[type="text"]:focus {
+select:focus,
+input[type="text"]:focus {
     border-color: var(--neon-blue);
     box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
 }
@@ -285,20 +288,27 @@ canvas {
 
 .heatmap-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    gap: 0.4rem;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
 }
 
 .locale-cell {
     background: var(--bg-tertiary);
-    border-radius: 6px;
-    padding: 0.6rem;
+    border-radius: 8px;
+    padding: 0.75rem 0.5rem;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
     transition: var(--transition);
     cursor: pointer;
     border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.2;
 }
 
 .locale-cell:hover {
@@ -367,21 +377,52 @@ thead {
 }
 
 th {
-    padding: 0.85rem;
+    background: #1e2533;
+    padding: 0.8rem 1rem;
     text-align: left;
     font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: var(--text-muted);
     font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     border-bottom: 1px solid var(--border-color);
 }
 
+th.sortable {
+    cursor: pointer;
+    transition: var(--transition);
+    user-select: none;
+}
+
+th.sortable:hover {
+    background: #2a3447;
+    color: var(--neon-blue);
+}
+
+.sort-icon::after {
+    content: '↕';
+    margin-left: 5px;
+    opacity: 0.3;
+}
+
+th.sort-asc .sort-icon::after {
+    content: '↑';
+    opacity: 1;
+    color: var(--neon-blue);
+}
+
+th.sort-desc .sort-icon::after {
+    content: '↓';
+    opacity: 1;
+    color: var(--neon-blue);
+}
+
 td {
-    padding: 0.85rem;
+    padding: 0.8rem 1rem;
     border-bottom: 1px solid var(--border-color);
+    font-size: 0.75rem;
     color: var(--text-primary);
-    font-size: 0.9rem;
+    vertical-align: middle;
 }
 
 tbody tr {
@@ -422,6 +463,53 @@ tbody tr:hover {
     text-align: center;
     padding: 2rem;
     color: var(--text-secondary);
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    min-width: 40px;
+    text-align: center;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    border-color: var(--neon-blue);
+    background: var(--bg-hover);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.pagination-btn.active {
+    background: var(--neon-blue);
+    color: var(--bg-primary);
+    border-color: var(--neon-blue);
+    font-weight: 700;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0 1rem;
 }
 
 /* Responsive Design */
@@ -480,4 +568,21 @@ tbody tr:hover {
 /* Premium glow effects */
 .metric-value {
     text-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+.clear-filters-btn {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.clear-filters-btn:hover {
+    background: var(--neon-blue);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
 }
