@@ -10,29 +10,31 @@ INPUT_CSV = "live_urls.csv"
 OUTPUT_JSON = "registry/en_deep_links.json"
 BASE_URL = "https://kwalee.com"
 
-async def fetch_links(session, url):
-    try:
-        async with session.get(url, timeout=10) as response:
-            if response.status != 200:
-                print(f"⚠️ Failed to fetch {url}: {response.status}")
-                return []
-            
-            html = await response.text()
-            soup = BeautifulSoup(html, 'html.parser')
-            links = set()
-            
-            for a in soup.find_all('a', href=True):
-                href = a['href']
-                full_url = urljoin(url, href)
-                text = a.get_text(strip=True) or "No Text"
-                # Only include links that are part of kwalee.com or external links
-                links.add((full_url, text))
-            
-            print(f"✅ Extracted {len(links)} links from {url}")
-            return [{"url": l[0], "source": url, "text": l[1]} for l in links]
-    except Exception as e:
-        print(f"❌ Error fetching {url}: {e}")
-        return []
+async def fetch_links(session, url, sem):
+    async with sem:
+        try:
+            # Add a small delay between requests
+            await asyncio.sleep(0.1)
+            async with session.get(url, timeout=30) as response:
+                if response.status != 200:
+                    print(f"⚠️ Failed to fetch {url}: {response.status}")
+                    return []
+                
+                html = await response.text()
+                soup = BeautifulSoup(html, 'html.parser')
+                links = set()
+                
+                for a in soup.find_all('a', href=True):
+                    href = a['href']
+                    full_url = urljoin(url, href)
+                    text = a.get_text(strip=True) or "No Text"
+                    links.add((full_url, text))
+                
+                print(f"✅ Extracted {len(links)} links from {url}")
+                return [{"url": l[0], "source": url, "text": l[1]} for l in links]
+        except Exception as e:
+            print(f"❌ Error fetching {url}: {e}")
+            return []
 
 async def main():
     if not os.path.exists('registry'):
@@ -47,14 +49,16 @@ async def main():
 
     print(f"🚀 Starting deep crawl of {len(urls)} English URLs...")
     
-    all_deep_links = {}
+    sem = asyncio.Semaphore(20) # Limit concurrency
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
     
-    async with aiohttp.ClientSession() as session:
-        tasks = [fetch_links(session, url) for url in urls]
+    async with aiohttp.ClientSession(headers=headers) as session:
+        tasks = [fetch_links(session, url, sem) for url in urls]
         results = await asyncio.gather(*tasks)
-        
-        for url, links in zip(urls, results):
-            all_deep_links[url] = links
 
     # Deduplicate while preserving source/text (keep the first one found)
     unique_links = {}
