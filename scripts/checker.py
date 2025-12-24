@@ -15,7 +15,7 @@ CONCURRENCY_LIMIT = 50 # Adjust based on server capacity
 async def check_url(session, url, locale_name, is_deep_check, source=None, text=None):
     try:
         start_time = time.time()
-        async with session.get(url, timeout=15) as response:
+        async with session.get(url, timeout=30) as response:
             latency = (time.time() - start_time) * 1000 # ms
             status = response.status
             
@@ -37,8 +37,17 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
                     "text": text if text else "Unknown"
                 }
     except asyncio.TimeoutError:
-        # Ignore timeouts as per requirements
-        return None
+        return {
+            "url": url,
+            "locale": locale_name,
+            "statusCode": "Timeout",
+            "errorType": "Timeout Error",
+            "lastChecked": datetime.now().isoformat(),
+            "latency": 30000,
+            "isDeepCheck": is_deep_check,
+            "source": source if source else url,
+            "text": text if text else "Unknown"
+        }
     except Exception as e:
         # Other errors (DNS, Connection, etc.) - we can report these as "Network Error"
         # unless they are effectively timeouts
@@ -70,28 +79,73 @@ async def main():
     with open(LOCALE_MAP, 'r') as f:
         locale_map = json.load(f)
 
-    all_tasks = []
+    # Load locales for prefix detection
+    with open('registry/locales.json', 'r') as f:
+        locales_config = json.load(f)
     
-    connector = aiohttp.TCPConnector(limit=CONCURRENCY_LIMIT)
-    
-    async with aiohttp.ClientSession(connector=connector) as session:
-        # Add English deep links
-        for item in en_links:
-            # Handle both old format (strings) and new format (dicts)
-            if isinstance(item, str):
-                # Old format: just a URL string
-                all_tasks.append(check_url(session, item, "English", True, None, None))
-            else:
-                # New format: dict with url, source, text
-                all_tasks.append(check_url(session, item['url'], "English", True, item.get('source'), item.get('text')))
-        
-        # Add Locale surface links
-        for locale_name, urls in locale_map.items():
-            for url in urls:
-                # For surface links, the source is the URL itself and text is "Base URL"
-                all_tasks.append(check_url(session, url, locale_name, False, url, "Base URL"))
+    # Create a mapping of prefix to locale name
+    prefix_to_name = {l['href']: l['text'] for l in locales_config if l.get('href')}
 
-        print(f"🚀 Checking {len(all_tasks)} URLs...")
+    def detect_locale(url, current_locale):
+        # If it's already a specific locale, keep it
+        if current_locale != "English":
+            return current_locale
+        
+        # Check if URL has a locale prefix
+        for prefix, name in prefix_to_name.items():
+            if f"kwalee.com{prefix}/" in url:
+                return name
+        return "English"
+
+    # Deduplicate tasks by URL
+    unique_tasks = {}
+    
+    # Process English deep links
+    for item in en_links:
+        if isinstance(item, str):
+            url, source, text = item, None, None
+        else:
+            url, source, text = item['url'], item.get('source'), item.get('text')
+        
+        locale = detect_locale(url, "English")
+        unique_tasks[url] = {
+            "url": url,
+            "locale": locale,
+            "is_deep": True,
+            "source": source,
+            "text": text
+        }
+
+    # Process Locale surface links
+    for locale_name, urls in locale_map.items():
+        for url in urls:
+            if url in unique_tasks:
+                # If already exists, just ensure locale is correct (prefer specific over English)
+                if unique_tasks[url]["locale"] == "English":
+                    unique_tasks[url]["locale"] = locale_name
+            else:
+                unique_tasks[url] = {
+                    "url": url,
+                    "locale": locale_name,
+                    "is_deep": False,
+                    "source": url,
+                    "text": "Base URL"
+                }
+
+    connector = aiohttp.TCPConnector(limit=CONCURRENCY_LIMIT)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
+    
+    async with aiohttp.ClientSession(connector=connector, headers=headers) as session:
+        all_tasks = [
+            check_url(session, t["url"], t["locale"], t["is_deep"], t["source"], t["text"])
+            for t in unique_tasks.values()
+        ]
+
+        print(f"🚀 Checking {len(all_tasks)} unique URLs...")
         
         results = await asyncio.gather(*all_tasks)
         
