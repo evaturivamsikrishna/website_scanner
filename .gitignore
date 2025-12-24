@@ -27,3 +27,11 @@ data/email_body.txt
 # Node (if any)
 node_modules/
 dist/
+
+# Logs and temporary files
+*.log
+*.pptx
+check_detail.py
+test_urls.py
+verify_loading.py
+check_detail.log
