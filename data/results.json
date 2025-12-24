@@ -1,331 +1,369 @@
 {
-  "lastUpdated": "2025-12-19T23:40:19.287470",
+  "lastUpdated": "2025-12-24T10:13:47.756098",
+  "totalRuns": 1,
   "totalUrls": 7186,
-  "brokenLinks": 35,
-  "successRate": 99.51294183133872,
+  "brokenLinks": 32,
+  "successRate": 99.55468967436683,
   "brokenLinksList": [
     {
       "url": "https://www.kwalee.com/blog/gamedev/rocket-sky-from-prototype-to-hit",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:09.891069",
-      "latency": 5948.478937149048,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.264743",
+      "latency": 1560.5881214141846,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/gamedev/rocket-sky-from-prototype-to-hit",
+      "text": "Unknown"
     },
     {
       "url": "https://apps.apple.com/us/app/dream-build-solitaire/id6446602374",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:04.447220",
-      "latency": 504.30917739868164,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://www.tiktok.com/@insinkgame",
-      "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:08.422782",
-      "latency": 0,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:32.165371",
+      "latency": 460.91175079345703,
+      "isDeepCheck": true,
+      "source": "https://apps.apple.com/us/app/dream-build-solitaire/id6446602374",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/DavidDarling",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:07.452676",
+      "lastChecked": "2025-12-24T10:13:33.427481",
       "latency": 0,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://twitter.com/theprecinctgame",
-      "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:10.718780",
-      "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/DavidDarling",
+      "text": "Unknown"
     },
     {
       "url": "https://store.epicgames.com/en-US/p/robobeat-5f084b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:11.165519",
-      "latency": 7218.837022781372,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:32.436259",
+      "latency": 722.830057144165,
+      "isDeepCheck": true,
+      "source": "https://store.epicgames.com/en-US/p/robobeat-5f084b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
+      "text": "Unknown"
     },
     {
       "url": "https://store.epicgames.com/en-US/p/space-chef-3f1010?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=space-chef",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:12.960625",
-      "latency": 9013.844966888428,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:32.436161",
+      "latency": 722.6262092590332,
+      "isDeepCheck": true,
+      "source": "https://store.epicgames.com/en-US/p/space-chef-3f1010?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=space-chef",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/VoidwroughtGame",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:14.831082",
+      "lastChecked": "2025-12-24T10:13:33.604993",
       "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/VoidwroughtGame",
+      "text": "Unknown"
     },
     {
       "url": "https://www.kwalee.com/blog/industry/why-your-game-job-application-is-rejected",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:17.365601",
-      "latency": 13416.983127593994,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:34.228660",
+      "latency": 2513.154983520508,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/industry/why-your-game-job-application-is-rejected",
+      "text": "Unknown"
     },
     {
       "url": "https://store.epicgames.com/en-US/p/the-precinct-e86840?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:13.284993",
-      "latency": 9335.88695526123,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/statement.csv",
-      "locale": "English",
-      "statusCode": 400,
-      "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:11.436656",
-      "latency": 7487.425088882446,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/report-identification-v2.csv",
-      "locale": "English",
-      "statusCode": 400,
-      "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:12.679245",
-      "latency": 8729.718923568726,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.228507",
+      "latency": 1512.5670433044434,
+      "isDeepCheck": true,
+      "source": "https://store.epicgames.com/en-US/p/the-precinct-e86840?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/kwalee",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.064140",
+      "lastChecked": "2025-12-24T10:13:33.729384",
       "latency": 0,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://www.tiktok.com/@kwalee.games",
-      "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:12.776972",
-      "latency": 0,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/categories-name.csv",
-      "locale": "English",
-      "statusCode": 400,
-      "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:13.697456",
-      "latency": 9744.883060455322,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/kwalee",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/kwaleegaming",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.218377",
+      "lastChecked": "2025-12-24T10:13:33.762393",
       "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/kwaleegaming",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://www.kwalee.com/blog/gamedev/game-jam-priorities-how-to-make-a-great-hypercasual-game-in-two-days/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-24T10:13:38.424614",
+      "latency": 6703.964948654175,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/gamedev/game-jam-priorities-how-to-make-a-great-hypercasual-game-in-two-days/",
+      "text": "Unknown"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=com.kwalee.dropstuff&hl=en_US",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:13.217431",
-      "latency": 9263.153791427612,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://www.tiktok.com/@spacechefgame",
-      "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:13.188485",
-      "latency": 0,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:32.817881",
+      "latency": 1097.123146057129,
+      "isDeepCheck": true,
+      "source": "https://play.google.com/store/apps/details?id=com.kwalee.dropstuff&hl=en_US",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/SpaceChefGame",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.426017",
+      "lastChecked": "2025-12-24T10:13:33.835949",
       "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/SpaceChefGame",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://onespecialday.org.uk/",
+      "locale": "English",
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-24T10:13:33.305420",
+      "latency": 0,
+      "isDeepCheck": true,
+      "source": "https://onespecialday.org.uk/",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/robobeatgame",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.843408",
+      "lastChecked": "2025-12-24T10:13:33.928534",
       "latency": 0,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://www.tiktok.com/@kwaleetiktok",
-      "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:13.428315",
-      "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/robobeatgame",
+      "text": "Unknown"
     },
     {
       "url": "https://surreynewwritersfest.com/buy-tickets/",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:14.135873",
-      "latency": 10174.798727035522,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.855219",
+      "latency": 2128.3740997314453,
+      "isDeepCheck": true,
+      "source": "https://surreynewwritersfest.com/buy-tickets/",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/what-are-creative-wednesdays",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-24T10:13:41.903583",
+      "latency": 10176.64885520935,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/worklife/what-are-creative-wednesdays",
+      "text": "Unknown"
     },
     {
       "url": "https://www.techspot.com/news/97572-mount-blade-ii-mod-uses-chatgpt-procedurally-generate.html",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:13.132457",
-      "latency": 9170.983076095581,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.279174",
+      "latency": 1552.0203113555908,
+      "isDeepCheck": true,
+      "source": "https://www.techspot.com/news/97572-mount-blade-ii-mod-uses-chatgpt-procedurally-generate.html",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/one-special-day-2020/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-24T10:13:41.235833",
+      "latency": 9508.100032806396,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/worklife/one-special-day-2020/",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/JasonFalcus",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.921037",
+      "lastChecked": "2025-12-24T10:13:33.965850",
       "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/JasonFalcus",
+      "text": "Unknown"
     },
     {
       "url": "https://onespecialday.org.uk/buy-games/",
       "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:12.220382",
-      "latency": 8255.905151367188,
-      "isDeepCheck": true
+      "statusCode": "Error",
+      "errorType": "Network Error",
+      "lastChecked": "2025-12-24T10:13:33.284724",
+      "latency": 0,
+      "isDeepCheck": true,
+      "source": "https://onespecialday.org.uk/buy-games/",
+      "text": "Unknown"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=com.kwalee.dreambuildsolitaire",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:15.586991",
-      "latency": 11619.045972824097,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.753616",
+      "latency": 2021.0633277893066,
+      "isDeepCheck": true,
+      "source": "https://play.google.com/store/apps/details?id=com.kwalee.dreambuildsolitaire",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/our-expansion-continues-with-the-launch-of-kwalee-china",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-24T10:13:42.387901",
+      "latency": 10654.875993728638,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/worklife/our-expansion-continues-with-the-launch-of-kwalee-china",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://www.kwalee.com/blog/worklife/our-ceo-earned-a-fellowship",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-24T10:13:42.407161",
+      "latency": 10674.124002456665,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/worklife/our-ceo-earned-a-fellowship",
+      "text": "Unknown"
     },
     {
       "url": "https://open.spotify.com/show/0Sa4kAACed8FPxmpofKPMC",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:11.219069",
-      "latency": 7249.768972396851,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.039342",
+      "latency": 1305.5710792541504,
+      "isDeepCheck": true,
+      "source": "https://open.spotify.com/show/0Sa4kAACed8FPxmpofKPMC",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/InSinkGame",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.916714",
+      "lastChecked": "2025-12-24T10:13:33.977699",
       "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/InSinkGame",
+      "text": "Unknown"
     },
     {
       "url": "https://twitter.com/WildmenderGame",
       "locale": "English",
       "statusCode": "Error",
       "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:15.933221",
+      "lastChecked": "2025-12-24T10:13:34.104390",
       "latency": 0,
-      "isDeepCheck": true
+      "isDeepCheck": true,
+      "source": "https://twitter.com/WildmenderGame",
+      "text": "Unknown"
+    },
+    {
+      "url": "https://www.kwalee.com/blog/kwalee-knowledge/game-jam-priorities-how-to-make-a-great-hypercasual-game-in-two-days/",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2025-12-24T10:13:38.633792",
+      "latency": 6897.969007492065,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/kwalee-knowledge/game-jam-priorities-how-to-make-a-great-hypercasual-game-in-two-days/",
+      "text": "Unknown"
     },
     {
       "url": "https://store.epicgames.com/en-US/p/voidwrought-ce8f4b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:13.480465",
-      "latency": 9507.742881774902,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:33.347600",
+      "latency": 1610.764980316162,
+      "isDeepCheck": true,
+      "source": "https://store.epicgames.com/en-US/p/voidwrought-ce8f4b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
+      "text": "Unknown"
     },
     {
-      "url": "https://www.tiktok.com/@kwaleegaming",
+      "url": "https://www.kwalee.com/blog/worklife/women-in-games-with-jen-flannery",
       "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:14.096457",
-      "latency": 0,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://www.tiktok.com/@robobeatgame",
-      "locale": "English",
-      "statusCode": "Error",
-      "errorType": "Network Error",
-      "lastChecked": "2025-12-19T23:40:14.148839",
-      "latency": 0,
-      "isDeepCheck": true
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/overall-figures.csv",
-      "locale": "English",
-      "statusCode": 400,
+      "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:13.790546",
-      "latency": 9815.656900405884,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:39.385604",
+      "latency": 7648.565053939819,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/worklife/women-in-games-with-jen-flannery",
+      "text": "Unknown"
     },
     {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/notices.csv",
+      "url": "https://www.kwalee.com/blog/industry/ai-in-game-development-and-its-impact",
       "locale": "English",
-      "statusCode": 400,
+      "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:14.312743",
-      "latency": 10337.753057479858,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:41.316060",
+      "latency": 9578.825235366821,
+      "isDeepCheck": true,
+      "source": "https://www.kwalee.com/blog/industry/ai-in-game-development-and-its-impact",
+      "text": "Unknown"
     },
     {
       "url": "https://openai.com/blog/chatgpt/",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2025-12-19T23:40:10.584331",
-      "latency": 6609.210252761841,
-      "isDeepCheck": true
+      "lastChecked": "2025-12-24T10:13:32.846932",
+      "latency": 1108.077049255371,
+      "isDeepCheck": true,
+      "source": "https://openai.com/blog/chatgpt/",
+      "text": "Unknown"
     }
   ],
   "locales": [
     {
       "name": "English",
       "total": 1766,
-      "broken": 35,
-      "successRate": 98.01812004530012
+      "broken": 32,
+      "successRate": 98.18799546998868
     },
     {
       "name": "espa\u00f1ol de Espa\u00f1a",
@@ -448,16 +486,27 @@
       "successRate": 100.0
     }
   ],
+  "trends": [
+    {
+      "date": "2025-12-24T10:13:47.756098",
+      "brokenLinks": 32,
+      "totalUrls": 7186,
+      "errorDistribution": {
+        "404": 15,
+        "Error": 11,
+        "403": 6
+      }
+    }
+  ],
   "errorDistribution": {
-    "404": 8,
-    "Error": 16,
-    "403": 6,
-    "400": 5
+    "404": 15,
+    "Error": 11,
+    "403": 6
   },
   "responseTimeDistribution": {
-    "<1s": 0,
-    "1-3s": 0,
+    "<1s": 14,
+    "1-3s": 10,
     "3-5s": 0,
-    ">5s": 0
+    ">5s": 8
   }
 }

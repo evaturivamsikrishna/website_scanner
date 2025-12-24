@@ -122,11 +122,19 @@ async def main():
         "trends": existing_data.get("trends", [])
     }
 
+    # Error distribution
+    error_dist = {}
+    for link in broken_links:
+        code = str(link['statusCode'])
+        error_dist[code] = error_dist.get(code, 0) + 1
+    dashboard_data["errorDistribution"] = error_dist
+
     # Add current run to trends
     dashboard_data["trends"].append({
         "date": current_time,
         "brokenLinks": len(broken_links),
-        "totalUrls": len(all_tasks)
+        "totalUrls": len(all_tasks),
+        "errorDistribution": error_dist
     })
     
     # Keep only last 90 days of trends (assuming 2 runs per day = 180 entries)
@@ -151,13 +159,6 @@ async def main():
             "broken": stats["broken"],
             "successRate": ((stats["total"] - stats["broken"]) / stats["total"]) * 100 if stats["total"] > 0 else 100
         })
-
-    # Error distribution
-    error_dist = {}
-    for link in broken_links:
-        code = str(link['statusCode'])
-        error_dist[code] = error_dist.get(code, 0) + 1
-    dashboard_data["errorDistribution"] = error_dist
 
     # Response time distribution
     dashboard_data["responseTimeDistribution"] = {

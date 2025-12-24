@@ -197,9 +197,106 @@ function populateErrorFilter() {
 // Create all charts
 function createCharts() {
     createTrendChart();
+    createErrorTrendChart();
     createErrorChart();
     createLocaleChart();
     createResponseTimeChart();
+}
+
+// Error Wise Trend Chart - Multiple lines for different error types
+function createErrorTrendChart() {
+    const canvas = document.getElementById('errorTrendChart');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    if (charts.errorTrend) charts.errorTrend.destroy();
+
+    // Identify all unique error types across all trends
+    const errorTypes = new Set();
+    allData.trends.forEach(t => {
+        if (t.errorDistribution) {
+            Object.keys(t.errorDistribution).forEach(type => errorTypes.add(type));
+        }
+    });
+
+    const sortedErrorTypes = Array.from(errorTypes).sort();
+    const colorKeys = Object.keys(neonColors);
+
+    const datasets = sortedErrorTypes.map((type, index) => {
+        const color = neonColors[colorKeys[index % colorKeys.length]];
+        return {
+            label: type,
+            data: allData.trends.map(t => (t.errorDistribution && t.errorDistribution[type]) ? t.errorDistribution[type] : 0),
+            borderColor: color,
+            backgroundColor: color + '26', // 15% opacity
+            tension: 0.4,
+            fill: false,
+            pointRadius: 2,
+            pointHoverRadius: 6,
+            pointBackgroundColor: color,
+            pointBorderColor: '#12161f',
+            pointBorderWidth: 2,
+            borderWidth: 2
+        };
+    });
+
+    charts.errorTrend = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: allData.trends.map(t => formatDate(t.date)),
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        color: '#c5d1e0',
+                        padding: 12,
+                        font: { size: 11 },
+                        usePointStyle: true,
+                        pointStyle: 'circle'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: '#12161f',
+                    borderColor: neonColors.blue,
+                    borderWidth: 2,
+                    titleColor: '#f0f4f8',
+                    bodyColor: '#c5d1e0',
+                    padding: 12,
+                    mode: 'index',
+                    intersect: false
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        color: '#1e2533',
+                        drawBorder: false
+                    },
+                    ticks: {
+                        color: '#7a8599',
+                        font: { size: 11 }
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        color: '#7a8599',
+                        maxRotation: 45,
+                        minRotation: 45,
+                        font: { size: 10 }
+                    }
+                }
+            }
+        }
+    });
 }
 
 // Trend Chart - Full width with neon pink line
@@ -788,6 +885,21 @@ function updateTrendByRuns(count) {
         });
         charts.trend.data.datasets[0].data = filteredTrends.map(t => t.brokenLinks);
         charts.trend.update();
+    }
+
+    if (charts.errorTrend) {
+        charts.errorTrend.data.labels = filteredTrends.map((t, i) => {
+            const runNum = allData.totalRuns ? (allData.totalRuns - filteredTrends.length + i + 1) : (i + 1);
+            return `Run #${runNum} (${formatDate(t.date)})`;
+        });
+
+        charts.errorTrend.data.datasets.forEach(dataset => {
+            dataset.data = filteredTrends.map(t =>
+                (t.errorDistribution && t.errorDistribution[dataset.label]) ? t.errorDistribution[dataset.label] : 0
+            );
+        });
+
+        charts.errorTrend.update();
     }
 }
 
