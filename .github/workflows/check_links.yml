@@ -81,6 +81,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/results.json registry/en_deep_links.json registry/locale_map.json dashboard/data/results.json
           git commit -m "📊 Update link check results [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
 
       - name: Upload Pages Artifact
