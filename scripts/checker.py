@@ -9,16 +9,24 @@ from datetime import datetime
 EN_DEEP_LINKS = "registry/en_deep_links.json"
 LOCALE_MAP = "registry/locale_map.json"
 OUTPUT_JSON = "data/results.json"
-CONCURRENCY_LIMIT = 20 # Limit for active tasks
+CONCURRENCY_LIMIT = 50 # Limit for active tasks
 
 
 async def check_url(session, url, locale_name, is_deep_check, source=None, text=None, retries=1):
     try:
         start_time = time.time()
-        async with session.get(url, timeout=30) as response:
-            latency = (time.time() - start_time) * 1000 # ms
+        # Try HEAD request first for speed
+        async with session.head(url, timeout=25, allow_redirects=True) as response:
             status = response.status
             
+            # If HEAD is not allowed or returns an error that might be a false positive, fallback to GET
+            if status in [405, 403, 400] or status >= 500:
+                async with session.get(url, timeout=25, allow_redirects=True) as get_resp:
+                    status = get_resp.status
+                    latency = (time.time() - start_time) * 1000
+            else:
+                latency = (time.time() - start_time) * 1000
+
             # Ignore 999 and success codes (200)
             if status == 200 or status == 999:
                 return None
@@ -39,7 +47,7 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
     except asyncio.TimeoutError:
         if retries > 0:
             # Retry once after a small delay
-            await asyncio.sleep(1)
+            await asyncio.sleep(0.5)
             return await check_url(session, url, locale_name, is_deep_check, source, text, retries - 1)
         
         print(f"❌ Final Timeout for {url}", flush=True)
@@ -49,31 +57,45 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
             "statusCode": "Timeout",
             "errorType": "Timeout Error",
             "lastChecked": datetime.now().isoformat(),
-            "latency": 30000,
+            "latency": 25000,
             "isDeepCheck": is_deep_check,
             "source": source if source else url,
             "text": text if text else "Unknown"
         }
     except Exception as e:
-        # Other errors (DNS, Connection, etc.) - we can report these as "Network Error"
-        # unless they are effectively timeouts
-        error_str = str(e)
-        if "timeout" in error_str.lower():
-            return None
-        return {
-            "url": url,
-            "locale": locale_name,
-            "statusCode": "Error",
-            "errorType": "Network Error",
-            "lastChecked": datetime.now().isoformat(),
-            "latency": 0,
-            "isDeepCheck": is_deep_check,
-            "source": source if source else url,
-            "text": text if text else "Unknown"
-        }
+        # Fallback to GET on any other exception during HEAD
+        try:
+            async with session.get(url, timeout=25, allow_redirects=True) as get_resp:
+                status = get_resp.status
+                if status == 200 or status == 999: return None
+                return {
+                    "url": url,
+                    "locale": locale_name,
+                    "statusCode": status,
+                    "errorType": "Client Error" if status < 500 else "Server Error",
+                    "lastChecked": datetime.now().isoformat(),
+                    "latency": (time.time() - start_time) * 1000,
+                    "isDeepCheck": is_deep_check,
+                    "source": source if source else url,
+                    "text": text if text else "Unknown"
+                }
+        except:
+            error_str = str(e)
+            return {
+                "url": url,
+                "locale": locale_name,
+                "statusCode": "Error",
+                "errorType": "Network Error",
+                "lastChecked": datetime.now().isoformat(),
+                "latency": 0,
+                "isDeepCheck": is_deep_check,
+                "source": source if source else url,
+                "text": text if text else "Unknown"
+            }
     return None
 
 async def main():
+    start_time = time.time()
     if not os.path.exists('data'):
         os.makedirs('data')
 
@@ -143,8 +165,6 @@ async def main():
 
     async def sem_check(session, t):
         async with sem:
-            # Add a delay to avoid overwhelming the server
-            await asyncio.sleep(0.1)
             return await check_url(session, t["url"], t["locale"], t["is_deep"], t["source"], t["text"])
 
     connector = aiohttp.TCPConnector(limit=CONCURRENCY_LIMIT, limit_per_host=5)
@@ -248,6 +268,9 @@ async def main():
 
     print(f"✅ Check completed. Total Runs: {total_runs}")
     print(f"📊 Results saved to {OUTPUT_JSON}")
+    
+    total_time = time.time() - start_time
+    print(f"⏱️ Total time taken: {total_time:.2f} seconds ({total_time/60:.2f} minutes)")
 
 if __name__ == "__main__":
     asyncio.run(main())
