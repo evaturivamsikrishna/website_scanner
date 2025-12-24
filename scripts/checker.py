@@ -9,10 +9,10 @@ from datetime import datetime
 EN_DEEP_LINKS = "registry/en_deep_links.json"
 LOCALE_MAP = "registry/locale_map.json"
 OUTPUT_JSON = "data/results.json"
-CONCURRENCY_LIMIT = 50 # Adjust based on server capacity
+CONCURRENCY_LIMIT = 20 # Limit for active tasks
 
 
-async def check_url(session, url, locale_name, is_deep_check, source=None, text=None):
+async def check_url(session, url, locale_name, is_deep_check, source=None, text=None, retries=1):
     try:
         start_time = time.time()
         async with session.get(url, timeout=30) as response:
@@ -37,6 +37,12 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
                     "text": text if text else "Unknown"
                 }
     except asyncio.TimeoutError:
+        if retries > 0:
+            # Retry once after a small delay
+            await asyncio.sleep(1)
+            return await check_url(session, url, locale_name, is_deep_check, source, text, retries - 1)
+        
+        print(f"❌ Final Timeout for {url}", flush=True)
         return {
             "url": url,
             "locale": locale_name,
@@ -132,18 +138,25 @@ async def main():
                     "text": "Base URL"
                 }
 
-    connector = aiohttp.TCPConnector(limit=CONCURRENCY_LIMIT)
+    # Use a semaphore to limit active tasks
+    sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
+
+    async def sem_check(session, t):
+        async with sem:
+            # Add a delay to avoid overwhelming the server
+            await asyncio.sleep(0.1)
+            return await check_url(session, t["url"], t["locale"], t["is_deep"], t["source"], t["text"])
+
+    connector = aiohttp.TCPConnector(limit=CONCURRENCY_LIMIT, limit_per_host=5)
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9"
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br"
     }
     
     async with aiohttp.ClientSession(connector=connector, headers=headers) as session:
-        all_tasks = [
-            check_url(session, t["url"], t["locale"], t["is_deep"], t["source"], t["text"])
-            for t in unique_tasks.values()
-        ]
+        all_tasks = [sem_check(session, t) for t in unique_tasks.values()]
 
         print(f"🚀 Checking {len(all_tasks)} unique URLs...")
         
@@ -195,13 +208,15 @@ async def main():
     if len(dashboard_data["trends"]) > 200:
         dashboard_data["trends"] = dashboard_data["trends"][-200:]
 
-    # Aggregate locale stats
+    # Aggregate locale stats (using deduplicated counts)
     locales_stats = {}
     
-    # Initialize with all locales
-    locales_stats["English"] = {"total": len(en_links), "broken": 0}
-    for locale_name, urls in locale_map.items():
-        locales_stats[locale_name] = {"total": len(urls), "broken": 0}
+    # Initialize with all locales found in unique_tasks
+    for t in unique_tasks.values():
+        loc = t["locale"]
+        if loc not in locales_stats:
+            locales_stats[loc] = {"total": 0, "broken": 0}
+        locales_stats[loc]["total"] += 1
     
     for link in broken_links:
         locales_stats[link['locale']]["broken"] += 1
