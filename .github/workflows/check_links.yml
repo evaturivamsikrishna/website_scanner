@@ -33,7 +33,6 @@ jobs:
       - name: Fetch previous results
         run: |
           mkdir -p data registry
-          curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/data/results.json -o data/results.json || echo "{}" > data/results.json
           curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/en_deep_links.json -o registry/en_deep_links.json || echo "[]" > registry/en_deep_links.json
           curl -sf https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/locale_map.json -o registry/locale_map.json || echo "{}" > registry/locale_map.json
 
