@@ -26,6 +26,8 @@ async def fetch_links(session, url, sem):
                 for a in soup.find_all('a', href=True):
                     href = a['href']
                     full_url = urljoin(url, href)
+                    if not full_url.startswith(('http://', 'https://')):
+                        continue
                     text = a.get_text(strip=True) or "No Text"
                     links.add((full_url, text))
                 

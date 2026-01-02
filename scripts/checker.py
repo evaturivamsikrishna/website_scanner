@@ -19,6 +19,8 @@ EXTERNAL_CONCURRENCY = 20
 PROCESS_COUNT = min(multiprocessing.cpu_count(), 4)
 
 async def check_url(session, url, locale_name, is_deep_check, source=None, text=None, timeout=15, retries=1):
+    if not url.startswith(('http://', 'https://')):
+        return None
     try:
         start_time = time.time()
         # Try HEAD request first for speed
@@ -83,14 +85,18 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
                     "source": source if source else url,
                     "text": text if text else "Unknown"
                 }
-        except:
+        except Exception as e2:
+            if retries > 0:
+                # Retry on network error as well
+                return await check_url(session, url, locale_name, is_deep_check, source, text, timeout=30, retries=retries - 1)
             return {
                 "url": url,
                 "locale": locale_name,
                 "statusCode": "Error",
                 "errorType": "Network Error",
+                "errorMessage": f"{type(e2).__name__}: {str(e2)}",
                 "lastChecked": datetime.now().isoformat(),
-                "latency": 0,
+                "latency": (time.time() - start_time) * 1000,
                 "isDeepCheck": is_deep_check,
                 "source": source if source else url,
                 "text": text if text else "Unknown"
@@ -106,10 +112,15 @@ async def process_chunk_async(tasks_chunk):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
-        "Accept-Encoding": "gzip, deflate, br"
+        "Accept-Encoding": "gzip, deflate"
     }
     
-    async with aiohttp.ClientSession(connector=connector, headers=headers) as session:
+    async with aiohttp.ClientSession(
+        connector=connector, 
+        headers=headers,
+        max_line_size=16384,
+        max_field_size=16384
+    ) as session:
         async def bounded_check(t):
             is_internal = INTERNAL_DOMAIN in t["url"]
             sem = internal_sem if is_internal else external_sem
