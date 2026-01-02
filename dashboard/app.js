@@ -49,9 +49,11 @@ async function initDashboard() {
         createHeatmap();
         populateTable();
 
-        // Set last updated time
         document.getElementById('lastUpdated').textContent =
             `Last updated: ${formatDate(allData.lastUpdated)}`;
+
+        // Apply initial filters (defaults to 25 runs)
+        handleFilterChange();
     } catch (error) {
         console.error('Error loading data:', error);
         // Use sample data for demonstration
@@ -231,12 +233,13 @@ function createErrorTrendChart() {
             backgroundColor: color + '26', // 15% opacity
             tension: 0.4,
             fill: false,
-            pointRadius: 2,
+            pointRadius: 3,
             pointHoverRadius: 6,
             pointBackgroundColor: color,
             pointBorderColor: '#12161f',
             pointBorderWidth: 2,
-            borderWidth: 2
+            borderWidth: 2,
+            datalabels: { display: false } // Disable datalabels for this chart
         };
     });
 
@@ -289,8 +292,8 @@ function createErrorTrendChart() {
                     },
                     ticks: {
                         color: '#7a8599',
-                        maxRotation: 45,
-                        minRotation: 45,
+                        autoSkip: true,
+                        maxTicksLimit: 15,
                         font: { size: 10 }
                     }
                 }
@@ -316,12 +319,13 @@ function createTrendChart() {
                 backgroundColor: 'rgba(255, 61, 154, 0.15)',
                 tension: 0.4,
                 fill: true,
-                pointRadius: 2,
+                pointRadius: 3,
                 pointHoverRadius: 6,
                 pointBackgroundColor: neonColors.pink,
                 pointBorderColor: '#12161f',
                 pointBorderWidth: 2,
-                borderWidth: 3
+                borderWidth: 3,
+                datalabels: { display: false } // Disable datalabels for this chart
             }]
         },
         options: {
@@ -976,7 +980,7 @@ document.getElementById('clearFilters').addEventListener('click', () => {
     document.getElementById('localeFilter').value = 'all';
     document.getElementById('errorFilter').value = 'all';
     document.getElementById('searchBox').value = '';
-    document.getElementById('dateRange').value = '50';
+    document.getElementById('dateRange').value = '25';
 
     currentSort = { column: null, direction: 'asc' };
     handleFilterChange();
