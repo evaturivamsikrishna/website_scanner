@@ -12,7 +12,7 @@
       "errorType": "Client Error",
       "lastChecked": "2026-01-02T08:57:35.991370",
       "latency": 622.2140789031982,
-      "isDeepCheck": true,
+      "isDeepCheck": true,2025-12-24T07:38:54.231107
       "source": "https://kwalee.com/",
       "text": "No Text"
     },
@@ -3380,32 +3380,6 @@
         "Error": 11,
         "404": 13,
         "403": 14
-      }
-    },
-    {
-      "date": "2025-12-24T07:38:54.231107",
-      "brokenLinks": 5541,
-      "totalUrls": 5880,
-      "errorDistribution": {
-        "403": 13,
-        "404": 10,
-        "429": 8,
-        "Error": 13,
-        "Timeout": 5490,
-        "400": 7
-      }
-    },
-    {
-      "date": "2025-12-24T07:41:43.597298",
-      "brokenLinks": 6337,
-      "totalUrls": 6842,
-      "errorDistribution": {
-        "403": 29,
-        "404": 63,
-        "429": 12,
-        "Error": 25,
-        "Timeout": 6194,
-        "400": 14
       }
     },
     {
