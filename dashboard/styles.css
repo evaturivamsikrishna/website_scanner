@@ -370,6 +370,7 @@ canvas {
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 thead {
@@ -386,6 +387,38 @@ th {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-bottom: 1px solid var(--border-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Column Widths */
+th[data-sort="url"] {
+    width: 35%;
+}
+
+th[data-sort="locale"] {
+    width: 12%;
+}
+
+th[data-sort="statusCode"] {
+    width: 10%;
+}
+
+th[data-sort="errorType"] {
+    width: 12%;
+}
+
+th[data-sort="source"] {
+    width: 15%;
+}
+
+th[data-sort="text"] {
+    width: 10%;
+}
+
+th[data-sort="lastChecked"] {
+    width: 12%;
 }
 
 th.sortable {
@@ -423,6 +456,13 @@ td {
     font-size: 0.75rem;
     color: var(--text-primary);
     vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.url-cell {
+    word-break: break-all;
+    white-space: normal;
 }
 
 tbody tr {

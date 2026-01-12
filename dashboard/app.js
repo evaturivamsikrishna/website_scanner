@@ -488,10 +488,27 @@ function createLocaleChart() {
                     callbacks: {
                         label: function (context) {
                             const locale = sortedLocales[context.dataIndex];
+
+                            // Calculate error breakdown for this locale
+                            const errorCounts = {};
+                            allData.brokenLinksList
+                                .filter(l => l.locale === locale.name)
+                                .forEach(l => {
+                                    const type = l.statusCode || l.errorType || 'Unknown';
+                                    errorCounts[type] = (errorCounts[type] || 0) + 1;
+                                });
+
+                            const breakdown = Object.entries(errorCounts)
+                                .sort((a, b) => b[1] - a[1]) // Sort by count desc
+                                .slice(0, 5) // Top 5 errors
+                                .map(([type, count]) => `${type}: ${count}`)
+                                .join(', ');
+
                             return [
                                 `Broken: ${context.parsed.x}`,
                                 `Total: ${locale.total}`,
-                                `Success: ${locale.successRate.toFixed(1)}%`
+                                `Success: ${locale.successRate.toFixed(1)}%`,
+                                `Errors: ${breakdown}${Object.keys(errorCounts).length > 5 ? '...' : ''}`
                             ];
                         }
                     }
@@ -759,7 +776,8 @@ function renderPagination(totalPages, currentPage) {
     prevBtn.onclick = () => {
         const locale = document.getElementById('localeFilter').value;
         const searchTerm = document.getElementById('searchBox').value;
-        populateTable(locale, searchTerm, currentPage - 1);
+        const errorType = document.getElementById('errorFilter').value;
+        populateTable(locale, searchTerm, errorType, currentPage - 1);
     };
     pagination.appendChild(prevBtn);
 
@@ -774,7 +792,8 @@ function renderPagination(totalPages, currentPage) {
         pageBtn.onclick = () => {
             const locale = document.getElementById('localeFilter').value;
             const searchTerm = document.getElementById('searchBox').value;
-            populateTable(locale, searchTerm, i);
+            const errorType = document.getElementById('errorFilter').value;
+            populateTable(locale, searchTerm, errorType, i);
         };
         pagination.appendChild(pageBtn);
     }
@@ -787,7 +806,8 @@ function renderPagination(totalPages, currentPage) {
     nextBtn.onclick = () => {
         const locale = document.getElementById('localeFilter').value;
         const searchTerm = document.getElementById('searchBox').value;
-        populateTable(locale, searchTerm, currentPage + 1);
+        const errorType = document.getElementById('errorFilter').value;
+        populateTable(locale, searchTerm, errorType, currentPage + 1);
     };
     pagination.appendChild(nextBtn);
 
