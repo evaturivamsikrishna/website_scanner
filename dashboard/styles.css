@@ -634,3 +634,23 @@ tbody tr:hover {
     color: var(--bg-primary);
     box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
 }
+
+/* Export CSV Button */
+.export-btn {
+    background: rgba(0, 255, 159, 0.1);
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.export-btn:hover {
+    background: var(--neon-green);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 159, 0.4);
+}

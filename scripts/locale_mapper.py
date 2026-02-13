@@ -25,18 +25,16 @@ def main():
     
     for locale in locales:
         prefix = locale['href'] # e.g., /fr-fr
-        if prefix == "/en":
-            # English is already handled by deep search, but we might want to check base URLs too
-            continue
             
         locale_urls = []
         for url in urls:
             # Replace https://kwalee.com/ with https://kwalee.com/fr-fr/
             # Handle trailing slashes and base URL
             if url == "https://kwalee.com/":
-                locale_url = f"https://kwalee.com{prefix}"
+                locale_url = f"https://kwalee.com{prefix}/"
             else:
-                locale_url = url.replace("https://kwalee.com/", f"https://kwalee.com{prefix}/")
+                # Use rsplit to handle only the first occurrence, preventing double slashes
+                locale_url = url.replace("https://kwalee.com", f"https://kwalee.com{prefix}", 1)
             
             locale_urls.append(locale_url)
         

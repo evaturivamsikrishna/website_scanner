@@ -31,12 +31,11 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
             if status in [405, 403, 400] or status >= 500:
                 async with session.get(url, timeout=timeout, allow_redirects=True) as get_resp:
                     status = get_resp.status
-                    latency = (time.time() - start_time) * 1000
-            else:
-                latency = (time.time() - start_time) * 1000
+            
+            latency = (time.time() - start_time) * 1000
 
-            # Ignore 999 and success codes (200)
-            if status == 200 or status == 999:
+            # Ignore success codes (2xx) and special case 999 (Yahoo)
+            if (200 <= status < 300) or status == 999:
                 return None
             
             # Report 4xx and 5xx
@@ -63,7 +62,7 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
             "statusCode": "Timeout",
             "errorType": "Timeout Error",
             "lastChecked": datetime.now().isoformat(),
-            "latency": timeout * 1000,
+            "latency": (time.time() - start_time) * 1000,
             "isDeepCheck": is_deep_check,
             "source": source if source else url,
             "text": text if text else "Unknown"
@@ -73,7 +72,7 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
         try:
             async with session.get(url, timeout=timeout, allow_redirects=True) as get_resp:
                 status = get_resp.status
-                if status == 200 or status == 999: return None
+                if (200 <= status < 300) or status == 999: return None
                 return {
                     "url": url,
                     "locale": locale_name,
@@ -94,7 +93,7 @@ async def check_url(session, url, locale_name, is_deep_check, source=None, text=
                 "locale": locale_name,
                 "statusCode": "Error",
                 "errorType": "Network Error",
-                "errorMessage": f"{type(e2).__name__}: {str(e2)}",
+                "errorMessage": f"{type(e2).__name__}",
                 "lastChecked": datetime.now().isoformat(),
                 "latency": (time.time() - start_time) * 1000,
                 "isDeepCheck": is_deep_check,

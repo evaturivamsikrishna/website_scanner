@@ -45,7 +45,7 @@ def generate_text_email():
         status = f"❌ {broken_links} BROKEN LINKS NEED ATTENTION"
     
     # URLs
-    dashboard_url = f"https://evaturivamsikrishna.github.io/website_scanner/"
+    dashboard_url = f"https://{repo_owner}.github.io/{repo_name}/"
    # workflow_url = f"https://github.com/{repo_full}/actions/runs/{run_id}" if run_id else dashboard_url
     
     # Build plain text email

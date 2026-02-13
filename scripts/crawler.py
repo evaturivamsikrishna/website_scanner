@@ -28,8 +28,10 @@ async def fetch_links(session, url, sem):
                     full_url = urljoin(url, href)
                     if not full_url.startswith(('http://', 'https://')):
                         continue
-                    text = a.get_text(strip=True) or "No Text"
-                    links.add((full_url, text))
+                    text = a.get_text(strip=True)
+                    # Only include links with visible text
+                    if text:
+                        links.add((full_url, text))
                 
                 print(f"✅ Extracted {len(links)} links from {url}")
                 return [{"url": l[0], "source": url, "text": l[1]} for l in links]

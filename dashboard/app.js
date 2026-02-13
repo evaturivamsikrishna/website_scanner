@@ -32,11 +32,23 @@ async function initDashboard() {
         // Load data from JSON file
         const response = await fetch('data/results.json');
         allData = await response.json();
+        
+        // Validate required fields
+        if (!allData.brokenLinksList) {
+            console.warn('brokenLinksList missing from data, initializing as empty array');
+            allData.brokenLinksList = [];
+        }
+        if (!allData.locales) {
+            allData.locales = [];
+        }
+        if (!allData.trends) {
+            allData.trends = [];
+        }
 
         updateMetrics();
 
         // Add a single trend point if missing (for first run)
-        if (!allData.trends) {
+        if (allData.trends.length === 0) {
             allData.trends = [{
                 date: allData.lastUpdated,
                 brokenLinks: allData.brokenLinks
@@ -56,8 +68,8 @@ async function initDashboard() {
         handleFilterChange();
     } catch (error) {
         console.error('Error loading data:', error);
-        // Use sample data for demonstration
-        loadSampleData();
+        // Show error message to user instead of silently loading sample data
+        showErrorMessage('Failed to load data. Please refresh the page.');
     }
 }
 
@@ -93,6 +105,15 @@ function loadSampleData() {
 
     document.getElementById('lastUpdated').textContent =
         `Last updated: ${formatDate(allData.lastUpdated)}`;
+}
+
+// Show error message to user
+function showErrorMessage(message) {
+    const container = document.querySelector('.container') || document.body;
+    const errorDiv = document.createElement('div');
+    errorDiv.style.cssText = 'background:#ff6b6b;color:white;padding:20px;margin:20px;border-radius:8px;font-weight:bold;';
+    errorDiv.textContent = message;
+    container.insertBefore(errorDiv, container.firstChild);
 }
 
 // Generate sample locale data - ALL 40 LOCALES
@@ -667,7 +688,7 @@ function populateTable(filterLocale = 'all', searchTerm = '', errorType = 'all',
     const pagination = document.getElementById('pagination');
     tbody.innerHTML = '';
 
-    let filteredLinks = [...allData.brokenLinksList];
+    let filteredLinks = [...(allData.brokenLinksList || [])];
 
     // Filter by locale
     if (filterLocale !== 'all') {
@@ -733,7 +754,7 @@ function populateTable(filterLocale = 'all', searchTerm = '', errorType = 'all',
     currentPage = page;
 
     if (filteredLinks.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="5" class="loading">No broken links found</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="7" class="loading">No broken links found</td></tr>';
         pagination.innerHTML = '';
         return;
     }
@@ -837,8 +858,10 @@ function handleFilterChange() {
 
 // Update charts when filters change
 function updateChartsByFilter(locale, errorType, searchTerm) {
+    const brokenLinks = allData.brokenLinksList || [];
+    
     // 1. Filter links for Error Distribution and Response Time (respects ALL filters)
-    let linksForDist = [...allData.brokenLinksList];
+    let linksForDist = [...brokenLinks];
     if (locale !== 'all') linksForDist = linksForDist.filter(l => l.locale === locale);
     if (errorType !== 'all') linksForDist = linksForDist.filter(l =>
         l.errorType === errorType || String(l.statusCode) === errorType
@@ -848,7 +871,7 @@ function updateChartsByFilter(locale, errorType, searchTerm) {
     );
 
     // 2. Filter links for Locale Bar Chart (respects Error Type and Search Term, but NOT Locale filter)
-    let linksForLocaleChart = [...allData.brokenLinksList];
+    let linksForLocaleChart = [...brokenLinks];
     if (errorType !== 'all') linksForLocaleChart = linksForLocaleChart.filter(l =>
         l.errorType === errorType || String(l.statusCode) === errorType
     );
@@ -884,10 +907,11 @@ function updateChartsByFilter(locale, errorType, searchTerm) {
 
 function updateLocaleChartFiltered(stats) {
     if (charts.locale) {
-        // If filtering by a specific locale, we might want to show only that one
-        // or keep all but update counts. Let's update counts for all.
-        const labels = charts.locale.data.labels;
-        const newData = labels.map(label => stats[label] || 0);
+        // Get all locale names from working data
+        const localeNames = allData.locales.map(l => l.name);
+        const newData = localeNames.map(name => stats[name] || 0);
+        
+        charts.locale.data.labels = localeNames;
         charts.locale.data.datasets[0].data = newData;
         charts.locale.update();
     }
@@ -952,6 +976,49 @@ function filterByLocale(locale) {
     document.querySelector('.table-section').scrollIntoView({ behavior: 'smooth' });
 }
 
+// Export broken links to CSV
+function exportToCSV() {
+    if (!allData || !allData.brokenLinksList || allData.brokenLinksList.length === 0) {
+        alert('No broken links to export');
+        return;
+    }
+
+    // CSV Headers
+    const headers = ['URL', 'Locale', 'Status Code', 'Error Type', 'Source Page', 'Section Text', 'Last Checked', 'Latency (ms)', 'Deep Check'];
+    
+    // Prepare CSV rows - export ALL broken links, not just current page
+    const rows = allData.brokenLinksList.map(link => [
+        `"${(link.url || '').replace(/"/g, '""')}"`,  // Escape quotes in URL
+        link.locale || '',
+        link.statusCode || '',
+        link.errorType || '',
+        `"${(link.source || '').replace(/"/g, '""')}"`,  // Escape quotes
+        `"${(link.text || '').replace(/"/g, '""')}"`,  // Escape quotes
+        link.lastChecked || '',
+        link.latency || '',
+        link.isDeepCheck ? 'Yes' : 'No'
+    ]);
+
+    // Combine headers and rows
+    const csv = [
+        headers.join(','),
+        ...rows.map(row => row.join(','))
+    ].join('\n');
+
+    // Create blob and download
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const timestamp = new Date().toISOString().split('T')[0];
+    link.setAttribute('href', URL.createObjectURL(blob));
+    link.setAttribute('download', `broken-links-${timestamp}.csv`);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    console.log(`Exported ${allData.brokenLinksList.length} broken links to CSV`);
+}
+
 // Format date helper
 function formatDate(dateString) {
     const date = new Date(dateString);
@@ -976,6 +1043,9 @@ document.getElementById('errorFilter').addEventListener('change', handleFilterCh
 document.getElementById('dateRange').addEventListener('change', () => {
     handleFilterChange();
 });
+
+// Export CSV button listener
+document.getElementById('exportCSVBtn').addEventListener('click', exportToCSV);
 
 // Table header sorting listeners
 document.querySelectorAll('th.sortable').forEach(th => {
