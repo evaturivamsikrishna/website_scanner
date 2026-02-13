@@ -5,7 +5,7 @@ Chart.defaults.color = '#cbd5e1';
 Chart.defaults.borderColor = '#334155';
 Chart.defaults.backgroundColor = 'rgba(6, 182, 212, 0.1)';
 
-// Dark Neon color palette
+// Dark Neon color palette (Updated with Design System Chart Colors)
 const neonColors = {
     cyan: '#06b6d4',
     emerald: '#10b981',
@@ -13,7 +13,13 @@ const neonColors = {
     amber: '#f59e0b',
     purple: '#a855f7',
     slate: '#64748b',
-    red: '#ef4444'
+    red: '#ef4444',
+    // Design System Chart Colors
+    chart1: 'oklch(0.488 0.243 264.376)',
+    chart2: 'oklch(0.696 0.17 162.48)',
+    chart3: 'oklch(0.769 0.188 70.08)',
+    chart4: 'oklch(0.627 0.265 303.9)',
+    chart5: 'oklch(0.645 0.246 16.439)'
 };
 
 // Global variables
@@ -196,12 +202,12 @@ function createTrendChart() {
             datasets: [{
                 label: 'Broken Links',
                 data: data,
-                borderColor: neonColors.pink,
-                backgroundColor: 'rgba(236, 72, 153, 0.1)',
+                borderColor: neonColors.chart1,
+                backgroundColor: 'rgba(108, 58, 158, 0.1)', // Using chart1 color with opacity
                 fill: true,
                 tension: 0.4,
-                pointBackgroundColor: neonColors.pink,
-                pointBorderColor: neonColors.pink,
+                pointBackgroundColor: neonColors.chart1,
+                pointBorderColor: neonColors.chart1,
                 pointRadius: 4
             }]
         },
@@ -249,7 +255,7 @@ function createErrorChart() {
             labels: labels,
             datasets: [{
                 data: data,
-                backgroundColor: [neonColors.pink, neonColors.amber, neonColors.purple, neonColors.slate],
+                backgroundColor: [neonColors.chart1, neonColors.chart2, neonColors.chart3, neonColors.slate],
                 borderColor: '#334155',
                 borderWidth: 2
             }]
@@ -302,8 +308,8 @@ function createResponseTimeChart() {
             datasets: [{
                 label: 'Response Time',
                 data: data,
-                backgroundColor: neonColors.cyan,
-                borderColor: neonColors.cyan,
+                backgroundColor: neonColors.chart4,
+                borderColor: neonColors.chart4,
                 borderWidth: 1
             }]
         },
@@ -357,14 +363,14 @@ function createResolutionChart() {
             datasets: [{
                 label: 'New Issues',
                 data: newIssues,
-                backgroundColor: neonColors.pink,
-                borderColor: neonColors.pink,
+                backgroundColor: neonColors.chart1,
+                borderColor: neonColors.chart1,
                 borderWidth: 1
             }, {
                 label: 'Resolved',
                 data: resolved,
-                backgroundColor: neonColors.emerald,
-                borderColor: neonColors.emerald,
+                backgroundColor: neonColors.chart2,
+                borderColor: neonColors.chart2,
                 borderWidth: 1
             }]
         },
@@ -476,7 +482,7 @@ function createIssueAgeChart() {
             labels: labels,
             datasets: [{
                 data: data,
-                backgroundColor: [neonColors.emerald, neonColors.cyan, neonColors.amber, neonColors.pink],
+                backgroundColor: [neonColors.chart1, neonColors.chart2, neonColors.chart3, neonColors.chart4],
                 borderColor: '#334155',
                 borderWidth: 2
             }]
@@ -535,8 +541,8 @@ function createFailingDomainsChart() {
             datasets: [{
                 label: 'Broken Links',
                 data: data,
-                backgroundColor: neonColors.pink,
-                borderColor: neonColors.pink,
+                backgroundColor: neonColors.chart3,
+                borderColor: neonColors.chart3,
                 borderWidth: 1
             }]
         },
@@ -585,7 +591,10 @@ function createLocaleChart() {
             datasets: [{
                 label: 'Broken Links',
                 data: data,
-                backgroundColor: labels.map((_, i) => `hsl(${(i * 137.5) % 360}, 70%, 50%)`),
+                backgroundColor: labels.map((_, i) => {
+                    const chartColors = [neonColors.chart1, neonColors.chart2, neonColors.chart3, neonColors.chart4, neonColors.chart5];
+                    return chartColors[i % chartColors.length];
+                }),
                 borderColor: '#334155',
                 borderWidth: 1
             }]

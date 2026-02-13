@@ -1,17 +1,59 @@
-/* CSS Variables for Dark Neon Theme */
+/* CSS Variables for Dark Neon Theme with Design System Integration */
 :root {
-    /* Background Colors */
-    --bg-primary: #0a0a0f;
-    --bg-secondary: #12161f;
-    --bg-tertiary: #1e293b;
-    --bg-hover: #334155;
+    /* Base Design System Colors (Dark Mode) */
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.145 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.145 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.985 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.396 0.141 25.723);
+    --destructive-foreground: oklch(0.637 0.237 25.331);
+    --border: oklch(0.269 0 0);
+    --input: oklch(0.269 0 0);
+    --ring: oklch(0.439 0 0);
 
-    /* Text Colors */
-    --text-primary: #FFFFFF;
-    --text-secondary: #E5E7EB;
-    --text-muted: #A0AEC0;
+    /* Chart Colors from Design System */
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
 
-    /* Neon Colors */
+    /* Typography Scale (Updated) */
+    --font-size: 16px;
+    --font-display: 40px;
+    --font-h2: 24px;
+    --font-body: 16px;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+
+    /* Layout */
+    --radius: 0.625rem;
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+
+    /* Legacy Dark Neon Colors (Mapped to Design System) */
+    --bg-primary: var(--background);
+    --bg-secondary: var(--card);
+    --bg-tertiary: var(--muted);
+    --bg-hover: var(--accent);
+
+    --text-primary: var(--foreground);
+    --text-secondary: var(--muted-foreground);
+    --text-muted: var(--muted-foreground);
+
+    /* Neon Colors (Maintained for Brand Identity) */
     --neon-cyan: #06B6D4;
     --neon-emerald: #10B981;
     --neon-pink: #EC4899;
@@ -19,22 +61,17 @@
     --neon-purple: #A855F7;
 
     /* Accent Colors */
-    --accent: #06B6D4;
+    --accent: var(--neon-cyan);
     --accent-glow: rgba(6, 182, 212, 0.4);
-    --success: #10B981;
-    --warning: #F59E0B;
-    --error: #EC4899;
+    --success: var(--neon-emerald);
+    --warning: var(--neon-amber);
+    --error: var(--neon-pink);
 
     /* Layout Colors */
-    --border-color: #334155;
+    --border-color: var(--border);
     --border-glow: rgba(6, 182, 212, 0.2);
     --shadow: rgba(0, 0, 0, 0.5);
     --glow: 0 0 20px rgba(6, 182, 212, 0.3);
-
-    /* Typography Scale */
-    --font-display: 40px;
-    --font-h2: 24px;
-    --font-body: 16px;
 
     /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,39 +92,38 @@ body {
     overflow-x: hidden;
 }
 
-/* Typography System */
+/* Typography System (Updated to Design System) */
 .display {
     font-size: var(--font-display);
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
     letter-spacing: -0.02em;
-    color: var(--text-primary);
+    color: var(--foreground);
 }
 
 .h2 {
     font-size: var(--font-h2);
-    font-weight: 600;
-    line-height: 1.3;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
     letter-spacing: -0.01em;
-    color: var(--text-secondary);
+    color: var(--muted-foreground);
 }
 
 .body {
     font-size: var(--font-body);
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: 0;
-    color: var(--text-muted);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+    color: var(--muted-foreground);
 }
 
 .mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 14px;
-    font-weight: 500;
-    background: #0F172A;
+    font-weight: var(--font-weight-medium);
+    background: var(--muted);
     color: var(--neon-cyan);
     padding: 6px 10px;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
 }
 
 /* Neon Glow Utilities */
