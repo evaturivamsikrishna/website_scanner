@@ -1,15 +1,15 @@
 [
     {
-        "href": "/en",
-        "text": "English"
+        "href": "/ar-sa",
+        "text": "العربية (المملكة العربية السعودية)"
     },
     {
-        "href": "/es-es",
-        "text": "español de España"
+        "href": "/bg-bg",
+        "text": "български (България)"
     },
     {
-        "href": "/es-mx",
-        "text": "español de México"
+        "href": "/cs-cz",
+        "text": "čeština (Česko)"
     },
     {
         "href": "/da-dk",
@@ -20,8 +20,40 @@
         "text": "Deutsch (Deutschland)"
     },
     {
+        "href": "/el-gr",
+        "text": "Ελληνικά (Ελλάδα)"
+    },
+    {
+        "href": "/en",
+        "text": "English"
+    },
+    {
+        "href": "/es-ar",
+        "text": "español (Argentina)"
+    },
+    {
+        "href": "/es-es",
+        "text": "español de España"
+    },
+    {
+        "href": "/es-mx",
+        "text": "español de México"
+    },
+    {
+        "href": "/fi-fi",
+        "text": "suomi (Suomi)"
+    },
+    {
         "href": "/fr-fr",
         "text": "français (France)"
+    },
+    {
+        "href": "/hu-hu",
+        "text": "magyar (Magyarország)"
+    },
+    {
+        "href": "/id-id",
+        "text": "Indonesia (Indonesia)"
     },
     {
         "href": "/it-it",
@@ -44,16 +76,20 @@
         "text": "Nederlands (Nederland)"
     },
     {
-        "href": "/pt-br",
-        "text": "português (Brasil)"
-    },
-    {
         "href": "/pl-pl",
         "text": "polski (Polska)"
     },
     {
+        "href": "/pt-br",
+        "text": "português (Brasil)"
+    },
+    {
         "href": "/pt-pt",
         "text": "português europeu"
+    },
+    {
+        "href": "/ro-ro",
+        "text": "română (România)"
     },
     {
         "href": "/ru-ru",
@@ -74,6 +110,10 @@
     {
         "href": "/uk-ua",
         "text": "українська (Україна)"
+    },
+    {
+        "href": "/vi-vn",
+        "text": "Tiếng Việt (Việt Nam)"
     },
     {
         "href": "/zh-cn",

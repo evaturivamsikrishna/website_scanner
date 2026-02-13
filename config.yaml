@@ -1,0 +1,95 @@
+# Website Link Checker Configuration
+
+# Basic Settings
+base_url: "https://kwalee.com"
+check_interval_hours: 4
+timeout_seconds: 15
+
+# Whitelist & Exclusions
+whitelist:
+  # Domains to completely ignore
+  domains: []
+  # URL patterns to exclude (regex)
+  patterns:
+    - ".*facebook.com.*"
+    - ".*twitter.com.*"
+    - ".*instagram.com.*"
+    - ".*ads.google.com.*"
+    - ".*tracking\..*"
+
+# Advanced Link Testing
+advanced_testing:
+  check_response_time: true
+  response_time_warn_ms: 3000
+  check_ssl_certificate: true
+  ssl_warn_days: 30
+  check_redirects: true
+  max_redirect_chain: 5
+  check_metadata: true  # Page titles, descriptions
+  check_seo: true  # OpenGraph, schema.org
+
+# Locale Settings
+locales:
+  enabled: true
+  compare_across_regions: true
+  critical_locales:  # Alert if these fail
+    - "English"
+    - "español de España"
+    - "français (France)"
+
+# Analytics & Reporting
+reporting:
+  pdf_reports: true
+  email_frequency: "weekly"  # daily, weekly, monthly
+  include_trends: true
+  trend_lookback_days: 90
+  anomaly_detection: true
+  anomaly_threshold_percent: 10
+
+# Issue Tracking
+issue_tracking:
+  enabled: true
+  github_integration: true
+  # GitHub credentials via environment variables:
+  # GH_TOKEN, GH_REPO
+  auto_create_issues: true
+  auto_close_on_fix: true
+  issue_template: "broken-link"  # custom or default templates
+
+# Dashboard
+dashboard:
+  items_per_page: 15
+  auto_refresh_seconds: 300  # 5 minutes
+
+# Performance
+performance:
+  max_concurrent_checks: 60
+  max_concurrent_external: 20
+  process_count: 4  # Set to 0 for auto
+  batch_size: 100
+
+# Data Retention
+data_retention:
+  keep_runs: 500  # Keep last N runs
+  keep_days: 365  # Keep data for N days
+  auto_cleanup: true
+
+# Notifications
+notifications:
+  slack:
+    enabled: false
+    webhook_url: ""  # Set via environment: SLACK_WEBHOOK_URL
+    alert_threshold: 10  # Alert if X+ new broken links
+  
+  email:
+    enabled: true
+    recipients: []  # Set via MAIL_TO environment variable
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/checker.log"
+  max_size_mb: 10
+  backup_count: 5
