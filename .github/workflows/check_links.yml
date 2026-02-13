@@ -45,9 +45,6 @@ jobs:
       - name: Run Link Checker
         run: python scripts/checker.py
 
-      - name: Copy results to dashboard
-        run: cp data/results.json dashboard/data/results.json
-
       - name: Generate Email Content
         run: python scripts/generate_email.py
 
@@ -78,15 +75,28 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/results.json registry/en_deep_links.json registry/locale_map.json dashboard/data/results.json
+          git add data/results.json registry/en_deep_links.json registry/locale_map.json
           git commit -m "📊 Update link check results [skip ci]" || echo "No changes to commit"
           git pull --rebase origin main
           git push
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Dashboard Dependencies
+        working-directory: broken-links-dashboard
+        run: npm install --no-audit
+
+      - name: Build Dashboard
+        working-directory: broken-links-dashboard
+        run: npm run build
+
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dashboard
+          path: ./broken-links-dashboard/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
