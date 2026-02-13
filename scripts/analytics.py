@@ -11,7 +11,7 @@ from collections import defaultdict
 from typing import Dict, List, Tuple
 import statistics
 
-class LinkChecker Analytics:
+class LinkCheckerAnalytics:
     def __init__(self, results_file='data/results.json'):
         self.results_file = results_file
         self.data = self.load_data()
@@ -280,7 +280,7 @@ class LinkChecker Analytics:
         print(f"✅ Analytics report exported to {output_file}")
 
 if __name__ == "__main__":
-    analytics = LinkChecker Analytics()
+    analytics = LinkCheckerAnalytics()
     
     if analytics.data:
         print(f"🏥 Health Score: {analytics.get_health_score():.1f}/100")

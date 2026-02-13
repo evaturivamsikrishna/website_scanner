@@ -22,9 +22,9 @@ interface RawResultsData {
 
 export async function fetchResultsData(): Promise<RawResultsData> {
   try {
-    // Construct path relative to the dashboard root
-    // /website_scanner/broken-links-dashboard/index.html -> /website_scanner/data/results.json
-    const pathFromDashboard = '../../../data/results.json'
+    // Fetch from data folder in root (at same level as dashboard folder)
+    // /website_scanner/data/results.json
+    const pathFromDashboard = '../data/results.json'
     const response = await fetch(pathFromDashboard)
     if (!response.ok) throw new Error('Failed to fetch results.json')
     return await response.json()

@@ -86,17 +86,15 @@ jobs:
           node-version: '18'
 
       - name: Install Dashboard Dependencies
-        working-directory: broken-links-dashboard
         run: npm install --no-audit
 
       - name: Build Dashboard
-        working-directory: broken-links-dashboard
         run: npm run build
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./broken-links-dashboard/dist
+          path: ./dashboard
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -2,15 +2,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 export default defineConfig({
     plugins: [react()],
-    base: '/Website_Runner/broken-links-dashboard/',
+    root: './',
+    publicDir: 'public',
+    base: '/website_scanner/',
     server: {
         port: 5173,
-        strictPort: false,
-        open: true
+        strictPort: false
     },
     build: {
         target: 'ES2020',
-        outDir: 'dist',
+        outDir: 'dashboard',
         sourcemap: false
     }
 });

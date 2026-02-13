@@ -24,9 +24,12 @@ Thumbs.db
 data/email_body.html
 data/email_body.txt
 
-# Node (if any)
+# Node/Build
 node_modules/
-dist/
+dashboard/
+.vite/
+tsconfig.tsbuildinfo
+tsconfig.node.tsbuildinfo
 
 # Logs and temporary files
 *.log
@@ -35,3 +38,5 @@ check_detail.py
 test_urls.py
 verify_loading.py
 check_detail.log
+
+Create Advanced Dashboard/
