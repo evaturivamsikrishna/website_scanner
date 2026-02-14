@@ -42,22 +42,22 @@ export default function Locales() {
   const sortedLocales = [...locales].sort((a, b) => b.broken - a.broken)
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-2 pr-2 h-full flex flex-col">
       <div>
-        <h2 className="text-2xl font-bold text-white mb-1">Locale Analysis</h2>
-        <p className="text-slate-400 text-sm">Broken links by locale and region</p>
+        <h2 className="text-xl font-bold text-white">Locales</h2>
+        <p className="text-slate-400 text-xs">Broken links by region</p>
       </div>
 
-      {/* Locales Comparison Chart */}
-      <Card glowColor="cyan">
-        <h3 className="text-lg font-semibold text-white mb-4">Broken Links by Locale</h3>
-        <ResponsiveContainer width="100%" height={350}>
-          <BarChart data={sortedLocales} layout="vertical" margin={{ top: 5, right: 30, left: 180, bottom: 5 }}>
+      {/* Locales Chart - Half height */}
+      <Card glowColor="cyan" className="flex-1 overflow-hidden">
+        <h3 className="text-sm font-semibold text-white mb-1">Broken Links by Locale</h3>
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={sortedLocales} layout="vertical" margin={{ top: 5, right: 30, left: 100, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-            <XAxis type="number" stroke="#94a3b8" style={{ fontSize: '12px' }} />
-            <YAxis type="category" dataKey="name" stroke="#94a3b8" style={{ fontSize: '12px' }} width={170} />
+            <XAxis type="number" stroke="#94a3b8" style={{ fontSize: '10px' }} />
+            <YAxis type="category" dataKey="name" stroke="#94a3b8" style={{ fontSize: '10px' }} width={90} />
             <RechartsTooltip cursor={{ fill: 'rgba(6, 182, 212, 0.1)' }} content={<CustomTooltip />} />
-            <Bar dataKey="broken" fill="#06b6d4" radius={[0, 8, 8, 0]}>
+            <Bar dataKey="broken" fill="#06b6d4" radius={[0, 6, 6, 0]}>
               {sortedLocales.map((_, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
@@ -66,91 +66,49 @@ export default function Locales() {
         </ResponsiveContainer>
       </Card>
 
-      {/* Locale Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-        {locales.map((locale, index) => (
-          <Card key={locale.name} glowColor={['cyan', 'pink', 'emerald', 'purple', 'amber'][index % 5] as any}>
-            <div className="space-y-3">
-              <div>
-                <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Locale</p>
-                <p className="text-lg font-bold text-white">{locale.name}</p>
-              </div>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-slate-400">Success Rate:</span>
-                  <span className="text-sm font-bold text-emerald-400">{locale.successRate.toFixed(1)}%</span>
-                </div>
-                <div className="w-full bg-slate-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-emerald-500 to-cyan-500 h-2 rounded-full"
-                    style={{ width: `${locale.successRate}%` }}
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-slate-700">
-                <div>
-                  <p className="text-xs text-slate-400">Total</p>
-                  <p className="text-lg font-bold text-white">{locale.total}</p>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400">Broken</p>
-                  <p className="text-lg font-bold text-pink-400">{locale.broken}</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        ))}
-      </div>
-
-      {/* Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* Statistics Cards - Compact */}
+      <div className="grid grid-cols-4 gap-2 flex-shrink-0">
         <Card glowColor="cyan">
-          <p className="text-slate-400 text-xs uppercase tracking-wide mb-2">Total Locales</p>
-          <p className="text-2xl font-bold text-white">{locales.length}</p>
-          <p className="text-xs text-slate-500 mt-1">Monitored</p>
+          <p className="text-slate-400 text-xs uppercase tracking-wide mb-0.5">Locales</p>
+          <p className="text-lg font-bold text-white">{locales.length}</p>
         </Card>
 
         <Card glowColor="pink">
-          <p className="text-slate-400 text-xs uppercase tracking-wide mb-2">Highest Issues</p>
-          <p className="text-2xl font-bold text-white">{sortedLocales[0]?.name}</p>
-          <p className="text-xs text-slate-500 mt-1">{sortedLocales[0]?.broken} broken links</p>
+          <p className="text-slate-400 text-xs uppercase tracking-wide mb-0.5">Highest</p>
+          <p className="text-lg font-bold text-white truncate">{sortedLocales[0]?.name}</p>
         </Card>
 
         <Card glowColor="emerald">
-          <p className="text-slate-400 text-xs uppercase tracking-wide mb-2">Lowest Issues</p>
-          <p className="text-2xl font-bold text-white">{sortedLocales[sortedLocales.length - 1]?.name}</p>
-          <p className="text-xs text-slate-500 mt-1">{sortedLocales[sortedLocales.length - 1]?.broken} broken links</p>
+          <p className="text-slate-400 text-xs uppercase tracking-wide mb-0.5">Lowest</p>
+          <p className="text-lg font-bold text-white truncate">{sortedLocales[sortedLocales.length - 1]?.name}</p>
         </Card>
 
         <Card glowColor="amber">
-          <p className="text-slate-400 text-xs uppercase tracking-wide mb-2">Average Success</p>
-          <p className="text-2xl font-bold text-white">{(locales.reduce((sum, l) => sum + l.successRate, 0) / locales.length).toFixed(1)}%</p>
-          <p className="text-xs text-slate-500 mt-1">Across all locales</p>
+          <p className="text-slate-400 text-xs uppercase tracking-wide mb-0.5">Avg Success</p>
+          <p className="text-lg font-bold text-white">{(locales.reduce((sum, l) => sum + l.successRate, 0) / locales.length).toFixed(1)}%</p>
         </Card>
       </div>
 
-      {/* Details Table */}
-      <Card glowColor="purple">
-        <h3 className="text-lg font-semibold text-white mb-4">Locale Details</h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
+      {/* Details Table - Compact */}
+      <Card glowColor="purple" className="flex-1 overflow-hidden flex flex-col">
+        <h3 className="text-sm font-semibold text-white mb-1 flex-shrink-0">Details</h3>
+        <div className="overflow-auto flex-1">
+          <table className="w-full text-xs">
+            <thead className="sticky top-0 bg-slate-900">
               <tr className="border-b border-slate-700">
-                <th className="text-left py-3 px-4 text-slate-400 font-semibold uppercase text-xs tracking-wide">Locale</th>
-                <th className="text-right py-3 px-4 text-slate-400 font-semibold uppercase text-xs tracking-wide">Total URLs</th>
-                <th className="text-right py-3 px-4 text-slate-400 font-semibold uppercase text-xs tracking-wide">Broken</th>
-                <th className="text-right py-3 px-4 text-slate-400 font-semibold uppercase text-xs tracking-wide">Success Rate</th>
+                <th className="text-left py-1 px-2 text-slate-400 font-semibold uppercase text-xs">Locale</th>
+                <th className="text-right py-1 px-2 text-slate-400 font-semibold uppercase text-xs">Total</th>
+                <th className="text-right py-1 px-2 text-slate-400 font-semibold uppercase text-xs">Broken</th>
+                <th className="text-right py-1 px-2 text-slate-400 font-semibold uppercase text-xs">Success</th>
               </tr>
             </thead>
             <tbody>
               {sortedLocales.map(locale => (
-                <tr key={locale.name} className="border-b border-slate-800 hover:bg-slate-800/30 transition-colors">
-                  <td className="px-4 py-3 font-medium text-white">{locale.name}</td>
-                  <td className="px-4 py-3 text-right text-slate-300">{locale.total}</td>
-                  <td className="px-4 py-3 text-right">
-                    <span className="font-bold text-pink-400">{locale.broken}</span>
-                  </td>
-                  <td className="px-4 py-3 text-right">
+                <tr key={locale.name} className="border-b border-slate-800 hover:bg-slate-800/20 transition-colors">
+                  <td className="px-2 py-1 font-medium text-white text-xs">{locale.name}</td>
+                  <td className="px-2 py-1 text-right text-slate-300 text-xs">{locale.total}</td>
+                  <td className="px-2 py-1 text-right font-bold text-pink-400 text-xs">{locale.broken}</td>
+                  <td className="px-2 py-1 text-right text-xs">
                     <span className={locale.successRate >= 98 ? 'text-emerald-400' : locale.successRate >= 95 ? 'text-yellow-400' : 'text-pink-400'}>
                       {locale.successRate.toFixed(1)}%
                     </span>
