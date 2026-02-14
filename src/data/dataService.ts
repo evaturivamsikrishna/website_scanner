@@ -22,10 +22,9 @@ interface RawResultsData {
 
 export async function fetchResultsData(): Promise<RawResultsData> {
   try {
-    // Fetch from data folder in root (at same level as dashboard folder)
-    // /website_scanner/data/results.json
-    const pathFromDashboard = '../data/results.json'
-    const response = await fetch(pathFromDashboard)
+    // Fetch results.json from public folder (included in build)
+    // Available at /website_scanner/results.json on GitHub Pages
+    const response = await fetch('/results.json')
     if (!response.ok) throw new Error('Failed to fetch results.json')
     return await response.json()
   } catch (error) {
