@@ -24,7 +24,7 @@ export async function fetchResultsData(): Promise<RawResultsData> {
   try {
     // Fetch results.json from public folder (included in build)
     // Available at /website_scanner/results.json on GitHub Pages
-    const response = await fetch('/results.json')
+    const response = await fetch('/website_scanner/results.json')
     if (!response.ok) throw new Error('Failed to fetch results.json')
     return await response.json()
   } catch (error) {

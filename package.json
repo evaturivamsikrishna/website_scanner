@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://vamsievaturi.github.io/Website_Runner/broken-links-dashboard/",
+  "homepage": "https://evaturivamsikrishna.github.io/website_scanner/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
