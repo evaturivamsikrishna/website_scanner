@@ -16,7 +16,9 @@ INTERNAL_DOMAIN = "kwalee.com"
 # Concurrency Settings
 INTERNAL_CONCURRENCY = 60
 EXTERNAL_CONCURRENCY = 20
-PROCESS_COUNT = multiprocessing.cpu_count()
+# Use all available cores, with minimum of 2 for GitHub Actions
+# Can override with PROCESS_COUNT env variable (e.g., for GitHub Actions: 4)
+PROCESS_COUNT = int(os.getenv('PROCESS_COUNT', max(multiprocessing.cpu_count(), 2)))
 
 async def check_url(session, url, locale_name, is_deep_check, source=None, text=None, timeout=15, retries=1):
     if not url.startswith(('http://', 'https://')):

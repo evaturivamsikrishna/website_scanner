@@ -43,6 +43,8 @@ jobs:
         run: python scripts/locale_mapper.py
 
       - name: Run Link Checker
+        env:
+          PROCESS_COUNT: 4
         run: python scripts/checker.py
 
       - name: Generate Email Content
