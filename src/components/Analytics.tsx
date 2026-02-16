@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, LineChart, Line } from 'recharts'
 import Card from './Card'
-import { mockTrends, mockErrors, mockLocales, loadData, TrendData, Locale } from '../data/mockData'
+import { mockTrends, mockErrors, loadData, TrendData } from '../data/mockData'
 import { format } from 'date-fns'
 
 const CustomTooltip = ({ active, payload, label }: any) => {
@@ -23,7 +23,6 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 export default function Analytics() {
   const [trends, setTrends] = useState<TrendData[]>(mockTrends)
   const [errors, setErrors] = useState<Record<string, number>>(mockErrors)
-  const [locales, setLocales] = useState<Locale[]>(mockLocales)
 
   // Load real data on mount
   useEffect(() => {
@@ -32,7 +31,6 @@ export default function Analytics() {
         const data = await loadData()
         setTrends(data.trends)
         setErrors(data.errors)
-        setLocales(data.locales)
       } catch (err) {
         console.error('Error loading analytics data:', err)
         // Keep using mock data as fallback
