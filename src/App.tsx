@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import { LayoutDashboard, Activity, Globe } from 'lucide-react'
+import { LayoutDashboard, Activity, Globe, AlertTriangle } from 'lucide-react'
 import Dashboard from './components/Dashboard'
 import Analytics from './components/Analytics'
 import Locales from './components/Locales'
+import Errors from './components/Errors'
 
 function App() {
-  const [activeTab, setActiveTab] = useState<'overview' | 'analytics' | 'locales'>('overview')
+  const [activeTab, setActiveTab] = useState<'overview' | 'analytics' | 'locales' | 'errors'>('overview')
 
   const tabs = [
     { id: 'overview' as const, label: 'Overview', icon: LayoutDashboard },
     { id: 'analytics' as const, label: 'Analytics', icon: Activity },
-    { id: 'locales' as const, label: 'Locales', icon: Globe }
+    { id: 'locales' as const, label: 'Locales', icon: Globe },
+    { id: 'errors' as const, label: 'Errors', icon: AlertTriangle }
   ]
 
   return (
@@ -49,6 +51,7 @@ function App() {
           {activeTab === 'overview' && <Dashboard />}
           {activeTab === 'analytics' && <Analytics />}
           {activeTab === 'locales' && <Locales />}
+          {activeTab === 'errors' && <Errors />}
         </div>
       </div>
     </div>

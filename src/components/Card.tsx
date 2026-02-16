@@ -19,10 +19,12 @@ export const Card: React.FC<CardProps> = ({ children, className, glowColor = 'cy
   return (
     <div
       className={clsx(
-        'bg-slate-900/50 backdrop-blur-sm border rounded-lg p-6 transition-all duration-300 hover:scale-105',
+        'bg-slate-900/50 backdrop-blur-sm border rounded-lg p-4 transition-colors duration-200',
         glowColorMap[glowColor],
         className
       )}
+      // prevent card from scaling or stretching unexpectedly
+      style={{ transform: 'none' }}
     >
       {children}
     </div>

@@ -23,3 +23,28 @@ body {
 #root {
   @apply w-screen h-screen overflow-hidden;
 }
+
+/* App-level inner container used to align charts and content consistently */
+.app-inner {
+  width: calc(100vw - 4vw);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Standard compact card padding and reduced heading sizes for compact UI */
+.card-compact-heading {
+  font-size: 0.95rem; /* slightly larger compact heading */
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.truncate-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

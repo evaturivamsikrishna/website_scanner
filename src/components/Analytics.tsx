@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, LineChart, Line } from 'recharts'
 import Card from './Card'
-import { mockTrends, mockErrors, loadData, TrendData } from '../data/mockData'
+import { mockTrends, mockErrors, mockLocales, loadData, TrendData, Locale } from '../data/mockData'
 import { format } from 'date-fns'
 
 const CustomTooltip = ({ active, payload, label }: any) => {
@@ -23,6 +23,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 export default function Analytics() {
   const [trends, setTrends] = useState<TrendData[]>(mockTrends)
   const [errors, setErrors] = useState<Record<string, number>>(mockErrors)
+  const [locales, setLocales] = useState<Locale[]>(mockLocales)
 
   // Load real data on mount
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Analytics() {
         const data = await loadData()
         setTrends(data.trends)
         setErrors(data.errors)
+        setLocales(data.locales)
       } catch (err) {
         console.error('Error loading analytics data:', err)
         // Keep using mock data as fallback
@@ -61,62 +63,94 @@ export default function Analytics() {
         <p className="text-slate-400 text-xs">Insights & trends</p>
       </div>
 
-      {/* Charts Grid - 3 columns */}
-      <div className="grid grid-cols-3 gap-2 flex-1 overflow-hidden">
-        {/* Daily Broken vs Success */}
-        <Card glowColor="cyan">
-          <h3 className="text-sm font-semibold text-white mb-1">Daily Status</h3>
-          <ResponsiveContainer width="100%" height={160}>
-            <AreaChart data={dailyStats.slice(-7)}>
-              <defs>
-                <linearGradient id="colorBroken" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#ec4899" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#ec4899" stopOpacity={0} />
-                </linearGradient>
-                <linearGradient id="colorSuccess" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-              <XAxis dataKey="date" stroke="#94a3b8" style={{ fontSize: '10px' }} />
-              <YAxis stroke="#94a3b8" style={{ fontSize: '10px' }} />
-              <RechartsTooltip content={<CustomTooltip />} />
-              <Area type="monotone" dataKey="broken" stackId="1" stroke="#ec4899" fillOpacity={1} fill="url(#colorBroken)" />
-              <Area type="monotone" dataKey="success" stackId="1" stroke="#10b981" fillOpacity={1} fill="url(#colorSuccess)" />
-            </AreaChart>
-          </ResponsiveContainer>
-        </Card>
+      {/* Charts arranged to match requested 2-row layout */}
+      <div className="w-full flex flex-col items-center">
+        <div className="w-full flex justify-center mb-2">
+          <div className="app-inner">
+            <Card glowColor="cyan">
+              <h3 className="text-sm font-semibold text-white mb-1">Daily Status</h3>
+              <div style={{ width: '100%', height: 240 }}>
+                <ResponsiveContainer width="100%" height={240}>
+                  <AreaChart data={dailyStats.slice(-7)}>
+                    <defs>
+                      <linearGradient id="colorBroken" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#ec4899" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="#ec4899" stopOpacity={0} />
+                      </linearGradient>
+                      <linearGradient id="colorSuccess" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                    <XAxis dataKey="date" stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <YAxis stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <RechartsTooltip content={<CustomTooltip />} />
+                    <Area type="monotone" dataKey="broken" stackId="1" stroke="#ec4899" fillOpacity={1} fill="url(#colorBroken)" />
+                    <Area type="monotone" dataKey="success" stackId="1" stroke="#10b981" fillOpacity={1} fill="url(#colorSuccess)" />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </div>
+            </Card>
+          </div>
+        </div>
 
-        {/* Error Type Over Time */}
-        <Card glowColor="pink">
-          <h3 className="text-sm font-semibold text-white mb-1">Error Trend</h3>
-          <ResponsiveContainer width="100%" height={160}>
-            <LineChart data={errorTrendData.slice(-7)}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-              <XAxis dataKey="date" stroke="#94a3b8" style={{ fontSize: '10px' }} />
-              <YAxis stroke="#94a3b8" style={{ fontSize: '10px' }} />
-              <RechartsTooltip content={<CustomTooltip />} />
-              <Line type="monotone" dataKey="404" stroke="#ec4899" strokeWidth={2} dot={false} />
-              <Line type="monotone" dataKey="500" stroke="#f97316" strokeWidth={2} dot={false} />
-              <Line type="monotone" dataKey="503" stroke="#eab308" strokeWidth={2} dot={false} />
-            </LineChart>
-          </ResponsiveContainer>
-        </Card>
+        <div className="w-full flex justify-center" >
+          <div className="app-inner flex gap-2 justify-between" style={{ paddingBottom: '1rem' }}>
+          <div style={{ flex: 1 }}>
+            <Card glowColor="purple">
+              <h3 className="text-sm font-semibold text-white mb-1">Error Distribution</h3>
+              <div style={{ width: '100%', height: 200 }}>
+                <ResponsiveContainer width="100%" height={200}>
+                  <BarChart data={Object.entries(mockErrors).map(([type, count]) => ({ type, count }))}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                    <XAxis dataKey="type" stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <YAxis stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <RechartsTooltip content={<CustomTooltip />} />
+                    <Bar dataKey="count" fill="#a855f7" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </Card>
+          </div>
 
-        {/* Error Distribution Bar Chart */}
-        <Card glowColor="purple">
-          <h3 className="text-sm font-semibold text-white mb-1">Error Distribution</h3>
-          <ResponsiveContainer width="100%" height={160}>
-            <BarChart data={Object.entries(errors).map(([type, count]) => ({ type, count }))}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-              <XAxis dataKey="type" stroke="#94a3b8" style={{ fontSize: '10px' }} />
-              <YAxis stroke="#94a3b8" style={{ fontSize: '10px' }} />
-              <RechartsTooltip content={<CustomTooltip />} />
-              <Bar dataKey="count" fill="#a855f7" radius={[4, 4, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </Card>
+          <div style={{ flex: 1 }}>
+            <Card glowColor="emerald">
+              <h3 className="text-sm font-semibold text-white mb-1">Response Times</h3>
+              <div style={{ width: '100%', height: 200 }}>
+                <ResponsiveContainer width="100%" height={200}>
+                  <BarChart data={Object.entries(mockErrors).slice(0, 5).map(([time, count]) => ({ time, count }))}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                    <XAxis dataKey="time" stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <YAxis stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <RechartsTooltip content={<CustomTooltip />} />
+                    <Bar dataKey="count" fill="#10b981" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </Card>
+          </div>
+
+          <div style={{ flex: 1 }}>
+            <Card glowColor="pink">
+              <h3 className="text-sm font-semibold text-white mb-1">Error Trend</h3>
+              <div style={{ width: '100%', height: 200 }}>
+                <ResponsiveContainer width="100%" height={200}>
+                  <LineChart data={errorTrendData.slice(-7)}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                    <XAxis dataKey="date" stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <YAxis stroke="#94a3b8" style={{ fontSize: '11px' }} />
+                    <RechartsTooltip content={<CustomTooltip />} />
+                    <Line type="monotone" dataKey="404" stroke="#ec4899" strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="500" stroke="#f97316" strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="503" stroke="#eab308" strokeWidth={2} dot={false} />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </Card>
+          </div>
+          </div>
+        </div>
       </div>
 
       {/* Statistics Cards - Compact */}
@@ -141,6 +175,8 @@ export default function Analytics() {
           <p className="text-lg font-bold text-white">{Object.values(errors).reduce((sum, val) => sum + val, 0)}</p>
         </Card>
       </div>
+
+
     </div>
   )
 }
