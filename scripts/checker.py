@@ -16,7 +16,7 @@ INTERNAL_DOMAIN = "kwalee.com"
 # Concurrency Settings
 INTERNAL_CONCURRENCY = 60
 EXTERNAL_CONCURRENCY = 20
-PROCESS_COUNT = min(multiprocessing.cpu_count(), 4)
+PROCESS_COUNT = multiprocessing.cpu_count()
 
 async def check_url(session, url, locale_name, is_deep_check, source=None, text=None, timeout=15, retries=1):
     if not url.startswith(('http://', 'https://')):
