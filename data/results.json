@@ -1,30 +1,74 @@
 {
-  "lastUpdated": "2026-08-09T01:14:07.151904",
-  "totalRuns": 563,
-  "totalUrls": 8830,
-  "brokenLinks": 194,
-  "successRate": 97.80294450736126,
+  "lastUpdated": "2026-08-16T01:00:27.218291",
+  "totalRuns": 564,
+  "totalUrls": 8785,
+  "brokenLinks": 151,
+  "successRate": 98.2811610700057,
   "brokenLinksList": [
+    {
+      "url": "https://kwalee.com/blog/30-million-teachers-have-entered-classroom",
+      "locale": "English",
+      "statusCode": 504,
+      "errorType": "Server Error",
+      "lastChecked": "2026-08-16T00:51:46.994328",
+      "latency": 10512.709379196167,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/",
+      "text": "30 MILLION Teachers Have Entered the Classroom!"
+    },
+    {
+      "url": "https://kwalee.com/legal/copyright-dmca-takedown-policy",
+      "locale": "English",
+      "statusCode": 502,
+      "errorType": "Server Error",
+      "lastChecked": "2026-08-16T00:51:37.073187",
+      "latency": 591.4959907531738,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/",
+      "text": "Copyright (DMCA) Takedown Policy"
+    },
     {
       "url": "https://play.google.com/store/apps/details?id=com.kwalee.dreambuildsolitaire",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:42.020540",
-      "latency": 177.1235466003418,
+      "lastChecked": "2026-08-16T00:51:37.149099",
+      "latency": 667.3264503479004,
       "isDeepCheck": true,
       "source": "https://kwalee.com/",
       "text": "3.5\u2605"
+    },
+    {
+      "url": "https://kwalee.com/investors",
+      "locale": "English",
+      "statusCode": 502,
+      "errorType": "Server Error",
+      "lastChecked": "2026-08-16T00:51:36.918169",
+      "latency": 18.69344711303711,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/",
+      "text": "Investor Information"
     },
     {
       "url": "https://apps.apple.com/us/app/dream-build-solitaire/id6446602374",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:42.020262",
-      "latency": 176.74708366394043,
+      "lastChecked": "2026-08-16T00:51:36.938456",
+      "latency": 152.91070938110352,
       "isDeepCheck": true,
       "source": "https://kwalee.com/",
+      "text": "4.7\u2605"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/drop-smash/id1480239275",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:37.678609",
+      "latency": 48.45857620239258,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/fun-games/drop-smash",
       "text": "4.7\u2605"
     },
     {
@@ -32,41 +76,41 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:43.507004",
-      "latency": 59.23199653625488,
+      "lastChecked": "2026-08-16T00:51:37.734003",
+      "latency": 101.27758979797363,
       "isDeepCheck": true,
       "source": "https://kwalee.com/fun-games/drop-smash",
       "text": "4.4\u2605"
-    },
-    {
-      "url": "https://apps.apple.com/us/app/drop-smash/id1480239275",
-      "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:43.598281",
-      "latency": 110.01062393188477,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/fun-games/drop-smash",
-      "text": "4.7\u2605"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=com.eightsec.roguehero&pcampaignid=web_share",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:43.590876",
-      "latency": 83.83917808532715,
+      "lastChecked": "2026-08-16T00:51:37.740027",
+      "latency": 61.38420104980469,
       "isDeepCheck": true,
       "source": "https://kwalee.com/fun-games/exfil-loot-and-extract",
       "text": "4\u2605"
+    },
+    {
+      "url": "https://kwalee.com/careers/data-engineer-3ff2db1a-6fc9-425f-a99a-ad22de8ff48c",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:42.218291",
+      "latency": 4010.922431945801,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
+      "text": "Apply Now"
     },
     {
       "url": "https://itunes.apple.com/us/app/plank/id1370483471?ls=1&mt=8",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:44.653634",
-      "latency": 158.8900089263916,
+      "lastChecked": "2026-08-16T00:51:38.653811",
+      "latency": 192.34848022460938,
       "isDeepCheck": true,
       "source": "https://kwalee.com/fun-games/plank",
       "text": "4.3\u2605"
@@ -76,8 +120,8 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:44.594428",
-      "latency": 71.27118110656738,
+      "lastChecked": "2026-08-16T00:51:39.126142",
+      "latency": 616.1088943481445,
       "isDeepCheck": true,
       "source": "https://kwalee.com/fun-games/plank",
       "text": "4.2\u2605"
@@ -87,8 +131,8 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:44.977730",
-      "latency": 101.09519958496094,
+      "lastChecked": "2026-08-16T00:51:38.891683",
+      "latency": 55.43708801269531,
       "isDeepCheck": true,
       "source": "https://kwalee.com/fun-games/skiddy-car",
       "text": "4.6\u2605"
@@ -98,8 +142,8 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:45.042675",
-      "latency": 94.44069862365723,
+      "lastChecked": "2026-08-16T00:51:38.984279",
+      "latency": 96.15707397460938,
       "isDeepCheck": true,
       "source": "https://kwalee.com/fun-games/spillz",
       "text": "4.5\u2605"
@@ -109,8 +153,8 @@
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:45.551980",
-      "latency": 355.3292751312256,
+      "lastChecked": "2026-08-16T00:51:39.214599",
+      "latency": 88.41156959533691,
       "isDeepCheck": true,
       "source": "https://kwalee.com/gaming/robobeat",
       "text": "Epic"
@@ -120,8 +164,8 @@
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:45.809431",
-      "latency": 257.3351860046387,
+      "lastChecked": "2026-08-16T00:51:39.391073",
+      "latency": 35.89892387390137,
       "isDeepCheck": true,
       "source": "https://kwalee.com/gaming/space-chef",
       "text": "Epic"
@@ -131,8 +175,8 @@
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:46.262551",
-      "latency": 230.1785945892334,
+      "lastChecked": "2026-08-16T00:51:39.784776",
+      "latency": 70.54901123046875,
       "isDeepCheck": true,
       "source": "https://kwalee.com/gaming/the-precinct",
       "text": "Epic"
@@ -142,52 +186,19 @@
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:47.117893",
-      "latency": 247.8780746459961,
+      "lastChecked": "2026-08-16T00:51:40.386388",
+      "latency": 53.16424369812012,
       "isDeepCheck": true,
       "source": "https://kwalee.com/gaming/voidwrought",
       "text": "Epic"
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/notices.csv",
-      "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:48.182256",
-      "latency": 219.87104415893555,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/eu-dsa-report",
-      "text": "Notices"
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/statement.csv",
-      "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:48.172265",
-      "latency": 193.01724433898926,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/eu-dsa-report",
-      "text": "Statement"
-    },
-    {
-      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/report-identification-v2.csv",
-      "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:48.205371",
-      "latency": 166.2755012512207,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/eu-dsa-report",
-      "text": "Report Identification"
     },
     {
       "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/categories-name.csv",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:48.263323",
-      "latency": 158.51664543151855,
+      "lastChecked": "2026-08-16T00:51:41.221804",
+      "latency": 313.0495548248291,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/eu-dsa-report",
       "text": "Categories Name"
@@ -197,118 +208,118 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:48.225540",
-      "latency": 53.23171615600586,
+      "lastChecked": "2026-08-16T00:51:41.431727",
+      "latency": 238.68227005004883,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/eu-dsa-report",
       "text": "Overall Figures"
     },
     {
-      "url": "https://liftoff.io/privacy-policy",
-      "locale": "English",
-      "statusCode": 403,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:48.795535",
-      "latency": 398.58222007751465,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Liftoff"
-    },
-    {
-      "url": "https://huq.io/our-privacy-policy",
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/notices.csv",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:50.432579",
-      "latency": 1649.5370864868164,
+      "lastChecked": "2026-08-16T00:51:41.301171",
+      "latency": 79.33330535888672,
       "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "HUQ"
+      "source": "https://kwalee.com/legal/eu-dsa-report",
+      "text": "Notices"
     },
     {
-      "url": "https://www.facebook.com/privacy/explanation",
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/statement.csv",
       "locale": "English",
-      "statusCode": 400,
+      "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:49.069957",
-      "latency": 274.3396759033203,
+      "lastChecked": "2026-08-16T00:51:41.380686",
+      "latency": 79.47301864624023,
       "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Facebook"
+      "source": "https://kwalee.com/legal/eu-dsa-report",
+      "text": "Statement"
     },
     {
-      "url": "https://legal.my.com/us/mytarget/privacy",
+      "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/report-identification-v2.csv",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:41.563426",
+      "latency": 240.3271198272705,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/eu-dsa-report",
+      "text": "Report Identification"
+    },
+    {
+      "url": "https://kwalee.com/privacy-policy/",
       "locale": "English",
       "statusCode": "Timeout",
       "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:07:35.284148",
-      "latency": 30997.649669647217,
+      "lastChecked": "2026-08-16T00:53:31.794387",
+      "latency": 31003.504753112793,
       "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "MyTarget"
+      "source": "https://kwalee.com/legal/eula-mobile",
+      "text": "https://kwalee.com/privacy-policy"
+    },
+    {
+      "url": "https://kwalee.com/legal/eula-pcc-wildmender",
+      "locale": "English",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:53:32.791585",
+      "latency": 30999.683141708374,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/eula-pcc-wildmender",
+      "text": "Work at Kwalee"
+    },
+    {
+      "url": "https://kwalee.com/legal/pp-pcc-robobeat",
+      "locale": "English",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:53:32.791817",
+      "latency": 31000.784635543823,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/pp-pcc",
+      "text": "www.kwalee.com/pp-pcc-robobeat"
+    },
+    {
+      "url": "https://kwalee.com/legal/pp-pcc-feign",
+      "locale": "English",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:53:33.791164",
+      "latency": 31000.90503692627,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/pp-pcc",
+      "text": "www.kwalee.com/pp-pcc-feign"
+    },
+    {
+      "url": "https://kwalee.com/legal/pp-pcc-wildmender",
+      "locale": "English",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:53:34.791155",
+      "latency": 31000.93698501587,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/pp-pcc",
+      "text": "www.kwalee.com/pp-pcc-wildmender"
     },
     {
       "url": "https://ogury.com/privacy-policy",
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:49.879636",
-      "latency": 368.24989318847656,
+      "lastChecked": "2026-08-16T00:51:41.527446",
+      "latency": 146.7301845550537,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Ogury"
-    },
-    {
-      "url": "https://verve.com/product-privacy-policies",
-      "locale": "English",
-      "statusCode": 403,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:50.595120",
-      "latency": 451.69973373413086,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Verve Group"
-    },
-    {
-      "url": "https://www.adaction.com/privacy-policy",
-      "locale": "English",
-      "statusCode": 403,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:50.778811",
-      "latency": 183.59637260437012,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Adaction"
-    },
-    {
-      "url": "https://adjoe.io/privacy/",
-      "locale": "English",
-      "statusCode": 403,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:51.203662",
-      "latency": 424.7896671295166,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Adjoe"
-    },
-    {
-      "url": "https://www.tiktok.com/en-uk/privacy-policy",
-      "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:51.927187",
-      "latency": 723.381757736206,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "TikTok Inc."
+      "text": "Orgury"
     },
     {
       "url": "https://support.google.com/admob/answer/6128543",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:51.540292",
-      "latency": 113.40570449829102,
+      "lastChecked": "2026-08-16T00:51:41.479627",
+      "latency": 47.86515235900879,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/privacy-policy",
       "text": "Admob"
@@ -318,19 +329,129 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:53.656337",
-      "latency": 1813.6365413665771,
+      "lastChecked": "2026-08-16T00:51:42.661469",
+      "latency": 641.6280269622803,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/privacy-policy",
       "text": "AppNext"
+    },
+    {
+      "url": "https://huq.io/our-privacy-policy",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:42.347616",
+      "latency": 132.6613426208496,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "HUQ"
+    },
+    {
+      "url": "https://liftoff.io/privacy-policy",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:42.865192",
+      "latency": 114.60375785827637,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "Liftoff"
+    },
+    {
+      "url": "https://verve.com/product-privacy-policies",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:43.041729",
+      "latency": 176.4683723449707,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "Verve Group"
+    },
+    {
+      "url": "https://www.adaction.com/privacy-policy",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:43.228729",
+      "latency": 186.920166015625,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "Adaction"
+    },
+    {
+      "url": "http://vungle.com/privacy",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:43.624573",
+      "latency": 513.1876468658447,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "Vungle"
+    },
+    {
+      "url": "https://www.facebook.com/privacy/explanation",
+      "locale": "English",
+      "statusCode": 400,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:43.869368",
+      "latency": 318.4685707092285,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "Facebook"
+    },
+    {
+      "url": "https://legal.my.com/us/mytarget/privacy",
+      "locale": "English",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:52:30.790263",
+      "latency": 30999.429941177368,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "MyTarget"
+    },
+    {
+      "url": "https://adjoe.io/privacy/",
+      "locale": "English",
+      "statusCode": 403,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:44.013778",
+      "latency": 170.9756851196289,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "Adjoe"
+    },
+    {
+      "url": "https://www.tiktok.com/en-uk/privacy-policy",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:44.374010",
+      "latency": 360.1531982421875,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "TikTok Inc."
+    },
+    {
+      "url": "https://huq.io/data-partners",
+      "locale": "English",
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:51:44.206625",
+      "latency": 27.970075607299805,
+      "isDeepCheck": true,
+      "source": "https://kwalee.com/legal/privacy-policy",
+      "text": "https://huq.io/data-partners"
     },
     {
       "url": "https://support.snapchat.com/en-GB/article/games-data-privacy",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:52.617231",
-      "latency": 658.6129665374756,
+      "lastChecked": "2026-08-16T00:51:45.055493",
+      "latency": 681.4332008361816,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/privacy-policy",
       "text": "Snapchat"
@@ -340,41 +461,19 @@
       "locale": "English",
       "statusCode": 403,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:52.496639",
-      "latency": 305.2239418029785,
+      "lastChecked": "2026-08-16T00:51:44.653175",
+      "latency": 201.68375968933105,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/privacy-policy",
       "text": "HyprMx"
-    },
-    {
-      "url": "https://huq.io/data-partners",
-      "locale": "English",
-      "statusCode": 404,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:54.065677",
-      "latency": 1568.9871311187744,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "https://huq.io/data-partners"
-    },
-    {
-      "url": "http://vungle.com/privacy",
-      "locale": "English",
-      "statusCode": 403,
-      "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:54.848207",
-      "latency": 815.9794807434082,
-      "isDeepCheck": true,
-      "source": "https://kwalee.com/legal/privacy-policy",
-      "text": "Vungle"
     },
     {
       "url": "https://kwalee-optimization-team.s3.us-west-2.amazonaws.com/Kwalee+Game+Jam+Challenge++Kwalee+Developer+Portal+Submission+Terms+and+Conditions+Terms+and+Conditions(43143402.2)(44162751.2).pdf?op-61",
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:55.370174",
-      "latency": 205.5673599243164,
+      "lastChecked": "2026-08-16T00:51:44.897178",
+      "latency": 338.3793830871582,
       "isDeepCheck": true,
       "source": "https://kwalee.com/legal/terms-of-use",
       "text": "terms and conditions"
@@ -384,30 +483,19 @@
       "locale": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:27.727207",
-      "latency": 12989.641189575195,
+      "lastChecked": "2026-08-16T00:53:55.093240",
+      "latency": 3346.905469894409,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ar-sa/gaming/in-sink",
       "text": "Base URL"
     },
     {
-      "url": "https://kwalee.com/ar-sa/gaming/robobeat",
-      "locale": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:09:01.284338",
-      "latency": 30999.587535858154,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/ar-sa/gaming/robobeat",
-      "text": "Base URL"
-    },
-    {
       "url": "https://kwalee.com/ar-sa/pc-console-community",
       "locale": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:09:05.284316",
-      "latency": 31000.32949447632,
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:54:09.638426",
+      "latency": 14545.127391815186,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ar-sa/pc-console-community",
       "text": "Base URL"
@@ -417,8 +505,8 @@
       "locale": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:21.225094",
-      "latency": 610.8503341674805,
+      "lastChecked": "2026-08-16T00:55:03.651148",
+      "latency": 7859.680414199829,
       "isDeepCheck": false,
       "source": "https://kwalee.com/bg-bg/gaming/in-sink",
       "text": "Base URL"
@@ -428,41 +516,19 @@
       "locale": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:47.693907",
-      "latency": 9409.956455230713,
+      "lastChecked": "2026-08-16T00:55:05.923440",
+      "latency": 7774.852275848389,
       "isDeepCheck": false,
       "source": "https://kwalee.com/bg-bg/pc-console-community",
       "text": "Base URL"
     },
     {
-      "url": "https://kwalee.com/cs-cz/fun-games/airport-security",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:34.285400",
-      "latency": 31001.150131225586,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/fun-games/airport-security",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/fun-games/shootout-3d",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:40.288861",
-      "latency": 31004.911422729492,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/fun-games/shootout-3d",
-      "text": "Base URL"
-    },
-    {
       "url": "https://kwalee.com/cs-cz/gaming/in-sink",
       "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:48.284029",
-      "latency": 31000.22006034851,
+      "statusCode": 404,
+      "errorType": "Client Error",
+      "lastChecked": "2026-08-16T00:55:45.060762",
+      "latency": 269.23656463623047,
       "isDeepCheck": false,
       "source": "https://kwalee.com/cs-cz/gaming/in-sink",
       "text": "Base URL"
@@ -472,87 +538,10 @@
       "locale": "\u010de\u0161tina (\u010cesko)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:10:06.273409",
-      "latency": 1290.6055450439453,
+      "lastChecked": "2026-08-16T00:56:01.120290",
+      "latency": 6329.93745803833,
       "isDeepCheck": false,
       "source": "https://kwalee.com/cs-cz/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/careers#current-openings",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:51.284474",
-      "latency": 30999.08399581909,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/careers#current-openings",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/contact/finance",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:52.284544",
-      "latency": 31000.537395477295,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/contact/finance",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/contact/mobile-game-support",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:53.285150",
-      "latency": 31000.768423080444,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/contact/mobile-game-support",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/legal/eu-dsa-report",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:56.286393",
-      "latency": 31000.196933746338,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/legal/eu-dsa-report",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/legal/eula-pcc-robobeat",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:58.284776",
-      "latency": 31000.452280044556,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/legal/eula-pcc-robobeat",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/legal/eula-pcc-wildmender",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:59.284644",
-      "latency": 31000.66614151001,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/legal/eula-pcc-wildmender",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/cs-cz/blog",
-      "locale": "\u010de\u0161tina (\u010cesko)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:11:02.283442",
-      "latency": 30999.65524673462,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/cs-cz/blog",
       "text": "Base URL"
     },
     {
@@ -560,8 +549,8 @@
       "locale": "dansk (Danmark)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:11:54.175147",
-      "latency": 11237.771034240723,
+      "lastChecked": "2026-08-16T00:56:44.617583",
+      "latency": 1826.6708850860596,
       "isDeepCheck": false,
       "source": "https://kwalee.com/da-dk/gaming/in-sink",
       "text": "Base URL"
@@ -571,8 +560,8 @@
       "locale": "dansk (Danmark)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:14.983846",
-      "latency": 6699.664115905762,
+      "lastChecked": "2026-08-16T00:56:38.015650",
+      "latency": 3757.342576980591,
       "isDeepCheck": false,
       "source": "https://kwalee.com/da-dk/pc-console-community",
       "text": "Base URL"
@@ -582,8 +571,8 @@
       "locale": "Deutsch (Deutschland)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:45.051024",
-      "latency": 8430.036783218384,
+      "lastChecked": "2026-08-16T00:57:10.068484",
+      "latency": 977.942705154419,
       "isDeepCheck": false,
       "source": "https://kwalee.com/de-de/gaming/in-sink",
       "text": "Base URL"
@@ -593,10 +582,109 @@
       "locale": "Deutsch (Deutschland)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:40.608794",
-      "latency": 2620.070219039917,
+      "lastChecked": "2026-08-16T00:57:13.632889",
+      "latency": 2789.592981338501,
       "isDeepCheck": false,
       "source": "https://kwalee.com/de-de/pc-console-community",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/cross-platform-development",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:20.791847",
+      "latency": 30999.518871307373,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/cross-platform-development",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/draw-it-soars-past-100-million-downloads-worldwide",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:24.794094",
+      "latency": 31003.459453582764,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/draw-it-soars-past-100-million-downloads-worldwide",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/essential-role-of-software-development-kit-sdk",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:24.794184",
+      "latency": 31003.345489501953,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/essential-role-of-software-development-kit-sdk",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/game-programming-guide",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:26.791884",
+      "latency": 31001.188278198242,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/game-programming-guide",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/games-to-play-while-travelling",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:28.791988",
+      "latency": 31001.14941596985,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/games-to-play-while-travelling",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/happy-diwali-kwalee",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:29.790517",
+      "latency": 30998.742818832397,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/happy-diwali-kwalee",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/how-do-i-market-test-games-i-make",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:30.791507",
+      "latency": 31000.475645065308,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/how-do-i-market-test-games-i-make",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/how-get-your-game-published-kwalee-guide",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:30.791606",
+      "latency": 31000.412940979004,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/how-get-your-game-published-kwalee-guide",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/de-de/blog/how-to-become-a-game-developer-in-6-months",
+      "locale": "Deutsch (Deutschland)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:38.790635",
+      "latency": 30998.214721679688,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/de-de/blog/how-to-become-a-game-developer-in-6-months",
       "text": "Base URL"
     },
     {
@@ -604,8 +692,8 @@
       "locale": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:19.879466",
-      "latency": 4804.84414100647,
+      "lastChecked": "2026-08-16T00:59:02.065825",
+      "latency": 3823.045253753662,
       "isDeepCheck": false,
       "source": "https://kwalee.com/el-gr/gaming/in-sink",
       "text": "Base URL"
@@ -615,8 +703,8 @@
       "locale": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:27.376670",
-      "latency": 10828.654050827026,
+      "lastChecked": "2026-08-16T00:59:04.352950",
+      "latency": 4074.246883392334,
       "isDeepCheck": false,
       "source": "https://kwalee.com/el-gr/pc-console-community",
       "text": "Base URL"
@@ -626,8 +714,8 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:14:03.312273",
-      "latency": 2028.0706882476807,
+      "lastChecked": "2026-08-16T00:59:47.114111",
+      "latency": 4503.841400146484,
       "isDeepCheck": false,
       "source": "https://kwalee.com/en/gaming/in-sink",
       "text": "Base URL"
@@ -637,8 +725,8 @@
       "locale": "English",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:48.988262",
-      "latency": 932.7983856201172,
+      "lastChecked": "2026-08-16T01:00:03.930459",
+      "latency": 4139.225482940674,
       "isDeepCheck": false,
       "source": "https://kwalee.com/en/pc-console-community",
       "text": "Base URL"
@@ -648,8 +736,8 @@
       "locale": "espa\u00f1ol (Argentina)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:36.432437",
-      "latency": 14148.439168930054,
+      "lastChecked": "2026-08-16T00:52:19.908392",
+      "latency": 13193.736791610718,
       "isDeepCheck": false,
       "source": "https://kwalee.com/es-ar/gaming/in-sink",
       "text": "Base URL"
@@ -659,8 +747,8 @@
       "locale": "espa\u00f1ol (Argentina)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:13.112629",
-      "latency": 3001.847505569458,
+      "lastChecked": "2026-08-16T00:52:19.286585",
+      "latency": 9680.638551712036,
       "isDeepCheck": false,
       "source": "https://kwalee.com/es-ar/pc-console-community",
       "text": "Base URL"
@@ -670,8 +758,8 @@
       "locale": "espa\u00f1ol de Espa\u00f1a",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:57.670565",
-      "latency": 1447.178602218628,
+      "lastChecked": "2026-08-16T00:52:58.924022",
+      "latency": 11164.293766021729,
       "isDeepCheck": false,
       "source": "https://kwalee.com/es-es/gaming/in-sink",
       "text": "Base URL"
@@ -681,32 +769,10 @@
       "locale": "espa\u00f1ol de Espa\u00f1a",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:00.807493",
-      "latency": 3136.862277984619,
+      "lastChecked": "2026-08-16T00:53:28.991858",
+      "latency": 15200.292825698853,
       "isDeepCheck": false,
       "source": "https://kwalee.com/es-es/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/es-es/careers#application-process",
-      "locale": "espa\u00f1ol de Espa\u00f1a",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:08:44.286038",
-      "latency": 31002.326011657715,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/es-es/careers#application-process",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/es-es/legal/eula-pcc",
-      "locale": "espa\u00f1ol de Espa\u00f1a",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:08:47.284014",
-      "latency": 30998.632431030273,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/es-es/legal/eula-pcc",
       "text": "Base URL"
     },
     {
@@ -714,8 +780,8 @@
       "locale": "espa\u00f1ol de M\u00e9xico",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:46.566979",
-      "latency": 406.430721282959,
+      "lastChecked": "2026-08-16T00:54:08.184831",
+      "latency": 10244.475841522217,
       "isDeepCheck": false,
       "source": "https://kwalee.com/es-mx/gaming/in-sink",
       "text": "Base URL"
@@ -725,8 +791,8 @@
       "locale": "espa\u00f1ol de M\u00e9xico",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:49.537018",
-      "latency": 1279.4814109802246,
+      "lastChecked": "2026-08-16T00:54:19.425499",
+      "latency": 633.2547664642334,
       "isDeepCheck": false,
       "source": "https://kwalee.com/es-mx/pc-console-community",
       "text": "Base URL"
@@ -736,8 +802,8 @@
       "locale": "suomi (Suomi)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:26.297609",
-      "latency": 1076.9658088684082,
+      "lastChecked": "2026-08-16T00:55:10.126377",
+      "latency": 2509.8400115966797,
       "isDeepCheck": false,
       "source": "https://kwalee.com/fi-fi/gaming/in-sink",
       "text": "Base URL"
@@ -747,164 +813,10 @@
       "locale": "suomi (Suomi)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:33.054659",
-      "latency": 4910.902261734009,
+      "lastChecked": "2026-08-16T00:55:22.544064",
+      "latency": 12049.015522003174,
       "isDeepCheck": false,
       "source": "https://kwalee.com/fi-fi/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/cross-platform-development",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:41.292652",
-      "latency": 31008.03852081299,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/cross-platform-development",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/explore-attraction-our-new-game-jam-buildbox-starting-now",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:43.283930",
-      "latency": 31000.256538391113,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/explore-attraction-our-new-game-jam-buildbox-starting-now",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/games-industry-trends",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:45.285244",
-      "latency": 31001.39045715332,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/games-industry-trends",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/hitseeker-by-kwalee",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:47.285014",
-      "latency": 30999.62067604065,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/hitseeker-by-kwalee",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/how-data-games-industry-game-changer-studios-today",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:47.284944",
-      "latency": 30999.696254730225,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/how-data-games-industry-game-changer-studios-today",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/how-did-covid-19-pandemic-change-our-gaming-habits",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:47.285070",
-      "latency": 31000.15163421631,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/how-did-covid-19-pandemic-change-our-gaming-habits",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/how-make-most-out-games-conference",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:50.284348",
-      "latency": 30998.90947341919,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/how-make-most-out-games-conference",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/how-to-be-successful-making-mobile-games",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:51.284423",
-      "latency": 30999.996185302734,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/how-to-be-successful-making-mobile-games",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/how-to-make-a-game-in-two-days",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:51.284358",
-      "latency": 31000.1962184906,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/how-to-make-a-game-in-two-days",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/how-to-make-music-for-video-games",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:51.284215",
-      "latency": 30999.692916870117,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/how-to-make-music-for-video-games",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/interview-product-marketing-manager-jack-richardson",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:59.285050",
-      "latency": 30996.04320526123,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/interview-product-marketing-manager-jack-richardson",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/introducing-hordes-of-hunger",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:59.284929",
-      "latency": 30996.060609817505,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/introducing-hordes-of-hunger",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/introducing-hypercasual-heroes",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:59.285007",
-      "latency": 30996.060848236084,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/introducing-hypercasual-heroes",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/fi-fi/blog/introducing-kwalee-bengaluru-our-new-studio",
-      "locale": "suomi (Suomi)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:11:00.284385",
-      "latency": 30999.979257583618,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/fi-fi/blog/introducing-kwalee-bengaluru-our-new-studio",
       "text": "Base URL"
     },
     {
@@ -912,8 +824,8 @@
       "locale": "fran\u00e7ais (France)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:11:19.867778",
-      "latency": 3240.5307292938232,
+      "lastChecked": "2026-08-16T00:56:06.581006",
+      "latency": 15498.008489608765,
       "isDeepCheck": false,
       "source": "https://kwalee.com/fr-fr/gaming/in-sink",
       "text": "Base URL"
@@ -923,8 +835,8 @@
       "locale": "fran\u00e7ais (France)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:11:27.374263",
-      "latency": 9297.022104263306,
+      "lastChecked": "2026-08-16T00:55:57.519510",
+      "latency": 1478.9516925811768,
       "isDeepCheck": false,
       "source": "https://kwalee.com/fr-fr/pc-console-community",
       "text": "Base URL"
@@ -934,8 +846,8 @@
       "locale": "magyar (Magyarorsz\u00e1g)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:11.764680",
-      "latency": 1302.2174835205078,
+      "lastChecked": "2026-08-16T00:56:39.000706",
+      "latency": 5561.067581176758,
       "isDeepCheck": false,
       "source": "https://kwalee.com/hu-hu/gaming/in-sink",
       "text": "Base URL"
@@ -945,8 +857,8 @@
       "locale": "magyar (Magyarorsz\u00e1g)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:17.723328",
-      "latency": 3004.9304962158203,
+      "lastChecked": "2026-08-16T00:56:45.892707",
+      "latency": 3804.4509887695312,
       "isDeepCheck": false,
       "source": "https://kwalee.com/hu-hu/pc-console-community",
       "text": "Base URL"
@@ -956,8 +868,8 @@
       "locale": "Indonesia (Indonesia)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:43.798350",
-      "latency": 660.2866649627686,
+      "lastChecked": "2026-08-16T00:57:29.542115",
+      "latency": 614.2089366912842,
       "isDeepCheck": false,
       "source": "https://kwalee.com/id-id/gaming/in-sink",
       "text": "Base URL"
@@ -967,10 +879,153 @@
       "locale": "Indonesia (Indonesia)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:47.363586",
-      "latency": 2388.5140419006348,
+      "lastChecked": "2026-08-16T00:57:31.993707",
+      "latency": 1144.298791885376,
       "isDeepCheck": false,
       "source": "https://kwalee.com/id-id/pc-console-community",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/legal/pp-pcc-robobeat",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:20.794431",
+      "latency": 31003.742218017578,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/legal/pp-pcc-robobeat",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/legal/privacy-policy",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:20.794350",
+      "latency": 31003.865003585815,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/legal/privacy-policy",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/author/meredith-stephenson",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:27.790580",
+      "latency": 30996.474504470825,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/author/meredith-stephenson",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/author/pedro-caria",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:28.790653",
+      "latency": 30999.807119369507,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/author/pedro-caria",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/author/valery-martyniuk",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:30.791073",
+      "latency": 30998.651027679443,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/author/valery-martyniuk",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/tag/gamedev",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:32.791547",
+      "latency": 30999.913454055786,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/tag/gamedev",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/tag/gaming",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:32.791623",
+      "latency": 30999.17244911194,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/tag/gaming",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/tag/industry",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:32.791463",
+      "latency": 30999.138832092285,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/tag/industry",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/tag/technology",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:34.791062",
+      "latency": 30999.432802200317,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/tag/technology",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/tag/worklife",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:34.791152",
+      "latency": 30999.75848197937,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/tag/worklife",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/100-team-members",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:35.790572",
+      "latency": 30999.854803085327,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/100-team-members",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/30-million-teachers-have-entered-classroom",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:36.791840",
+      "latency": 31000.665426254272,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/30-million-teachers-have-entered-classroom",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/id-id/blog/5-tips-making-attractive-game-prototypes-game-publishers",
+      "locale": "Indonesia (Indonesia)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:46.791233",
+      "latency": 31000.465631484985,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/id-id/blog/5-tips-making-attractive-game-prototypes-game-publishers",
       "text": "Base URL"
     },
     {
@@ -978,8 +1033,8 @@
       "locale": "italiano (Italia)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:30.995572",
-      "latency": 1035.8331203460693,
+      "lastChecked": "2026-08-16T00:59:12.174470",
+      "latency": 2251.232624053955,
       "isDeepCheck": false,
       "source": "https://kwalee.com/it-it/gaming/in-sink",
       "text": "Base URL"
@@ -989,8 +1044,8 @@
       "locale": "italiano (Italia)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:34.923088",
-      "latency": 2469.235897064209,
+      "lastChecked": "2026-08-16T00:59:13.429686",
+      "latency": 1549.2603778839111,
       "isDeepCheck": false,
       "source": "https://kwalee.com/it-it/pc-console-community",
       "text": "Base URL"
@@ -1000,8 +1055,8 @@
       "locale": "\u65e5\u672c\u8a9e (\u65e5\u672c)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:01.811844",
-      "latency": 582.5316905975342,
+      "lastChecked": "2026-08-16T00:52:18.457797",
+      "latency": 12711.142301559448,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ja-jp/gaming/in-sink",
       "text": "Base URL"
@@ -1011,8 +1066,8 @@
       "locale": "\u65e5\u672c\u8a9e (\u65e5\u672c)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:37.530010",
-      "latency": 18245.712995529175,
+      "lastChecked": "2026-08-16T00:52:27.053581",
+      "latency": 8264.08338546753,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ja-jp/pc-console-community",
       "text": "Base URL"
@@ -1022,8 +1077,8 @@
       "locale": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:49.316659",
-      "latency": 1369.3227767944336,
+      "lastChecked": "2026-08-16T00:53:32.033403",
+      "latency": 17241.874933242798,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ko-kr/gaming/in-sink",
       "text": "Base URL"
@@ -1033,21 +1088,10 @@
       "locale": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:54.920833",
-      "latency": 1694.6499347686768,
+      "lastChecked": "2026-08-16T00:53:40.272233",
+      "latency": 2479.804039001465,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ko-kr/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nb-no/fun-games/skiddy-car",
-      "locale": "norsk bokm\u00e5l (Norge)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:09:19.287612",
-      "latency": 30999.30715560913,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nb-no/fun-games/skiddy-car",
       "text": "Base URL"
     },
     {
@@ -1055,8 +1099,8 @@
       "locale": "norsk bokm\u00e5l (Norge)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:57.088521",
-      "latency": 2804.7876358032227,
+      "lastChecked": "2026-08-16T00:54:37.736835",
+      "latency": 8400.988340377808,
       "isDeepCheck": false,
       "source": "https://kwalee.com/nb-no/gaming/in-sink",
       "text": "Base URL"
@@ -1066,32 +1110,10 @@
       "locale": "norsk bokm\u00e5l (Norge)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:56.009069",
-      "latency": 2068.7570571899414,
+      "lastChecked": "2026-08-16T00:54:46.470107",
+      "latency": 11435.188293457031,
       "isDeepCheck": false,
       "source": "https://kwalee.com/nb-no/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/fun-games/looper",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:12.601690",
-      "latency": 254.87804412841797,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/fun-games/looper",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/fun-games/shootout-3d",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:14.684407",
-      "latency": 641.9436931610107,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/fun-games/shootout-3d",
       "text": "Base URL"
     },
     {
@@ -1099,8 +1121,8 @@
       "locale": "Nederlands (Nederland)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:49.476310",
-      "latency": 5192.176818847656,
+      "lastChecked": "2026-08-16T00:55:47.210060",
+      "latency": 14248.416185379028,
       "isDeepCheck": false,
       "source": "https://kwalee.com/nl-nl/gaming/in-sink",
       "text": "Base URL"
@@ -1110,142 +1132,10 @@
       "locale": "Nederlands (Nederland)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:35.460009",
-      "latency": 3985.1417541503906,
+      "lastChecked": "2026-08-16T00:55:47.720756",
+      "latency": 10576.909303665161,
       "isDeepCheck": false,
       "source": "https://kwalee.com/nl-nl/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/hitseeker-by-kwalee",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:41.284154",
-      "latency": 31000.333547592163,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/hitseeker-by-kwalee",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/how-make-great-game-trailer",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:42.284264",
-      "latency": 30999.610662460327,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/how-make-great-game-trailer",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/how-to-be-successful-making-mobile-games",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:42.284330",
-      "latency": 31000.000953674316,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/how-to-be-successful-making-mobile-games",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/how-to-make-a-game-in-two-days",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:42.284033",
-      "latency": 30999.496459960938,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/how-to-make-a-game-in-two-days",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/how-to-make-music-for-video-games",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:42.284150",
-      "latency": 30999.67646598816,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/how-to-make-music-for-video-games",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/how-turn-game-prototype-hit-hyper-casual-mobile-game",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:42.284213",
-      "latency": 30999.611616134644,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/how-turn-game-prototype-hit-hyper-casual-mobile-game",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/introducing-die-blade-coming-pc-consoles-2022",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:48.284543",
-      "latency": 30999.22800064087,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/introducing-die-blade-coming-pc-consoles-2022",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/introducing-your-top-mobile-game-publisher-worldwide-us",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:49.284305",
-      "latency": 31000.221967697144,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/introducing-your-top-mobile-game-publisher-worldwide-us",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/is-hyper-casual-hyper-different",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:50.284348",
-      "latency": 31000.577688217163,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/is-hyper-casual-hyper-different",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/kwalee-top-40-mobile-game-makers-2024",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:57.291250",
-      "latency": 31006.61277770996,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/kwalee-top-40-mobile-game-makers-2024",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/kwalee-top-mobile-game-makers-2023",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:57.291301",
-      "latency": 31006.370306015015,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/kwalee-top-mobile-game-makers-2023",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/nl-nl/blog/kwalee-tops-app-annie-uk-rankings",
-      "locale": "Nederlands (Nederland)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:57.291125",
-      "latency": 31006.297826766968,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/nl-nl/blog/kwalee-tops-app-annie-uk-rankings",
       "text": "Base URL"
     },
     {
@@ -1253,8 +1143,8 @@
       "locale": "polski (Polska)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:11:22.018058",
-      "latency": 6183.186292648315,
+      "lastChecked": "2026-08-16T00:56:29.647252",
+      "latency": 2051.7890453338623,
       "isDeepCheck": false,
       "source": "https://kwalee.com/pl-pl/gaming/in-sink",
       "text": "Base URL"
@@ -1264,8 +1154,8 @@
       "locale": "polski (Polska)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:11:22.681837",
-      "latency": 3605.8270931243896,
+      "lastChecked": "2026-08-16T00:56:37.115776",
+      "latency": 7321.247100830078,
       "isDeepCheck": false,
       "source": "https://kwalee.com/pl-pl/pc-console-community",
       "text": "Base URL"
@@ -1275,8 +1165,8 @@
       "locale": "portugu\u00eas (Brasil)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:07.084192",
-      "latency": 783.1182479858398,
+      "lastChecked": "2026-08-16T00:57:23.914072",
+      "latency": 989.6414279937744,
       "isDeepCheck": false,
       "source": "https://kwalee.com/pt-br/gaming/in-sink",
       "text": "Base URL"
@@ -1286,10 +1176,142 @@
       "locale": "portugu\u00eas (Brasil)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:09.348381",
-      "latency": 1101.7343997955322,
+      "lastChecked": "2026-08-16T00:57:27.460847",
+      "latency": 2297.8529930114746,
       "isDeepCheck": false,
       "source": "https://kwalee.com/pt-br/pc-console-community",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/legal/pp-pcc-robobeat",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:14.791519",
+      "latency": 31000.571489334106,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/legal/pp-pcc-robobeat",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/author/david-darling",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:18.791897",
+      "latency": 31001.347303390503,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/author/david-darling",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/author/milly",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:20.791158",
+      "latency": 31000.176191329956,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/author/milly",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/author/rohit-yadav",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:22.790325",
+      "latency": 30999.809980392456,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/author/rohit-yadav",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/author/sena-bektas",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:23.790968",
+      "latency": 30999.77970123291,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/author/sena-bektas",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/author/simon-platt",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:23.791060",
+      "latency": 30999.688386917114,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/author/simon-platt",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/author/valery-martyniuk",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:27.791558",
+      "latency": 30998.22187423706,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/author/valery-martyniuk",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/tag/gaming",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:29.791366",
+      "latency": 31000.54168701172,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/tag/gaming",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/tag/industry",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:30.791486",
+      "latency": 31000.166177749634,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/tag/industry",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/tag/worklife",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:30.791373",
+      "latency": 30999.876022338867,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/tag/worklife",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/5-profitable-game-development-technologies-rise",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:36.790281",
+      "latency": 30997.888803482056,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/5-profitable-game-development-technologies-rise",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/pt-br/blog/500-million-downloads",
+      "locale": "portugu\u00eas (Brasil)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:48.790822",
+      "latency": 31000.067710876465,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/pt-br/blog/500-million-downloads",
       "text": "Base URL"
     },
     {
@@ -1297,8 +1319,8 @@
       "locale": "portugu\u00eas europeu",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:49.021693",
-      "latency": 4606.73189163208,
+      "lastChecked": "2026-08-16T00:59:22.118617",
+      "latency": 1976.7231941223145,
       "isDeepCheck": false,
       "source": "https://kwalee.com/pt-pt/gaming/in-sink",
       "text": "Base URL"
@@ -1308,8 +1330,8 @@
       "locale": "portugu\u00eas europeu",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:54.184923",
-      "latency": 6647.693157196045,
+      "lastChecked": "2026-08-16T00:59:25.633688",
+      "latency": 3676.0780811309814,
       "isDeepCheck": false,
       "source": "https://kwalee.com/pt-pt/pc-console-community",
       "text": "Base URL"
@@ -1319,8 +1341,8 @@
       "locale": "rom\u00e2n\u0103 (Rom\u00e2nia)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:33.520212",
-      "latency": 1317.384958267212,
+      "lastChecked": "2026-08-16T01:00:14.645358",
+      "latency": 814.8653507232666,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ro-ro/gaming/in-sink",
       "text": "Base URL"
@@ -1330,8 +1352,8 @@
       "locale": "rom\u00e2n\u0103 (Rom\u00e2nia)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:13:39.883259",
-      "latency": 3833.561658859253,
+      "lastChecked": "2026-08-16T01:00:20.511160",
+      "latency": 5706.575632095337,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ro-ro/pc-console-community",
       "text": "Base URL"
@@ -1341,8 +1363,8 @@
       "locale": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:57.594530",
-      "latency": 3195.0626373291016,
+      "lastChecked": "2026-08-16T00:52:23.940095",
+      "latency": 6060.712814331055,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ru-ru/gaming/in-sink",
       "text": "Base URL"
@@ -1352,8 +1374,8 @@
       "locale": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:06:58.872558",
-      "latency": 2352.281093597412,
+      "lastChecked": "2026-08-16T00:52:31.300423",
+      "latency": 11245.92900276184,
       "isDeepCheck": false,
       "source": "https://kwalee.com/ru-ru/pc-console-community",
       "text": "Base URL"
@@ -1363,8 +1385,8 @@
       "locale": "svenska (Sverige)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:07:40.958714",
-      "latency": 1469.6383476257324,
+      "lastChecked": "2026-08-16T00:53:44.206844",
+      "latency": 11415.255784988403,
       "isDeepCheck": false,
       "source": "https://kwalee.com/sv-se/gaming/in-sink",
       "text": "Base URL"
@@ -1374,8 +1396,8 @@
       "locale": "svenska (Sverige)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:00.179167",
-      "latency": 2895.4765796661377,
+      "lastChecked": "2026-08-16T00:53:59.584746",
+      "latency": 14794.074535369873,
       "isDeepCheck": false,
       "source": "https://kwalee.com/sv-se/pc-console-community",
       "text": "Base URL"
@@ -1385,8 +1407,8 @@
       "locale": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:15.496893",
-      "latency": 4422.347068786621,
+      "lastChecked": "2026-08-16T00:54:41.846409",
+      "latency": 9800.64344406128,
       "isDeepCheck": false,
       "source": "https://kwalee.com/th-th/gaming/in-sink",
       "text": "Base URL"
@@ -1396,8 +1418,8 @@
       "locale": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:08:18.601439",
-      "latency": 5449.305295944214,
+      "lastChecked": "2026-08-16T00:54:54.282981",
+      "latency": 491.67704582214355,
       "isDeepCheck": false,
       "source": "https://kwalee.com/th-th/pc-console-community",
       "text": "Base URL"
@@ -1407,8 +1429,8 @@
       "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:20.171764",
-      "latency": 2887.681007385254,
+      "lastChecked": "2026-08-16T00:55:29.938277",
+      "latency": 2634.402275085449,
       "isDeepCheck": false,
       "source": "https://kwalee.com/tr-tr/gaming/in-sink",
       "text": "Base URL"
@@ -1418,527 +1440,10 @@
       "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:04.033325",
-      "latency": 1603.9347648620605,
+      "lastChecked": "2026-08-16T00:55:47.054303",
+      "latency": 1264.0492916107178,
       "isDeepCheck": false,
       "source": "https://kwalee.com/tr-tr/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/leon-paul-lynn",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:13.028772",
-      "latency": 546.8647480010986,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/leon-paul-lynn",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/madison-plantier",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:13.402659",
-      "latency": 633.5599422454834,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/madison-plantier",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/matthew-barter",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:13.795522",
-      "latency": 878.1225681304932,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/matthew-barter",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/meredith-stephenson",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:14.439644",
-      "latency": 1410.8107089996338,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/meredith-stephenson",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/milly",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:14.741298",
-      "latency": 1338.5798931121826,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/milly",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/nilay-patel",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:15.884670",
-      "latency": 2089.080810546875,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/nilay-patel",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/pedro-caria",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:14.887473",
-      "latency": 897.9220390319824,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/pedro-caria",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/rohit-yadav",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:14.687380",
-      "latency": 247.67184257507324,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/rohit-yadav",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/sena-bektas",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:15.385418",
-      "latency": 697.9889869689941,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/sena-bektas",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/simon-platt",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:15.710342",
-      "latency": 968.9762592315674,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/simon-platt",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/tom-cunliffe",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:15.568786",
-      "latency": 681.2582015991211,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/tom-cunliffe",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/valery-martyniuk",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:19.790946",
-      "latency": 4405.47513961792,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/valery-martyniuk",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/author/waqas-khan-and-sayeed-rahman",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:16.035661",
-      "latency": 466.8164253234863,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/author/waqas-khan-and-sayeed-rahman",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/tag/gamedev",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:16.220589",
-      "latency": 510.18309593200684,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/tag/gamedev",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/tag/gaming",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:20.117909",
-      "latency": 4233.164548873901,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/tag/gaming",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/tag/industry",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:17.351977",
-      "latency": 1316.248893737793,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/tag/industry",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/tag/publishing",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:16.726924",
-      "latency": 506.2670707702637,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/tag/publishing",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/tag/technology",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:21.789050",
-      "latency": 5062.0598793029785,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/tag/technology",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/tag/worklife",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:18.292608",
-      "latency": 940.5620098114014,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/tag/worklife",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/100-team-members",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.056903",
-      "latency": 3960.538387298584,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/100-team-members",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/30-million-teachers-have-entered-classroom",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:18.934698",
-      "latency": 704.204797744751,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/30-million-teachers-have-entered-classroom",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/5-common-games-company-mistakes-were-glad-kwalee-avoided",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:19.034185",
-      "latency": 741.5239810943604,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/5-common-games-company-mistakes-were-glad-kwalee-avoided",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/5-profitable-game-development-technologies-rise",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:19.510776",
-      "latency": 576.0083198547363,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/5-profitable-game-development-technologies-rise",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/5-tips-making-attractive-game-prototypes-game-publishers",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.270265",
-      "latency": 3236.0172271728516,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/5-tips-making-attractive-game-prototypes-game-publishers",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/500-million-downloads",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.050607",
-      "latency": 2539.762496948242,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/500-million-downloads",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/9-reasons-why-you-should-work-mobile-gaming-industry",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.603202",
-      "latency": 2812.1747970581055,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/9-reasons-why-you-should-work-mobile-gaming-industry",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/Gamemasters-summit-digital-event",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.115780",
-      "latency": 1997.8010654449463,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/Gamemasters-summit-digital-event",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/Simon-Platt-Head-of-Development-Spotlight-Podcast",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:20.726842",
-      "latency": 555.0079345703125,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/Simon-Platt-Head-of-Development-Spotlight-Podcast",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/Wildmender-Game-Merchandise",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.269428",
-      "latency": 1792.5519943237305,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/Wildmender-Game-Merchandise",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/adrian-garton",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:21.361818",
-      "latency": 647.6068496704102,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/adrian-garton",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/ai-game-development-what-impact-has-it-made",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.016456",
-      "latency": 1289.5493507385254,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/ai-game-development-what-impact-has-it-made",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/ai-in-marketing-to-fear-or-to-embrace-it",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.056557",
-      "latency": 694.6651935577393,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/ai-in-marketing-to-fear-or-to-embrace-it",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/all-you-need-know-about-fail-ads",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.282583",
-      "latency": 493.42989921569824,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/all-you-need-know-about-fail-ads",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/all-you-need-know-about-hypersims",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.519939",
-      "latency": 691.9734477996826,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/all-you-need-know-about-hypersims",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/all-you-need-to-know-sunset-games",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.903595",
-      "latency": 887.0880603790283,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/all-you-need-to-know-sunset-games",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/announcing-kwalee-game-jam",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.733850",
-      "latency": 683.1767559051514,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/announcing-kwalee-game-jam",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/announcing-tens-nintendo-switch",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.758366",
-      "latency": 701.6770839691162,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/announcing-tens-nintendo-switch",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/another-celebration-one-special-day-kwalee-specialeffect",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.651786",
-      "latency": 594.6331024169922,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/another-celebration-one-special-day-kwalee-specialeffect",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/app-store-optimisation-for-mobile-games",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.014922",
-      "latency": 899.0724086761475,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/app-store-optimisation-for-mobile-games",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/apprenticeship-at-kwalee",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.953678",
-      "latency": 684.18288230896,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/apprenticeship-at-kwalee",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/bake-it-reaches-over-50-million-players",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:22.923597",
-      "latency": 653.2766819000244,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/bake-it-reaches-over-50-million-players",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/becoming-a-video-game-story-writer",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.101135",
-      "latency": 818.4959888458252,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/becoming-a-video-game-story-writer",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/can-roguelikes-teach-us-what-indie-gamers-really-want",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.129396",
-      "latency": 609.3902587890625,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/can-roguelikes-teach-us-what-indie-gamers-really-want",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/couch-coop-games-vs-online",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.318071",
-      "latency": 666.2218570709229,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/couch-coop-games-vs-online",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/cozy-games-with-kwalee",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.582343",
-      "latency": 848.339319229126,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/cozy-games-with-kwalee",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/essential-role-of-software-development-kit-sdk",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.485734",
-      "latency": 458.432674407959,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/essential-role-of-software-development-kit-sdk",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/tr-tr/blog/first-jobs-of-ceos",
-      "locale": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "statusCode": 502,
-      "errorType": "Server Error",
-      "lastChecked": "2026-08-09T01:09:23.663498",
-      "latency": 533.8003635406494,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/tr-tr/blog/first-jobs-of-ceos",
       "text": "Base URL"
     },
     {
@@ -1946,8 +1451,8 @@
       "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:51.813092",
-      "latency": 7058.41588973999,
+      "lastChecked": "2026-08-16T00:56:12.831669",
+      "latency": 799.9148368835449,
       "isDeepCheck": false,
       "source": "https://kwalee.com/uk-ua/gaming/in-sink",
       "text": "Base URL"
@@ -1957,120 +1462,10 @@
       "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:09:54.656653",
-      "latency": 4726.513862609863,
+      "lastChecked": "2026-08-16T00:56:25.059338",
+      "latency": 7973.986625671387,
       "isDeepCheck": false,
       "source": "https://kwalee.com/uk-ua/pc-console-community",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/alex-burnett",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:44.284428",
-      "latency": 30999.39751625061,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/alex-burnett",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/connor-taylor",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:47.285248",
-      "latency": 30999.61829185486,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/connor-taylor",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/georgina-venman",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:47.285316",
-      "latency": 30999.42374229431,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/georgina-venman",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/jason-falcus",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:51.284381",
-      "latency": 30997.425079345703,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/jason-falcus",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/joanna-mazur",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:51.284448",
-      "latency": 30997.273206710815,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/joanna-mazur",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/leon-paul-lynn",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:53.285935",
-      "latency": 31000.775575637817,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/leon-paul-lynn",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/matthew-barter",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:53.286030",
-      "latency": 31000.633716583252,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/matthew-barter",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/meredith-stephenson",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:54.283954",
-      "latency": 30999.44043159485,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/meredith-stephenson",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/author/nilay-patel",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:54.284058",
-      "latency": 30999.271392822266,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/author/nilay-patel",
-      "text": "Base URL"
-    },
-    {
-      "url": "https://kwalee.com/uk-ua/blog/tag/gaming",
-      "locale": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "statusCode": "Timeout",
-      "errorType": "Timeout Error",
-      "lastChecked": "2026-08-09T01:10:57.285464",
-      "latency": 31001.084804534912,
-      "isDeepCheck": false,
-      "source": "https://kwalee.com/uk-ua/blog/tag/gaming",
       "text": "Base URL"
     },
     {
@@ -2078,8 +1473,8 @@
       "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:14.817127",
-      "latency": 24533.180236816406,
+      "lastChecked": "2026-08-16T00:56:50.433413",
+      "latency": 893.8143253326416,
       "isDeepCheck": false,
       "source": "https://kwalee.com/vi-vn/gaming/in-sink",
       "text": "Base URL"
@@ -2089,10 +1484,142 @@
       "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:11:48.702388",
-      "latency": 6891.511917114258,
+      "lastChecked": "2026-08-16T00:56:56.859364",
+      "latency": 5093.293190002441,
       "isDeepCheck": false,
       "source": "https://kwalee.com/vi-vn/pc-console-community",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/kwalee-shines-dataais-top-publisher-awards-2023",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:13.792641",
+      "latency": 31001.95813179016,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/kwalee-shines-dataais-top-publisher-awards-2023",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/meet-our-new-head-publishing-simon-prytherch",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:17.791636",
+      "latency": 31000.35071372986,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/meet-our-new-head-publishing-simon-prytherch",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/people-make-kwalee-international-womens-day",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:20.791336",
+      "latency": 30999.826431274414,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/people-make-kwalee-international-womens-day",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/people-make-kwalee-max-everingham",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:20.791402",
+      "latency": 30999.75538253784,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/people-make-kwalee-max-everingham",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/pet-power-at-kwalee",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:21.790314",
+      "latency": 30998.631477355957,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/pet-power-at-kwalee",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/publishing-kwalee-tictales-developers-perfume-love",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:28.791186",
+      "latency": 30999.726057052612,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/publishing-kwalee-tictales-developers-perfume-love",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/safe-in-our-world",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:30.790503",
+      "latency": 30998.74711036682,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/safe-in-our-world",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/scathe-our-bullet-hell-fps-is-now-out",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:32.791144",
+      "latency": 30999.802589416504,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/scathe-our-bullet-hell-fps-is-now-out",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/such-policy-many-dog-yay",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:35.790393",
+      "latency": 30999.104261398315,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/such-policy-many-dog-yay",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/tens-launching-5th-november",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:38.791357",
+      "latency": 31000.672101974487,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/tens-launching-5th-november",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/the-a-to-z-guide-to-getting-the-most-out-of-game-developers-conference",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:39.790585",
+      "latency": 30999.566316604614,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/the-a-to-z-guide-to-getting-the-most-out-of-game-developers-conference",
+      "text": "Base URL"
+    },
+    {
+      "url": "https://kwalee.com/vi-vn/blog/the-evolution-of-user-acquisition",
+      "locale": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
+      "statusCode": "Timeout",
+      "errorType": "Timeout Error",
+      "lastChecked": "2026-08-16T00:58:40.790396",
+      "latency": 31000.05269050598,
+      "isDeepCheck": false,
+      "source": "https://kwalee.com/vi-vn/blog/the-evolution-of-user-acquisition",
       "text": "Base URL"
     },
     {
@@ -2100,8 +1627,8 @@
       "locale": "\u4e2d\u6587\uff08\u4e2d\u56fd\uff09",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:41.639246",
-      "latency": 3355.679512023926,
+      "lastChecked": "2026-08-16T00:58:41.312163",
+      "latency": 1168.8592433929443,
       "isDeepCheck": false,
       "source": "https://kwalee.com/zh-cn/gaming/in-sink",
       "text": "Base URL"
@@ -2111,8 +1638,8 @@
       "locale": "\u4e2d\u6587\uff08\u4e2d\u56fd\uff09",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:35.008621",
-      "latency": 9802.99162864685,
+      "lastChecked": "2026-08-16T00:58:43.462199",
+      "latency": 2067.6705837249756,
       "isDeepCheck": false,
       "source": "https://kwalee.com/zh-cn/pc-console-community",
       "text": "Base URL"
@@ -2122,8 +1649,8 @@
       "locale": "\u4e2d\u6587\uff08\u53f0\u7063\uff09",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:57.578021",
-      "latency": 1624.964714050293,
+      "lastChecked": "2026-08-16T00:59:29.422820",
+      "latency": 398.80824089050293,
       "isDeepCheck": false,
       "source": "https://kwalee.com/zh-tw/gaming/in-sink",
       "text": "Base URL"
@@ -2133,8 +1660,8 @@
       "locale": "\u4e2d\u6587\uff08\u53f0\u7063\uff09",
       "statusCode": 404,
       "errorType": "Client Error",
-      "lastChecked": "2026-08-09T01:12:59.692146",
-      "latency": 2114.082098007202,
+      "lastChecked": "2026-08-16T00:59:34.207265",
+      "latency": 3629.716157913208,
       "isDeepCheck": false,
       "source": "https://kwalee.com/zh-tw/pc-console-community",
       "text": "Base URL"
@@ -2143,24 +1670,36 @@
   "locales": [
     {
       "name": "English",
-      "total": 700,
-      "broken": 36,
-      "successRate": 94.85714285714286
+      "total": 655,
+      "broken": 45,
+      "successRate": 93.12977099236642
     },
     {
-      "name": "portugu\u00eas (Brasil)",
+      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     },
     {
-      "name": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)",
+      "name": "svenska (Sverige)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     },
     {
-      "name": "portugu\u00eas europeu",
+      "name": "Deutsch (Deutschland)",
+      "total": 271,
+      "broken": 11,
+      "successRate": 95.9409594095941
+    },
+    {
+      "name": "dansk (Danmark)",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "suomi (Suomi)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
@@ -2172,25 +1711,7 @@
       "successRate": 99.2619926199262
     },
     {
-      "name": "polski (Polska)",
-      "total": 271,
-      "broken": 2,
-      "successRate": 99.2619926199262
-    },
-    {
-      "name": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
-      "total": 271,
-      "broken": 2,
-      "successRate": 99.2619926199262
-    },
-    {
-      "name": "dansk (Danmark)",
-      "total": 271,
-      "broken": 2,
-      "successRate": 99.2619926199262
-    },
-    {
-      "name": "Deutsch (Deutschland)",
+      "name": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
@@ -2202,13 +1723,31 @@
       "successRate": 99.2619926199262
     },
     {
-      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)",
+      "name": "espa\u00f1ol de M\u00e9xico",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     },
     {
-      "name": "Indonesia (Indonesia)",
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "norsk bokm\u00e5l (Norge)",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "Nederlands (Nederland)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
@@ -2220,25 +1759,19 @@
       "successRate": 99.2619926199262
     },
     {
-      "name": "norsk bokm\u00e5l (Norge)",
-      "total": 271,
-      "broken": 3,
-      "successRate": 98.8929889298893
-    },
-    {
       "name": "rom\u00e2n\u0103 (Rom\u00e2nia)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     },
     {
-      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)",
+      "name": "Indonesia (Indonesia)",
       "total": 271,
-      "broken": 2,
-      "successRate": 99.2619926199262
+      "broken": 15,
+      "successRate": 94.4649446494465
     },
     {
-      "name": "italiano (Italia)",
+      "name": "fran\u00e7ais (France)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
@@ -2250,19 +1783,19 @@
       "successRate": 99.2619926199262
     },
     {
-      "name": "suomi (Suomi)",
+      "name": "portugu\u00eas (Brasil)",
       "total": 271,
-      "broken": 16,
-      "successRate": 94.0959409594096
+      "broken": 14,
+      "successRate": 94.8339483394834
     },
     {
-      "name": "espa\u00f1ol (Argentina)",
+      "name": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)",
       "total": 271,
-      "broken": 2,
-      "successRate": 99.2619926199262
+      "broken": 14,
+      "successRate": 94.8339483394834
     },
     {
-      "name": "fran\u00e7ais (France)",
+      "name": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
@@ -2270,20 +1803,38 @@
     {
       "name": "\u010de\u0161tina (\u010cesko)",
       "total": 271,
-      "broken": 11,
-      "successRate": 95.9409594095941
+      "broken": 2,
+      "successRate": 99.2619926199262
     },
     {
-      "name": "espa\u00f1ol de M\u00e9xico",
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     },
     {
-      "name": "Nederlands (Nederland)",
+      "name": "polski (Polska)",
       "total": 271,
-      "broken": 16,
-      "successRate": 94.0959409594096
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "italiano (Italia)",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
+    },
+    {
+      "name": "portugu\u00eas europeu",
+      "total": 271,
+      "broken": 2,
+      "successRate": 99.2619926199262
     },
     {
       "name": "magyar (Magyarorsz\u00e1g)",
@@ -2292,56 +1843,19 @@
       "successRate": 99.2619926199262
     },
     {
-      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)",
-      "total": 271,
-      "broken": 3,
-      "successRate": 98.8929889298893
-    },
-    {
-      "name": "svenska (Sverige)",
+      "name": "espa\u00f1ol (Argentina)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     },
     {
-      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)",
-      "total": 271,
-      "broken": 12,
-      "successRate": 95.5719557195572
-    },
-    {
       "name": "espa\u00f1ol de Espa\u00f1a",
-      "total": 271,
-      "broken": 4,
-      "successRate": 98.5239852398524
-    },
-    {
-      "name": "T\u00fcrk\u00e7e (T\u00fcrkiye)",
-      "total": 271,
-      "broken": 49,
-      "successRate": 81.91881918819189
-    },
-    {
-      "name": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)",
       "total": 271,
       "broken": 2,
       "successRate": 99.2619926199262
     }
   ],
   "trends": [
-    {
-      "date": "2026-02-14T01:34:06.859289",
-      "brokenLinks": 334,
-      "totalUrls": 10067,
-      "errorDistribution": {
-        "404": 278,
-        "403": 35,
-        "Timeout": 3,
-        "400": 9,
-        "Error": 7,
-        "429": 2
-      }
-    },
     {
       "date": "2026-02-14T02:55:08.369079",
       "brokenLinks": 372,
@@ -5159,19 +4673,33 @@
         "Timeout": 52,
         "502": 49
       }
+    },
+    {
+      "date": "2026-08-16T01:00:27.218291",
+      "brokenLinks": 151,
+      "totalUrls": 8785,
+      "errorDistribution": {
+        "504": 1,
+        "502": 2,
+        "404": 84,
+        "403": 11,
+        "Timeout": 52,
+        "400": 1
+      }
     }
   ],
   "errorDistribution": {
-    "404": 81,
+    "504": 1,
+    "502": 2,
+    "404": 84,
     "403": 11,
-    "400": 1,
     "Timeout": 52,
-    "502": 49
+    "400": 1
   },
   "responseTimeDistribution": {
-    "<1s": 71,
-    "1-3s": 35,
-    "3-5s": 18,
-    ">5s": 70
+    "<1s": 45,
+    "1-3s": 15,
+    "3-5s": 10,
+    ">5s": 81
   }
 }
