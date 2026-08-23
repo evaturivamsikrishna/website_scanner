@@ -1,23 +1,28 @@
 [
   {
-    "url": "https://kwalee.com/publishing",
+    "url": "https://kwalee.com/careers",
     "source": "https://kwalee.com/",
-    "text": "Empowering Creators100+Game Studio Partners"
+    "text": "Join Kwalee"
   },
   {
-    "url": "https://kwalee.com/gaming/the-precinct",
+    "url": "https://kwalee.com/legal/privacy-policy",
     "source": "https://kwalee.com/",
-    "text": "The Precinct"
+    "text": "Privacy Policy"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.kwalee.looper",
+    "url": "https://kwalee.com/fun-games/go-fish",
     "source": "https://kwalee.com/",
-    "text": "4.4\u2605"
+    "text": "Go Fish!"
   },
   {
-    "url": "https://kwalee.com/fun-games",
+    "url": "https://play.google.com/store/apps/details?id=com.kwalee.gofish1&hl=en",
     "source": "https://kwalee.com/",
-    "text": "View All Mobile Games"
+    "text": "4.6\u2605"
+  },
+  {
+    "url": "https://kwalee.com/careers/senior-fullstack-developer-f8effeed-7e0d-4df1-b5a6-382f69278daf",
+    "source": "https://kwalee.com/",
+    "text": "Apply Now"
   },
   {
     "url": "https://kwalee.com/fun-games/dream-build-solitaire",
@@ -25,9 +30,24 @@
     "text": "Dream Build Solitaire"
   },
   {
-    "url": "https://kwalee.com/blog",
+    "url": "https://kwalee.com/fun-games",
     "source": "https://kwalee.com/",
-    "text": "Blog"
+    "text": "View All Mobile Games"
+  },
+  {
+    "url": "https://kwalee.com/careers#application-process",
+    "source": "https://kwalee.com/",
+    "text": "Application Process"
+  },
+  {
+    "url": "https://kwalee.com/",
+    "source": "https://kwalee.com/",
+    "text": "Home"
+  },
+  {
+    "url": "https://kwalee.com/publishing",
+    "source": "https://kwalee.com/",
+    "text": "Publish Your Game"
   },
   {
     "url": "https://kwalee.com/publishing/pc-console",
@@ -35,14 +55,9 @@
     "text": "Submit Game"
   },
   {
-    "url": "https://kwalee.com/gaming",
+    "url": "https://kwalee.com/legal/annual-reports",
     "source": "https://kwalee.com/",
-    "text": "View All PC & Console Games"
-  },
-  {
-    "url": "https://kwalee.com/contact",
-    "source": "https://kwalee.com/",
-    "text": "Contact us"
+    "text": "Annual Reports"
   },
   {
     "url": "https://kwalee.com/fun-games/looper",
@@ -50,24 +65,44 @@
     "text": "Looper!"
   },
   {
-    "url": "https://kwalee.com/join-us",
+    "url": "https://kwalee.com/blog/video-game-charities",
     "source": "https://kwalee.com/",
-    "text": "Growing Careers200+Team members & Growing"
+    "text": "12 Video Game Charities Making Positive Change In The World"
   },
   {
-    "url": "https://kwalee.com/careers/assistant-facilities-manager-82c341d0-f8dc-4bda-a92b-be525934e887",
+    "url": "https://kwalee.com/blog",
+    "source": "https://kwalee.com/",
+    "text": "Blog"
+  },
+  {
+    "url": "https://kwalee.com/mobile-publishing-team",
+    "source": "https://kwalee.com/",
+    "text": "Our Mobile Team"
+  },
+  {
+    "url": "https://kwalee.com/legal/eula-pcc",
+    "source": "https://kwalee.com/",
+    "text": "PCC EULA"
+  },
+  {
+    "url": "https://kwalee.com/gaming",
+    "source": "https://kwalee.com/",
+    "text": "Our Games"
+  },
+  {
+    "url": "https://kwalee.com/gaming/the-precinct",
+    "source": "https://kwalee.com/",
+    "text": "The Precinct"
+  },
+  {
+    "url": "https://itunes.apple.com/gb/app/go-fish/id1398987473?mt=8",
+    "source": "https://kwalee.com/",
+    "text": "4.6\u2605"
+  },
+  {
+    "url": "https://kwalee.com/careers/senior-legal-counsel-5d465388-f307-4952-9dc0-bd12e3e9c9c4",
     "source": "https://kwalee.com/",
     "text": "Apply Now"
-  },
-  {
-    "url": "https://kwalee.com/blog/30-million-teachers-have-entered-classroom",
-    "source": "https://kwalee.com/",
-    "text": "30 MILLION Teachers Have Entered the Classroom!"
-  },
-  {
-    "url": "https://kwalee.com/legal/copyright-dmca-takedown-policy",
-    "source": "https://kwalee.com/",
-    "text": "Copyright (DMCA) Takedown Policy"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.dreambuildsolitaire",
@@ -80,109 +115,9 @@
     "text": "Submit Your Game"
   },
   {
-    "url": "https://kwalee.com/legal/eula-pcc",
-    "source": "https://kwalee.com/",
-    "text": "PCC EULA"
-  },
-  {
-    "url": "https://kwalee.com/careers#application-process",
-    "source": "https://kwalee.com/",
-    "text": "Application Process"
-  },
-  {
-    "url": "https://kwalee.com/legal/terms-of-use",
-    "source": "https://kwalee.com/",
-    "text": "Terms Of Use"
-  },
-  {
-    "url": "https://kwalee.com/blog/video-game-charities",
-    "source": "https://kwalee.com/",
-    "text": "12 Video Game Charities Making Positive Change In The World"
-  },
-  {
-    "url": "https://kwalee.com/careers/senior-legal-counsel-5d465388-f307-4952-9dc0-bd12e3e9c9c4",
-    "source": "https://kwalee.com/",
-    "text": "Apply Now"
-  },
-  {
-    "url": "https://kwalee.com/legal/annual-reports",
-    "source": "https://kwalee.com/",
-    "text": "Annual Reports"
-  },
-  {
-    "url": "https://kwalee.com/blog/ai-game-development-what-impact-has-it-made",
-    "source": "https://kwalee.com/",
-    "text": "AI In Game Development: What Impact Has It Made?"
-  },
-  {
-    "url": "https://kwalee.com/",
-    "source": "https://kwalee.com/",
-    "text": "About Us"
-  },
-  {
     "url": "https://kwalee.com/investors",
     "source": "https://kwalee.com/",
     "text": "Investor Information"
-  },
-  {
-    "url": "https://itunes.apple.com/gb/app/go-fish/id1398987473?mt=8",
-    "source": "https://kwalee.com/",
-    "text": "4.6\u2605"
-  },
-  {
-    "url": "https://itunes.apple.com/app/draw-it/id1451505313?ls=1&mt=8",
-    "source": "https://kwalee.com/",
-    "text": "4.4\u2605"
-  },
-  {
-    "url": "https://play.google.com/store/apps/details?id=com.kwalee.gofish1&hl=en",
-    "source": "https://kwalee.com/",
-    "text": "4.6\u2605"
-  },
-  {
-    "url": "https://kwalee.com/legal/privacy-policy",
-    "source": "https://kwalee.com/",
-    "text": "Privacy Policy"
-  },
-  {
-    "url": "https://kwalee.com/about",
-    "source": "https://kwalee.com/",
-    "text": "About Us"
-  },
-  {
-    "url": "https://kwalee.com/mobile-publishing-team",
-    "source": "https://kwalee.com/",
-    "text": "Our Mobile Team"
-  },
-  {
-    "url": "https://kwalee.com/legal/eula-mobile",
-    "source": "https://kwalee.com/",
-    "text": "Mobile Eula"
-  },
-  {
-    "url": "https://kwalee.com/legal/pp-pcc",
-    "source": "https://kwalee.com/",
-    "text": "PCC Privacy Policy"
-  },
-  {
-    "url": "https://kwalee.com/fun-games/go-fish",
-    "source": "https://kwalee.com/",
-    "text": "Go Fish!"
-  },
-  {
-    "url": "https://kwalee.com/careers",
-    "source": "https://kwalee.com/",
-    "text": "Join Kwalee"
-  },
-  {
-    "url": "https://play.google.com/store/apps/details?id=com.kwalee.drawit",
-    "source": "https://kwalee.com/",
-    "text": "4.3\u2605"
-  },
-  {
-    "url": "https://kwalee.com/legal/eu-dsa-report",
-    "source": "https://kwalee.com/",
-    "text": "EU DSA Report"
   },
   {
     "url": "https://itunes.apple.com/us/app/looper/id1370475630?ls=1&mt=8",
@@ -190,14 +125,19 @@
     "text": "4.5\u2605"
   },
   {
-    "url": "https://kwalee.com/gaming/robobeat",
+    "url": "https://kwalee.com/fun-games/draw-it",
     "source": "https://kwalee.com/",
-    "text": "Robobeat"
+    "text": "Draw It"
   },
   {
-    "url": "https://kwalee.com/gaming/voidwrought",
+    "url": "https://kwalee.com/join-us",
     "source": "https://kwalee.com/",
-    "text": "Voidwrought"
+    "text": "Join Us"
+  },
+  {
+    "url": "https://kwalee.com/legal/copyright-dmca-takedown-policy",
+    "source": "https://kwalee.com/",
+    "text": "Copyright (DMCA) Takedown Policy"
   },
   {
     "url": "https://kwalee.com/gaming/town-to-city",
@@ -205,9 +145,44 @@
     "text": "Town to City"
   },
   {
-    "url": "https://kwalee.com/fun-games/draw-it",
+    "url": "https://kwalee.com/blog/ai-game-development-what-impact-has-it-made",
     "source": "https://kwalee.com/",
-    "text": "Draw It"
+    "text": "AI In Game Development: What Impact Has It Made?"
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=com.kwalee.looper",
+    "source": "https://kwalee.com/",
+    "text": "4.4\u2605"
+  },
+  {
+    "url": "https://kwalee.com/legal/pp-pcc",
+    "source": "https://kwalee.com/",
+    "text": "PCC Privacy Policy"
+  },
+  {
+    "url": "https://kwalee.com/gaming/voidwrought",
+    "source": "https://kwalee.com/",
+    "text": "Voidwrought"
+  },
+  {
+    "url": "https://itunes.apple.com/app/draw-it/id1451505313?ls=1&mt=8",
+    "source": "https://kwalee.com/",
+    "text": "4.4\u2605"
+  },
+  {
+    "url": "https://kwalee.com/about",
+    "source": "https://kwalee.com/",
+    "text": "About Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/legal/eu-dsa-report",
+    "source": "https://kwalee.com/",
+    "text": "EU DSA Report"
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=com.kwalee.drawit",
+    "source": "https://kwalee.com/",
+    "text": "4.3\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/dream-build-solitaire/id6446602374",
@@ -215,14 +190,34 @@
     "text": "4.7\u2605"
   },
   {
+    "url": "https://kwalee.com/legal/terms-of-use",
+    "source": "https://kwalee.com/",
+    "text": "Terms Of Use"
+  },
+  {
+    "url": "https://kwalee.com/blog/30-million-teachers-have-entered-classroom",
+    "source": "https://kwalee.com/",
+    "text": "30 MILLION Teachers Have Entered the Classroom!"
+  },
+  {
+    "url": "https://kwalee.com/legal/eula-mobile",
+    "source": "https://kwalee.com/",
+    "text": "Mobile Eula"
+  },
+  {
+    "url": "https://kwalee.com/contact",
+    "source": "https://kwalee.com/",
+    "text": "Contact us"
+  },
+  {
+    "url": "https://kwalee.com/gaming/robobeat",
+    "source": "https://kwalee.com/",
+    "text": "Robobeat"
+  },
+  {
     "url": "https://kwalee.com/gaming/wildmender",
     "source": "https://kwalee.com/fun-games",
     "text": "Wildmender"
-  },
-  {
-    "url": "https://www.developer.kwalee.com/games/submission",
-    "source": "https://kwalee.com/fun-games",
-    "text": "Publish With Us"
   },
   {
     "url": "https://developer.kwalee.com",
@@ -230,24 +225,9 @@
     "text": "Hitseeker"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.kwalee.bakeit",
-    "source": "https://kwalee.com/fun-games/airport-security",
-    "text": "4.4\u2605"
-  },
-  {
-    "url": "https://apps.apple.com/gb/app/bake-it/id1499833811",
-    "source": "https://kwalee.com/fun-games/airport-security",
-    "text": "4.5\u2605"
-  },
-  {
-    "url": "https://play.google.com/store/apps/details?id=com.sunsetgames.bordersecurity",
-    "source": "https://kwalee.com/fun-games/airport-security",
-    "text": "4.4\u2605"
-  },
-  {
-    "url": "https://kwalee.com/fun-games/airport-security",
-    "source": "https://kwalee.com/fun-games/airport-security",
-    "text": "Work at Kwalee"
+    "url": "https://www.developer.kwalee.com/games/submission",
+    "source": "https://kwalee.com/fun-games",
+    "text": "Publish With Us"
   },
   {
     "url": "https://apps.apple.com/us/app/airport-security/id1588094496",
@@ -260,14 +240,24 @@
     "text": "Bake it"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.syubestgames.teachersimulator&hl=en&gl=US",
-    "source": "https://kwalee.com/fun-games/bake-it",
+    "url": "https://kwalee.com/fun-games/airport-security",
+    "source": "https://kwalee.com/fun-games/airport-security",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://apps.apple.com/gb/app/bake-it/id1499833811",
+    "source": "https://kwalee.com/fun-games/airport-security",
     "text": "4.5\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/hunt-and-seek",
-    "source": "https://kwalee.com/fun-games/bake-it",
-    "text": "Hunt & Seek"
+    "url": "https://play.google.com/store/apps/details?id=com.kwalee.bakeit",
+    "source": "https://kwalee.com/fun-games/airport-security",
+    "text": "4.4\u2605"
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=com.sunsetgames.bordersecurity",
+    "source": "https://kwalee.com/fun-games/airport-security",
+    "text": "4.4\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/teacher-simulator/id1523627747",
@@ -280,9 +270,9 @@
     "text": "4.4\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/teacher-simulator",
+    "url": "https://kwalee.com/fun-games/hunt-and-seek",
     "source": "https://kwalee.com/fun-games/bake-it",
-    "text": "Teacher Simulator"
+    "text": "Hunt & Seek"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.transformhunt",
@@ -290,14 +280,24 @@
     "text": "4.3\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/big-battle-3d",
-    "source": "https://kwalee.com/fun-games/big-battle-3d",
-    "text": "Mobile Games"
+    "url": "https://play.google.com/store/apps/details?id=com.syubestgames.teachersimulator&hl=en&gl=US",
+    "source": "https://kwalee.com/fun-games/bake-it",
+    "text": "4.5\u2605"
+  },
+  {
+    "url": "https://kwalee.com/fun-games/teacher-simulator",
+    "source": "https://kwalee.com/fun-games/bake-it",
+    "text": "Teacher Simulator"
   },
   {
     "url": "https://apps.apple.com/us/app/big-battle-3d/id1487103274?ls=1",
     "source": "https://kwalee.com/fun-games/big-battle-3d",
     "text": "4.3\u2605"
+  },
+  {
+    "url": "https://kwalee.com/fun-games/big-battle-3d",
+    "source": "https://kwalee.com/fun-games/big-battle-3d",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.bluebook.bigbattle3d&hl=en_US",
@@ -307,7 +307,7 @@
   {
     "url": "https://kwalee.com/fun-games/blade-forge-3d",
     "source": "https://kwalee.com/fun-games/blade-forge-3d",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.bladeforge3d&hl=en&gl=US",
@@ -320,11 +320,6 @@
     "text": "4.6\u2605"
   },
   {
-    "url": "https://apps.apple.com/gb/app/clean-up-3d/id1465580173",
-    "source": "https://kwalee.com/fun-games/clean-up-3d",
-    "text": "4.4\u2605"
-  },
-  {
     "url": "https://play.google.com/store/apps/details?id=com.bwm.idlecleaner&hl=en",
     "source": "https://kwalee.com/fun-games/clean-up-3d",
     "text": "4.3\u2605"
@@ -332,17 +327,12 @@
   {
     "url": "https://kwalee.com/fun-games/clean-up-3d",
     "source": "https://kwalee.com/fun-games/clean-up-3d",
-    "text": "About Us"
-  },
-  {
-    "url": "https://kwalee.com/fun-games/crazy-shopping",
-    "source": "https://kwalee.com/fun-games/crazy-shopping",
     "text": "Work at Kwalee"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.kwalee.crazyshopping&hl=en_US",
-    "source": "https://kwalee.com/fun-games/crazy-shopping",
-    "text": "4.3\u2605"
+    "url": "https://apps.apple.com/gb/app/clean-up-3d/id1465580173",
+    "source": "https://kwalee.com/fun-games/clean-up-3d",
+    "text": "4.4\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/crazy-shopping/id1478722864?ls=1",
@@ -350,19 +340,29 @@
     "text": "4.7\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/drop-smash",
-    "source": "https://kwalee.com/fun-games/drop-smash",
-    "text": "About Us"
+    "url": "https://play.google.com/store/apps/details?id=com.kwalee.crazyshopping&hl=en_US",
+    "source": "https://kwalee.com/fun-games/crazy-shopping",
+    "text": "4.3\u2605"
   },
   {
-    "url": "https://apps.apple.com/us/app/drop-smash/id1480239275",
-    "source": "https://kwalee.com/fun-games/drop-smash",
-    "text": "4.7\u2605"
+    "url": "https://kwalee.com/fun-games/crazy-shopping",
+    "source": "https://kwalee.com/fun-games/crazy-shopping",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.dropstuff&hl=en_US",
     "source": "https://kwalee.com/fun-games/drop-smash",
     "text": "4.4\u2605"
+  },
+  {
+    "url": "https://kwalee.com/fun-games/drop-smash",
+    "source": "https://kwalee.com/fun-games/drop-smash",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://apps.apple.com/us/app/drop-smash/id1480239275",
+    "source": "https://kwalee.com/fun-games/drop-smash",
+    "text": "4.7\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/exfil-loot-extract/id6448720577",
@@ -380,28 +380,18 @@
     "text": "4\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/jetpack-jump",
-    "source": "https://kwalee.com/fun-games/jetpack-jump",
-    "text": "Work at Kwalee"
-  },
-  {
     "url": "https://itunes.apple.com/app/jetpack-jump/id1462399315?mt=8",
     "source": "https://kwalee.com/fun-games/jetpack-jump",
     "text": "4.3\u2605"
   },
   {
+    "url": "https://kwalee.com/fun-games/jetpack-jump",
+    "source": "https://kwalee.com/fun-games/jetpack-jump",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.jetpackjump&hl=en",
     "source": "https://kwalee.com/fun-games/jetpack-jump",
-    "text": "4.4\u2605"
-  },
-  {
-    "url": "https://kwalee.com/fun-games/lets-be-cops-3d",
-    "source": "https://kwalee.com/fun-games/lets-be-cops-3d",
-    "text": "About Us"
-  },
-  {
-    "url": "https://apps.apple.com/nz/app/lets-be-cops-3d/id1533666452",
-    "source": "https://kwalee.com/fun-games/lets-be-cops-3d",
     "text": "4.4\u2605"
   },
   {
@@ -410,14 +400,14 @@
     "text": "4.3\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/line-up",
-    "source": "https://kwalee.com/fun-games/line-up",
-    "text": "About Us"
+    "url": "https://kwalee.com/fun-games/lets-be-cops-3d",
+    "source": "https://kwalee.com/fun-games/lets-be-cops-3d",
+    "text": "Work at Kwalee"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.jhulse.lineup",
-    "source": "https://kwalee.com/fun-games/line-up",
-    "text": "4.5\u2605"
+    "url": "https://apps.apple.com/nz/app/lets-be-cops-3d/id1533666452",
+    "source": "https://kwalee.com/fun-games/lets-be-cops-3d",
+    "text": "4.4\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/line-up-draw-the-criminal/id1510322856",
@@ -425,14 +415,14 @@
     "text": "4.6\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/object-hunt",
-    "source": "https://kwalee.com/fun-games/object-hunt",
-    "text": "Mobile Games"
+    "url": "https://kwalee.com/fun-games/line-up",
+    "source": "https://kwalee.com/fun-games/line-up",
+    "text": "Work at Kwalee"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.kwalee.objecthide&hl=en&gl=US",
-    "source": "https://kwalee.com/fun-games/object-hunt",
-    "text": "4.3\u2605"
+    "url": "https://play.google.com/store/apps/details?id=com.jhulse.lineup",
+    "source": "https://kwalee.com/fun-games/line-up",
+    "text": "4.5\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/object-hunt/id1537594881",
@@ -440,14 +430,19 @@
     "text": "4.6\u2605"
   },
   {
+    "url": "https://kwalee.com/fun-games/object-hunt",
+    "source": "https://kwalee.com/fun-games/object-hunt",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=com.kwalee.objecthide&hl=en&gl=US",
+    "source": "https://kwalee.com/fun-games/object-hunt",
+    "text": "4.3\u2605"
+  },
+  {
     "url": "https://kwalee.com/fun-games/off-the-rails-3d",
     "source": "https://kwalee.com/fun-games/off-the-rails-3d",
     "text": "Mobile Games"
-  },
-  {
-    "url": "https://apps.apple.com/us/app/off-the-rails-3d/id1488312219?ls=1",
-    "source": "https://kwalee.com/fun-games/off-the-rails-3d",
-    "text": "4.2\u2605"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.jamesbooth.steamtrain&hl=en_GB",
@@ -455,9 +450,9 @@
     "text": "4.2\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/overtake",
-    "source": "https://kwalee.com/fun-games/overtake",
-    "text": "PC & Console Games"
+    "url": "https://apps.apple.com/us/app/off-the-rails-3d/id1488312219?ls=1",
+    "source": "https://kwalee.com/fun-games/off-the-rails-3d",
+    "text": "4.2\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/overtake/id1286341761",
@@ -465,9 +460,24 @@
     "text": "4.4\u2605"
   },
   {
+    "url": "https://kwalee.com/fun-games/overtake",
+    "source": "https://kwalee.com/fun-games/overtake",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.overtake&hl=en",
     "source": "https://kwalee.com/fun-games/overtake",
     "text": "3.8\u2605"
+  },
+  {
+    "url": "https://apps.apple.com/us/app/tens/id1248859635",
+    "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
+    "text": "4.4\u2605"
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=com.blazedays.perfectcoffee&hl=en_IN&gl=US&pli=1",
+    "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
+    "text": "4.3\u2605"
   },
   {
     "url": "https://apps.apple.com/us/app/perfect-coffee-3d/id1610991235",
@@ -480,34 +490,14 @@
     "text": "Work at Kwalee"
   },
   {
-    "url": "https://kwalee.com/careers/data-engineer-3ff2db1a-6fc9-425f-a99a-ad22de8ff48c",
-    "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
-    "text": "Apply Now"
-  },
-  {
-    "url": "https://play.google.com/store/apps/details?id=com.Kwalee.Tens",
-    "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
-    "text": "4.5\u2605"
-  },
-  {
-    "url": "https://apps.apple.com/us/app/tens/id1248859635",
-    "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
-    "text": "4.4\u2605"
-  },
-  {
     "url": "https://kwalee.com/fun-games/tens",
     "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
     "text": "TENS!"
   },
   {
-    "url": "https://play.google.com/store/apps/details?id=com.blazedays.perfectcoffee&hl=en_IN&gl=US&pli=1",
+    "url": "https://play.google.com/store/apps/details?id=com.Kwalee.Tens",
     "source": "https://kwalee.com/fun-games/perfect-coffee-3d",
-    "text": "4.3\u2605"
-  },
-  {
-    "url": "https://kwalee.com/fun-games/plank",
-    "source": "https://kwalee.com/fun-games/plank",
-    "text": "About Us"
+    "text": "4.5\u2605"
   },
   {
     "url": "https://itunes.apple.com/us/app/plank/id1370483471?ls=1&mt=8",
@@ -520,9 +510,14 @@
     "text": "4.2\u2605"
   },
   {
+    "url": "https://kwalee.com/fun-games/plank",
+    "source": "https://kwalee.com/fun-games/plank",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/fun-games/police-pursuit",
     "source": "https://kwalee.com/fun-games/police-pursuit",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.wantedgp&hl=en_GB",
@@ -537,7 +532,7 @@
   {
     "url": "https://kwalee.com/fun-games/rocket-sky",
     "source": "https://kwalee.com/fun-games/rocket-sky",
-    "text": "Work at Kwalee"
+    "text": "PC & Console Games"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.dpspace.rocketsky&hl=en_GB",
@@ -552,7 +547,7 @@
   {
     "url": "https://kwalee.com/fun-games/shootout-3d",
     "source": "https://kwalee.com/fun-games/shootout-3d",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.kwalee.gunpuzzle",
@@ -575,19 +570,19 @@
     "text": "4.6\u2605"
   },
   {
-    "url": "https://kwalee.com/fun-games/spillz",
-    "source": "https://kwalee.com/fun-games/spillz",
-    "text": "Work at Kwalee"
-  },
-  {
     "url": "https://apps.apple.com/us/app/spillz/id1273311118",
     "source": "https://kwalee.com/fun-games/spillz",
     "text": "4.5\u2605"
   },
   {
+    "url": "https://kwalee.com/fun-games/spillz",
+    "source": "https://kwalee.com/fun-games/spillz",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/fun-games/traffic-cop-3d",
     "source": "https://kwalee.com/fun-games/traffic-cop-3d",
-    "text": "Mobile Games"
+    "text": "About Us"
   },
   {
     "url": "https://play.google.com/store/apps/details?id=com.sunsetgames.copcarscan",
@@ -602,7 +597,7 @@
   {
     "url": "https://kwalee.com/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/mobile",
-    "text": "Submit Your Game"
+    "text": "Let's Start Our Journey Together"
   },
   {
     "url": "https://www.youtube.com/watch?v=5DLVxQE1Gm0",
@@ -617,22 +612,12 @@
   {
     "url": "https://kwalee.com/gaming/hordes-of-hunger",
     "source": "https://kwalee.com/gaming/hordes-of-hunger",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://store.steampowered.com/app/2157710/Hordes_of_Hunger/",
     "source": "https://kwalee.com/gaming/hordes-of-hunger",
     "text": "Steam"
-  },
-  {
-    "url": "https://www.robobeatgame.com",
-    "source": "https://kwalee.com/gaming/robobeat",
-    "text": "Visit Official Game Website"
-  },
-  {
-    "url": "https://store.epicgames.com/en-US/p/robobeat-5f084b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
-    "source": "https://kwalee.com/gaming/robobeat",
-    "text": "Epic"
   },
   {
     "url": "https://store.steampowered.com/app/1456760/ROBOBEAT/?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
@@ -645,29 +630,14 @@
     "text": "Space Chef"
   },
   {
-    "url": "https://kwalee.com/gaming/dont-stop-girlypop",
-    "source": "https://kwalee.com/gaming/space-chef",
-    "text": "Don't Stop, Girlypop!"
-  },
-  {
-    "url": "https://store.steampowered.com/app/1272290/Space_Chef/",
-    "source": "https://kwalee.com/gaming/space-chef",
-    "text": "Steam"
-  },
-  {
-    "url": "https://www.xbox.com/en-GB/games/store/space-chef/9MZBFSK00T6S/0010",
-    "source": "https://kwalee.com/gaming/space-chef",
-    "text": "Xbox"
-  },
-  {
-    "url": "https://store.epicgames.com/en-US/p/space-chef-3f1010?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=space-chef",
-    "source": "https://kwalee.com/gaming/space-chef",
+    "url": "https://store.epicgames.com/en-US/p/robobeat-5f084b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=robobeat",
+    "source": "https://kwalee.com/gaming/robobeat",
     "text": "Epic"
   },
   {
-    "url": "https://store.playstation.com/en-gb/concept/10015032",
-    "source": "https://kwalee.com/gaming/space-chef",
-    "text": "PlayStation"
+    "url": "https://www.robobeatgame.com",
+    "source": "https://kwalee.com/gaming/robobeat",
+    "text": "Visit Official Game Website"
   },
   {
     "url": "https://www.nintendo.com/us/store/products/space-chef-switch/",
@@ -675,8 +645,48 @@
     "text": "Nintendo"
   },
   {
+    "url": "https://store.steampowered.com/app/1272290/Space_Chef/",
+    "source": "https://kwalee.com/gaming/space-chef",
+    "text": "Steam"
+  },
+  {
+    "url": "https://kwalee.com/gaming/dont-stop-girlypop",
+    "source": "https://kwalee.com/gaming/space-chef",
+    "text": "Don't Stop, Girlypop!"
+  },
+  {
+    "url": "https://store.playstation.com/en-gb/concept/10015032",
+    "source": "https://kwalee.com/gaming/space-chef",
+    "text": "PlayStation"
+  },
+  {
+    "url": "https://store.epicgames.com/en-US/p/space-chef-3f1010?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=space-chef",
+    "source": "https://kwalee.com/gaming/space-chef",
+    "text": "Epic"
+  },
+  {
+    "url": "https://www.xbox.com/en-GB/games/store/space-chef/9MZBFSK00T6S/0010",
+    "source": "https://kwalee.com/gaming/space-chef",
+    "text": "Xbox"
+  },
+  {
     "url": "https://store.steampowered.com/app/598980/The_Coin_Game/",
     "source": "https://kwalee.com/gaming/the-coin-game",
+    "text": "Steam"
+  },
+  {
+    "url": "https://kwalee.com/gaming/ground-zero",
+    "source": "https://kwalee.com/gaming/the-precinct",
+    "text": "Ground Zero"
+  },
+  {
+    "url": "https://www.xbox.com/en-us/games/store/the-precinct/9mvjtc8jz348",
+    "source": "https://kwalee.com/gaming/the-precinct",
+    "text": "Xbox"
+  },
+  {
+    "url": "https://store.steampowered.com/app/490110/The_Precinct/?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
+    "source": "https://kwalee.com/gaming/the-precinct",
     "text": "Steam"
   },
   {
@@ -685,9 +695,9 @@
     "text": "Call of the Elder Gods"
   },
   {
-    "url": "https://www.xbox.com/en-us/games/store/the-precinct/9mvjtc8jz348",
+    "url": "https://store.playstation.com/en-us/concept/10008902?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
     "source": "https://kwalee.com/gaming/the-precinct",
-    "text": "Xbox"
+    "text": "PlayStation"
   },
   {
     "url": "https://www.theprecinctgame.com",
@@ -695,29 +705,9 @@
     "text": "Visit Official Game Website"
   },
   {
-    "url": "https://kwalee.com/gaming/ground-zero",
-    "source": "https://kwalee.com/gaming/the-precinct",
-    "text": "Ground Zero"
-  },
-  {
     "url": "https://store.epicgames.com/en-US/p/the-precinct-e86840?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
     "source": "https://kwalee.com/gaming/the-precinct",
     "text": "Epic"
-  },
-  {
-    "url": "https://store.playstation.com/en-us/concept/10008902?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
-    "source": "https://kwalee.com/gaming/the-precinct",
-    "text": "PlayStation"
-  },
-  {
-    "url": "https://store.steampowered.com/app/490110/The_Precinct/?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=the-precinct-page",
-    "source": "https://kwalee.com/gaming/the-precinct",
-    "text": "Steam"
-  },
-  {
-    "url": "https://www.xbox.com/en-US/games/store/voidwrought/9P7CFJS2DD3V",
-    "source": "https://kwalee.com/gaming/voidwrought",
-    "text": "Xbox"
   },
   {
     "url": "https://store.playstation.com/en-gb/concept/10014658",
@@ -730,9 +720,9 @@
     "text": "Nintendo"
   },
   {
-    "url": "https://www.voidwrought.com",
+    "url": "https://store.steampowered.com/app/2014550/Voidwrought/?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
     "source": "https://kwalee.com/gaming/voidwrought",
-    "text": "Visit Official Game Website"
+    "text": "Steam"
   },
   {
     "url": "https://store.epicgames.com/en-US/p/voidwrought-ce8f4b?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
@@ -740,9 +730,19 @@
     "text": "Epic"
   },
   {
-    "url": "https://store.steampowered.com/app/2014550/Voidwrought/?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=voidwrought",
+    "url": "https://www.voidwrought.com",
     "source": "https://kwalee.com/gaming/voidwrought",
-    "text": "Steam"
+    "text": "Visit Official Game Website"
+  },
+  {
+    "url": "https://www.xbox.com/en-US/games/store/voidwrought/9P7CFJS2DD3V",
+    "source": "https://kwalee.com/gaming/voidwrought",
+    "text": "Xbox"
+  },
+  {
+    "url": "https://store.playstation.com/en-gb/concept/10005505?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=wildmender",
+    "source": "https://kwalee.com/gaming/wildmender",
+    "text": "PlayStation"
   },
   {
     "url": "https://www.xbox.com/en-us/games/store/wildmender/9nrwlt874d38?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=wildmender",
@@ -760,94 +760,9 @@
     "text": "Visit Official Game Website"
   },
   {
-    "url": "https://store.playstation.com/en-gb/concept/10005505?utm_source=kwalee-website&utm_medium=kwalee-gaming&utm_campaign=wildmender",
-    "source": "https://kwalee.com/gaming/wildmender",
-    "text": "PlayStation"
-  },
-  {
-    "url": "https://kwalee.com/ru-ru/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)"
-  },
-  {
-    "url": "https://kwalee.com/sv-se/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "svenska (Sverige)"
-  },
-  {
-    "url": "https://kwalee.com/de-de/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "Deutsch (Deutschland)"
-  },
-  {
-    "url": "https://kwalee.com/da-dk/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "dansk (Danmark)"
-  },
-  {
-    "url": "https://kwalee.com/fi-fi/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "suomi (Suomi)"
-  },
-  {
-    "url": "https://kwalee.com/bg-bg/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f)"
-  },
-  {
-    "url": "https://kwalee.com/tr-tr/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "T\u00fcrk\u00e7e (T\u00fcrkiye)"
-  },
-  {
-    "url": "https://kwalee.com/zh-cn/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u4e2d\u6587\uff08\u4e2d\u56fd\uff09"
-  },
-  {
-    "url": "https://kwalee.com/es-mx/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "espa\u00f1ol de M\u00e9xico"
-  },
-  {
     "url": "https://kwalee.com/ar-sa/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/pc-console/submit",
     "text": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)"
-  },
-  {
-    "url": "https://kwalee.com/nb-no/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "norsk bokm\u00e5l (Norge)"
-  },
-  {
-    "url": "https://kwalee.com/uk-ua/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)"
-  },
-  {
-    "url": "https://kwalee.com/nl-nl/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "Nederlands (Nederland)"
-  },
-  {
-    "url": "https://kwalee.com/ja-jp/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u65e5\u672c\u8a9e (\u65e5\u672c)"
-  },
-  {
-    "url": "https://kwalee.com/ro-ro/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "rom\u00e2n\u0103 (Rom\u00e2nia)"
-  },
-  {
-    "url": "https://kwalee.com/id-id/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "Indonesia (Indonesia)"
-  },
-  {
-    "url": "https://kwalee.com/fr-fr/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "fran\u00e7ais (France)"
   },
   {
     "url": "https://kwalee.com/zh-tw/publishing/pc-console/submit",
@@ -855,39 +770,14 @@
     "text": "\u4e2d\u6587\uff08\u53f0\u7063\uff09"
   },
   {
-    "url": "https://kwalee.com/pt-br/publishing/pc-console/submit",
+    "url": "https://kwalee.com/sv-se/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "portugu\u00eas (Brasil)"
+    "text": "svenska (Sverige)"
   },
   {
-    "url": "https://kwalee.com/vi-vn/publishing/pc-console/submit",
+    "url": "https://kwalee.com/es-ar/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)"
-  },
-  {
-    "url": "https://kwalee.com/th-th/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)"
-  },
-  {
-    "url": "https://kwalee.com/cs-cz/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u010de\u0161tina (\u010cesko)"
-  },
-  {
-    "url": "https://kwalee.com/el-gr/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)"
-  },
-  {
-    "url": "https://kwalee.com/pl-pl/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "polski (Polska)"
-  },
-  {
-    "url": "https://kwalee.com/ko-kr/publishing/pc-console/submit",
-    "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)"
+    "text": "espa\u00f1ol (Argentina)"
   },
   {
     "url": "https://kwalee.com/en/publishing/pc-console/submit",
@@ -900,19 +790,64 @@
     "text": "italiano (Italia)"
   },
   {
-    "url": "https://kwalee.com/pt-pt/publishing/pc-console/submit",
+    "url": "https://kwalee.com/vi-vn/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "portugu\u00eas europeu"
+    "text": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)"
   },
   {
-    "url": "https://kwalee.com/hu-hu/publishing/pc-console/submit",
+    "url": "https://kwalee.com/bg-bg/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "magyar (Magyarorsz\u00e1g)"
+    "text": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f)"
   },
   {
-    "url": "https://kwalee.com/es-ar/publishing/pc-console/submit",
+    "url": "https://kwalee.com/nl-nl/publishing/pc-console/submit",
     "source": "https://kwalee.com/publishing/pc-console/submit",
-    "text": "espa\u00f1ol (Argentina)"
+    "text": "Nederlands (Nederland)"
+  },
+  {
+    "url": "https://kwalee.com/zh-cn/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\u4e2d\u6587\uff08\u4e2d\u56fd\uff09"
+  },
+  {
+    "url": "https://kwalee.com/th-th/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)"
+  },
+  {
+    "url": "https://kwalee.com/id-id/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "Indonesia (Indonesia)"
+  },
+  {
+    "url": "https://kwalee.com/ko-kr/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)"
+  },
+  {
+    "url": "https://kwalee.com/nb-no/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "norsk bokm\u00e5l (Norge)"
+  },
+  {
+    "url": "https://kwalee.com/pl-pl/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "polski (Polska)"
+  },
+  {
+    "url": "https://kwalee.com/ru-ru/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)"
+  },
+  {
+    "url": "https://kwalee.com/fi-fi/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "suomi (Suomi)"
+  },
+  {
+    "url": "https://kwalee.com/pt-br/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "portugu\u00eas (Brasil)"
   },
   {
     "url": "https://kwalee.com/es-es/publishing/pc-console/submit",
@@ -920,34 +855,69 @@
     "text": "espa\u00f1ol de Espa\u00f1a"
   },
   {
-    "url": "https://kwalee.com/uk-ua/careers",
-    "source": "https://kwalee.com/careers",
+    "url": "https://kwalee.com/cs-cz/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\u010de\u0161tina (\u010cesko)"
+  },
+  {
+    "url": "https://kwalee.com/da-dk/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "dansk (Danmark)"
+  },
+  {
+    "url": "https://kwalee.com/fr-fr/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "fran\u00e7ais (France)"
+  },
+  {
+    "url": "https://kwalee.com/es-mx/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "espa\u00f1ol de M\u00e9xico"
+  },
+  {
+    "url": "https://kwalee.com/el-gr/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)"
+  },
+  {
+    "url": "https://kwalee.com/tr-tr/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "T\u00fcrk\u00e7e (T\u00fcrkiye)"
+  },
+  {
+    "url": "https://kwalee.com/uk-ua/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
     "text": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)"
   },
   {
-    "url": "https://kwalee.com/ru-ru/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)"
+    "url": "https://kwalee.com/ja-jp/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "\u65e5\u672c\u8a9e (\u65e5\u672c)"
   },
   {
-    "url": "https://kwalee.com/pt-br/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "portugu\u00eas (Brasil)"
+    "url": "https://kwalee.com/hu-hu/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "magyar (Magyarorsz\u00e1g)"
   },
   {
-    "url": "https://kwalee.com/careers/game-scout-87310c93-0d54-4ef2-979d-acb1b9ae7d4c",
-    "source": "https://kwalee.com/careers",
-    "text": "\u30b2\u30fc\u30e0\u30b9\u30ab\u30a6\u30c8 (Game Scout)"
+    "url": "https://kwalee.com/pt-pt/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "portugu\u00eas europeu"
   },
   {
-    "url": "https://kwalee.com/careers/senior-fullstack-developer-f8effeed-7e0d-4df1-b5a6-382f69278daf",
-    "source": "https://kwalee.com/careers",
-    "text": "Senior Fullstack Developer"
+    "url": "https://kwalee.com/ro-ro/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "rom\u00e2n\u0103 (Rom\u00e2nia)"
   },
   {
-    "url": "https://kwalee.com/fr-fr/careers",
+    "url": "https://kwalee.com/de-de/publishing/pc-console/submit",
+    "source": "https://kwalee.com/publishing/pc-console/submit",
+    "text": "Deutsch (Deutschland)"
+  },
+  {
+    "url": "https://kwalee.com/careers/senior-market-intelligence-analyst-d7c5cf10-815f-41c8-b2b1-baa4f3b3abfa",
     "source": "https://kwalee.com/careers",
-    "text": "fran\u00e7ais (France)"
+    "text": "Senior Market Intelligence Analyst"
   },
   {
     "url": "https://kwalee.com/ro-ro/careers",
@@ -955,44 +925,14 @@
     "text": "rom\u00e2n\u0103 (Rom\u00e2nia)"
   },
   {
+    "url": "https://kwalee.com/hu-hu/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "magyar (Magyarorsz\u00e1g)"
+  },
+  {
     "url": "https://kwalee.com/vi-vn/careers",
     "source": "https://kwalee.com/careers",
     "text": "Ti\u1ebfng Vi\u1ec7t (Vi\u1ec7t Nam)"
-  },
-  {
-    "url": "https://kwalee.com/zh-tw/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "\u4e2d\u6587\uff08\u53f0\u7063\uff09"
-  },
-  {
-    "url": "https://kwalee.com/fi-fi/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "suomi (Suomi)"
-  },
-  {
-    "url": "https://kwalee.com/sv-se/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "svenska (Sverige)"
-  },
-  {
-    "url": "https://kwalee.com/it-it/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "italiano (Italia)"
-  },
-  {
-    "url": "https://kwalee.com/bg-bg/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f)"
-  },
-  {
-    "url": "https://kwalee.com/de-de/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "Deutsch (Deutschland)"
-  },
-  {
-    "url": "https://kwalee.com/es-ar/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "espa\u00f1ol (Argentina)"
   },
   {
     "url": "https://kwalee.com/el-gr/careers",
@@ -1000,14 +940,9 @@
     "text": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (\u0395\u03bb\u03bb\u03ac\u03b4\u03b1)"
   },
   {
-    "url": "https://kwalee.com/pl-pl/careers",
+    "url": "https://kwalee.com/ja-jp/careers",
     "source": "https://kwalee.com/careers",
-    "text": "polski (Polska)"
-  },
-  {
-    "url": "https://kwalee.com/es-mx/careers",
-    "source": "https://kwalee.com/careers",
-    "text": "espa\u00f1ol de M\u00e9xico"
+    "text": "\u65e5\u672c\u8a9e (\u65e5\u672c)"
   },
   {
     "url": "https://kwalee.com/th-th/careers",
@@ -1015,29 +950,34 @@
     "text": "\u0e44\u0e17\u0e22 (\u0e44\u0e17\u0e22)"
   },
   {
-    "url": "https://kwalee.com/cs-cz/careers",
+    "url": "https://kwalee.com/sv-se/careers",
     "source": "https://kwalee.com/careers",
-    "text": "\u010de\u0161tina (\u010cesko)"
+    "text": "svenska (Sverige)"
   },
   {
-    "url": "https://kwalee.com/da-dk/careers",
+    "url": "https://kwalee.com/es-ar/careers",
     "source": "https://kwalee.com/careers",
-    "text": "dansk (Danmark)"
+    "text": "espa\u00f1ol (Argentina)"
   },
   {
-    "url": "https://kwalee.com/pt-pt/careers",
+    "url": "https://kwalee.com/bg-bg/careers",
     "source": "https://kwalee.com/careers",
-    "text": "portugu\u00eas europeu"
+    "text": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 (\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f)"
   },
   {
-    "url": "https://kwalee.com/careers/senior-market-intelligence-analyst-836dbe68-84ac-42e7-8243-3cf81562e6fb",
+    "url": "https://kwalee.com/it-it/careers",
     "source": "https://kwalee.com/careers",
-    "text": "Senior Market Intelligence Analyst"
+    "text": "italiano (Italia)"
   },
   {
-    "url": "https://kwalee.com/ko-kr/careers",
+    "url": "https://kwalee.com/pt-br/careers",
     "source": "https://kwalee.com/careers",
-    "text": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)"
+    "text": "portugu\u00eas (Brasil)"
+  },
+  {
+    "url": "https://kwalee.com/id-id/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "Indonesia (Indonesia)"
   },
   {
     "url": "https://kwalee.com/tr-tr/careers",
@@ -1045,9 +985,44 @@
     "text": "T\u00fcrk\u00e7e (T\u00fcrkiye)"
   },
   {
+    "url": "https://kwalee.com/pl-pl/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "polski (Polska)"
+  },
+  {
     "url": "https://kwalee.com/ar-sa/careers",
     "source": "https://kwalee.com/careers",
     "text": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629)"
+  },
+  {
+    "url": "https://kwalee.com/da-dk/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "dansk (Danmark)"
+  },
+  {
+    "url": "https://kwalee.com/fr-fr/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "fran\u00e7ais (France)"
+  },
+  {
+    "url": "https://kwalee.com/careers/senior-market-intelligence-analyst-836dbe68-84ac-42e7-8243-3cf81562e6fb",
+    "source": "https://kwalee.com/careers",
+    "text": "Senior Market Intelligence Analyst"
+  },
+  {
+    "url": "https://kwalee.com/es-es/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "espa\u00f1ol de Espa\u00f1a"
+  },
+  {
+    "url": "https://kwalee.com/de-de/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "Deutsch (Deutschland)"
+  },
+  {
+    "url": "https://kwalee.com/careers/game-scout-87310c93-0d54-4ef2-979d-acb1b9ae7d4c",
+    "source": "https://kwalee.com/careers",
+    "text": "\u30b2\u30fc\u30e0\u30b9\u30ab\u30a6\u30c8 (Game Scout)"
   },
   {
     "url": "https://kwalee.com/zh-cn/careers",
@@ -1060,9 +1035,9 @@
     "text": "English"
   },
   {
-    "url": "https://kwalee.com/nb-no/careers",
+    "url": "https://kwalee.com/uk-ua/careers",
     "source": "https://kwalee.com/careers",
-    "text": "norsk bokm\u00e5l (Norge)"
+    "text": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (\u0423\u043a\u0440\u0430\u0457\u043d\u0430)"
   },
   {
     "url": "https://kwalee.com/nl-nl/careers",
@@ -1075,14 +1050,19 @@
     "text": "ASO Specialist"
   },
   {
-    "url": "https://kwalee.com/hu-hu/careers",
+    "url": "https://kwalee.com/ru-ru/careers",
     "source": "https://kwalee.com/careers",
-    "text": "magyar (Magyarorsz\u00e1g)"
+    "text": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439 (\u0420\u043e\u0441\u0441\u0438\u044f)"
   },
   {
-    "url": "https://kwalee.com/careers/senior-market-intelligence-analyst-d7c5cf10-815f-41c8-b2b1-baa4f3b3abfa",
+    "url": "https://kwalee.com/ko-kr/careers",
     "source": "https://kwalee.com/careers",
-    "text": "Senior Market Intelligence Analyst"
+    "text": "\ud55c\uad6d\uc5b4(\ub300\ud55c\ubbfc\uad6d)"
+  },
+  {
+    "url": "https://kwalee.com/cs-cz/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "\u010de\u0161tina (\u010cesko)"
   },
   {
     "url": "https://kwalee.com/careers#current-openings",
@@ -1090,19 +1070,34 @@
     "text": "Join Kwalee"
   },
   {
-    "url": "https://kwalee.com/id-id/careers",
+    "url": "https://kwalee.com/fi-fi/careers",
     "source": "https://kwalee.com/careers",
-    "text": "Indonesia (Indonesia)"
+    "text": "suomi (Suomi)"
   },
   {
-    "url": "https://kwalee.com/ja-jp/careers",
+    "url": "https://kwalee.com/zh-tw/careers",
     "source": "https://kwalee.com/careers",
-    "text": "\u65e5\u672c\u8a9e (\u65e5\u672c)"
+    "text": "\u4e2d\u6587\uff08\u53f0\u7063\uff09"
   },
   {
-    "url": "https://kwalee.com/es-es/careers",
+    "url": "https://kwalee.com/pt-pt/careers",
     "source": "https://kwalee.com/careers",
-    "text": "espa\u00f1ol de Espa\u00f1a"
+    "text": "portugu\u00eas europeu"
+  },
+  {
+    "url": "https://kwalee.com/nb-no/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "norsk bokm\u00e5l (Norge)"
+  },
+  {
+    "url": "https://kwalee.com/es-mx/careers",
+    "source": "https://kwalee.com/careers",
+    "text": "espa\u00f1ol de M\u00e9xico"
+  },
+  {
+    "url": "https://kwalee.com/blog/women-games-ambassador-alex-severino",
+    "source": "https://kwalee.com/about",
+    "text": "Women in Games Ambassador, Alex Severino"
   },
   {
     "url": "https://kwalee.com/blog/kwalee-approach-dogs-office",
@@ -1115,9 +1110,14 @@
     "text": "Our Women in Games Ambassador, Jahnavi Gupta"
   },
   {
-    "url": "https://kwalee.com/blog/women-games-ambassador-alex-severino",
-    "source": "https://kwalee.com/about",
-    "text": "Women in Games Ambassador, Alex Severino"
+    "url": "https://kwalee.com/contact/data-protection",
+    "source": "https://kwalee.com/contact",
+    "text": "Data Protection"
+  },
+  {
+    "url": "https://kwalee.com/contact/mobile-publishing",
+    "source": "https://kwalee.com/contact",
+    "text": "Mobile Publishing"
   },
   {
     "url": "https://maps.app.goo.gl/YygLkdTywnDA2u8Y9",
@@ -1125,14 +1125,14 @@
     "text": "View Directions"
   },
   {
-    "url": "https://kwalee.com/contact/careers",
+    "url": "https://kwalee.com/contact/mobile-game-support",
     "source": "https://kwalee.com/contact",
-    "text": "Careers"
+    "text": "Mobile Game Support"
   },
   {
-    "url": "https://kwalee.com/contact/mobile-publishing",
+    "url": "https://kwalee.com/contact/pcc-publishing",
     "source": "https://kwalee.com/contact",
-    "text": "Mobile Publishing"
+    "text": "PC & Console Publishing"
   },
   {
     "url": "https://kwalee.com/contact/press",
@@ -1145,9 +1145,9 @@
     "text": "Finance"
   },
   {
-    "url": "https://kwalee.com/contact/data-protection",
+    "url": "https://kwalee.com/contact/careers",
     "source": "https://kwalee.com/contact",
-    "text": "Data Protection"
+    "text": "Careers"
   },
   {
     "url": "https://maps.app.goo.gl/8grcK6sqnNRmBLyQ7",
@@ -1155,24 +1155,14 @@
     "text": "View Directions"
   },
   {
-    "url": "https://kwalee.com/contact/pcc-publishing",
-    "source": "https://kwalee.com/contact",
-    "text": "PC & Console Publishing"
-  },
-  {
-    "url": "https://kwalee.com/contact/mobile-game-support",
-    "source": "https://kwalee.com/contact",
-    "text": "Mobile Game Support"
-  },
-  {
     "url": "https://kwalee.com/contact/legal",
     "source": "https://kwalee.com/contact/legal",
-    "text": "Work at Kwalee"
+    "text": "Mobile Games"
   },
   {
-    "url": "https://kwalee.com/blog/games-to-play-while-travelling",
-    "source": "https://kwalee.com/join-us",
-    "text": "6 Mobile Games To Play While Travelling"
+    "url": "https://kwalee.com/investors#contact",
+    "source": "https://kwalee.com/investors",
+    "text": "Contact us"
   },
   {
     "url": "https://kwalee.com/blog/5-common-games-company-mistakes-were-glad-kwalee-avoided",
@@ -1180,19 +1170,19 @@
     "text": "5 Common Games Company Mistakes We\u2019re Glad Kwalee Avoided"
   },
   {
+    "url": "https://kwalee.com/blog/games-to-play-while-travelling",
+    "source": "https://kwalee.com/join-us",
+    "text": "6 Mobile Games To Play While Travelling"
+  },
+  {
     "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/categories-name.csv",
     "source": "https://kwalee.com/legal/eu-dsa-report",
     "text": "Categories Name"
   },
   {
-    "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/overall-figures.csv",
+    "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/report-identification-v2.csv",
     "source": "https://kwalee.com/legal/eu-dsa-report",
-    "text": "Overall Figures"
-  },
-  {
-    "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/notices.csv",
-    "source": "https://kwalee.com/legal/eu-dsa-report",
-    "text": "Notices"
+    "text": "Report Identification"
   },
   {
     "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/statement.csv",
@@ -1200,9 +1190,14 @@
     "text": "Statement"
   },
   {
-    "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/report-identification-v2.csv",
+    "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/notices.csv",
     "source": "https://kwalee.com/legal/eu-dsa-report",
-    "text": "Report Identification"
+    "text": "Notices"
+  },
+  {
+    "url": "https://kwaleeweb-live.s3.us-west-2.amazonaws.com/eu-dsa-report/2024/overall-figures.csv",
+    "source": "https://kwalee.com/legal/eu-dsa-report",
+    "text": "Overall Figures"
   },
   {
     "url": "https://www.kwalee.com/eula-pcc",
@@ -1220,9 +1215,9 @@
     "text": "https://kwalee.com/privacy-policy"
   },
   {
-    "url": "https://www.kwalee.com/legal/pp-pcc",
+    "url": "https://www.kwalee.com/eula-pcc/en-GB",
     "source": "https://kwalee.com/legal/eula-pcc",
-    "text": "Privacy Policy"
+    "text": "www.kwalee.com/eula-pcc/"
   },
   {
     "url": "https://kwalee.com/legal/eula-pcc-legacy",
@@ -1230,19 +1225,34 @@
     "text": "https://www.kwalee.com/legal/eula-pcc-legacy"
   },
   {
-    "url": "https://www.kwalee.com/eula-pcc/en-GB",
+    "url": "https://www.kwalee.com/legal/pp-pcc",
     "source": "https://kwalee.com/legal/eula-pcc",
-    "text": "www.kwalee.com/eula-pcc/"
+    "text": "Privacy Policy"
+  },
+  {
+    "url": "https://kwalee.com/legal/eula-pcc-robobeat",
+    "source": "https://kwalee.com/legal/eula-pcc-robobeat",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "http://www.kwalee.com",
+    "source": "https://kwalee.com/legal/eula-pcc-robobeat",
+    "text": "www.kwalee.com"
+  },
+  {
+    "url": "https://www.kwalee.com/robobeat-privacy-policy",
+    "source": "https://kwalee.com/legal/eula-pcc-robobeat",
+    "text": "https://www.kwalee.com/robobeat-privacy-policy"
+  },
+  {
+    "url": "https://www.kwalee.com/eula-pcc/",
+    "source": "https://kwalee.com/legal/eula-pcc-robobeat",
+    "text": "https://www.kwalee.com/eula-pcc/"
   },
   {
     "url": "https://kwalee.com/legal/eula-pcc-wildmender",
     "source": "https://kwalee.com/legal/eula-pcc-wildmender",
-    "text": "Work at Kwalee"
-  },
-  {
-    "url": "https://kwalee.com/pp-pcc/",
-    "source": "https://kwalee.com/legal/eula-pcc-wildmender",
-    "text": "https://kwalee.com/pp-pcc"
+    "text": "About Us"
   },
   {
     "url": "https://www.kwalee.com",
@@ -1250,14 +1260,14 @@
     "text": "https://www.kwalee.com"
   },
   {
+    "url": "https://kwalee.com/pp-pcc/",
+    "source": "https://kwalee.com/legal/eula-pcc-wildmender",
+    "text": "https://kwalee.com/pp-pcc"
+  },
+  {
     "url": "https://kwalee.com/legal/pp-pcc-robobeat",
     "source": "https://kwalee.com/legal/pp-pcc",
     "text": "www.kwalee.com/pp-pcc-robobeat"
-  },
-  {
-    "url": "https://kwalee.com/legal/pp-pcc-feign",
-    "source": "https://kwalee.com/legal/pp-pcc",
-    "text": "www.kwalee.com/pp-pcc-feign"
   },
   {
     "url": "https://kwalee.com/legal/pp-pcc-wildmender",
@@ -1265,24 +1275,14 @@
     "text": "www.kwalee.com/pp-pcc-wildmender"
   },
   {
+    "url": "https://kwalee.com/legal/pp-pcc-feign",
+    "source": "https://kwalee.com/legal/pp-pcc",
+    "text": "www.kwalee.com/pp-pcc-feign"
+  },
+  {
     "url": "https://forms.gle/YZpzZsNWem7xZ43s8",
     "source": "https://kwalee.com/legal/pp-pcc-robobeat",
     "text": "webform"
-  },
-  {
-    "url": "https://ogury.com/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Orgury"
-  },
-  {
-    "url": "https://support.google.com/admob/answer/6128543",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Admob"
-  },
-  {
-    "url": "https://www.pangleglobal.com/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Pangle"
   },
   {
     "url": "https://www.mobvista.com/en/privacy",
@@ -1290,19 +1290,14 @@
     "text": "Mobvista"
   },
   {
-    "url": "https://www.appsflyer.com/legal/privacy-policy/",
+    "url": "https://support.snapchat.com/en-GB/article/games-data-privacy",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Appsflyer"
+    "text": "Snapchat"
   },
   {
-    "url": "https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/index.html",
+    "url": "https://bidmachine.io/privacy-policy",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Verizon"
-  },
-  {
-    "url": "https://www.adcolony.com/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Adcolony"
+    "text": "BidMachine"
   },
   {
     "url": "https://www.appnext.com/privacy-policy-oem-operators/",
@@ -1310,49 +1305,9 @@
     "text": "AppNext"
   },
   {
-    "url": "https://www.mobileaction.co/privacy-policy/",
+    "url": "https://verve.com/product-privacy-policies",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Mobileaction (SearchAds main company)"
-  },
-  {
-    "url": "https://huq.io/our-privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "HUQ"
-  },
-  {
-    "url": "https://www.applovin.com/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Applovin"
-  },
-  {
-    "url": "https://huq.io/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "https://huq.io/privacy-policy"
-  },
-  {
-    "url": "https://firebase.google.com/support/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Firebase"
-  },
-  {
-    "url": "https://policies.google.com/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Google AdManager"
-  },
-  {
-    "url": "https://www.fyber.com/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Fyber"
-  },
-  {
-    "url": "https://www.oceanengine.com/extra/legal",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "OceanEngine (Tiktok CN)"
-  },
-  {
-    "url": "https://www.nativex.com/en/privacy/",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "NativeX (A Mobvista company)"
+    "text": "Verve Group"
   },
   {
     "url": "https://www.inmobi.com/privacy-policy",
@@ -1365,84 +1320,19 @@
     "text": "Liftoff"
   },
   {
-    "url": "https://verve.com/product-privacy-policies",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Verve Group"
-  },
-  {
-    "url": "https://advertising.amazon.com/legal/product-terms",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Amazon Advertising LLC and/or its Affiliates"
-  },
-  {
-    "url": "https://www.adaction.com/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Adaction"
-  },
-  {
-    "url": "http://vungle.com/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Vungle"
-  },
-  {
     "url": "https://policies.google.com/privacy?hl=en",
     "source": "https://kwalee.com/legal/privacy-policy",
     "text": "Google Ads"
   },
   {
-    "url": "https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy",
+    "url": "https://www.appsflyer.com/legal/privacy-policy/",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "IronSource"
+    "text": "Appsflyer"
   },
   {
-    "url": "https://www.facebook.com/privacy/explanation",
+    "url": "https://ogury.com/privacy-policy",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Facebook"
-  },
-  {
-    "url": "https://bidmachine.io/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "BidMachine"
-  },
-  {
-    "url": "https://legal.my.com/us/mytarget/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "MyTarget"
-  },
-  {
-    "url": "https://adjoe.io/privacy/",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Adjoe"
-  },
-  {
-    "url": "https://privacy.linkedin.com/",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Linkedin"
-  },
-  {
-    "url": "https://www.apple.com/legal/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Apple Search Ads"
-  },
-  {
-    "url": "https://www.tiktok.com/en-uk/privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "TikTok Inc."
-  },
-  {
-    "url": "https://www.mintegral.com/en/privacy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Mintegral"
-  },
-  {
-    "url": "https://huq.io/data-partners",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "https://huq.io/data-partners"
-  },
-  {
-    "url": "https://www.tapjoy.com/legal/#privacy-policy",
-    "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Tapjoy"
+    "text": "Orgury"
   },
   {
     "url": "https://twitter.com/en/privacy",
@@ -1450,14 +1340,49 @@
     "text": "Twitter"
   },
   {
-    "url": "https://unity3d.com/legal/privacy-policy",
+    "url": "https://huq.io/privacy-policy",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Unity"
+    "text": "https://huq.io/privacy-policy"
   },
   {
-    "url": "https://support.snapchat.com/en-GB/article/games-data-privacy",
+    "url": "https://www.applovin.com/privacy",
     "source": "https://kwalee.com/legal/privacy-policy",
-    "text": "Snapchat"
+    "text": "Applovin"
+  },
+  {
+    "url": "https://www.oceanengine.com/extra/legal",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "OceanEngine (Tiktok CN)"
+  },
+  {
+    "url": "https://policies.google.com/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Google AdManager"
+  },
+  {
+    "url": "https://huq.io/our-privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "HUQ"
+  },
+  {
+    "url": "https://www.facebook.com/privacy/explanation",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Facebook"
+  },
+  {
+    "url": "https://advertising.amazon.com/legal/product-terms",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Amazon Advertising LLC and/or its Affiliates"
+  },
+  {
+    "url": "https://firebase.google.com/support/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Firebase"
+  },
+  {
+    "url": "https://www.mobileaction.co/privacy-policy/",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Mobileaction (SearchAds main company)"
   },
   {
     "url": "https://www.hyprmx.com/privacy-policy",
@@ -1465,19 +1390,94 @@
     "text": "HyprMx"
   },
   {
-    "url": "https://www.kwalee.com/privacy-policy/",
-    "source": "https://kwalee.com/legal/terms-of-use",
-    "text": "here"
+    "url": "https://www.tiktok.com/en-uk/privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "TikTok Inc."
   },
   {
-    "url": "https://www.kwalee.com/contact-us/",
-    "source": "https://kwalee.com/legal/terms-of-use",
-    "text": "https://www.kwalee.com/contact-us/"
+    "url": "https://www.apple.com/legal/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Apple Search Ads"
   },
   {
-    "url": "https://kwalee-optimization-team.s3.us-west-2.amazonaws.com/Kwalee+Game+Jam+Challenge++Kwalee+Developer+Portal+Submission+Terms+and+Conditions+Terms+and+Conditions(43143402.2)(44162751.2).pdf?op-61",
-    "source": "https://kwalee.com/legal/terms-of-use",
-    "text": "terms and conditions"
+    "url": "https://www.mintegral.com/en/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Mintegral"
+  },
+  {
+    "url": "https://www.tapjoy.com/legal/#privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Tapjoy"
+  },
+  {
+    "url": "https://legal.my.com/us/mytarget/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "MyTarget"
+  },
+  {
+    "url": "https://huq.io/data-partners",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "https://huq.io/data-partners"
+  },
+  {
+    "url": "https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/index.html",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Verizon"
+  },
+  {
+    "url": "https://www.pangleglobal.com/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Pangle"
+  },
+  {
+    "url": "https://www.adcolony.com/privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Adcolony"
+  },
+  {
+    "url": "https://adjoe.io/privacy/",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Adjoe"
+  },
+  {
+    "url": "http://vungle.com/privacy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Vungle"
+  },
+  {
+    "url": "https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "IronSource"
+  },
+  {
+    "url": "https://www.nativex.com/en/privacy/",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "NativeX (A Mobvista company)"
+  },
+  {
+    "url": "https://privacy.linkedin.com/",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Linkedin"
+  },
+  {
+    "url": "https://unity3d.com/legal/privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Unity"
+  },
+  {
+    "url": "https://www.fyber.com/privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Fyber"
+  },
+  {
+    "url": "https://support.google.com/admob/answer/6128543",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Admob"
+  },
+  {
+    "url": "https://www.adaction.com/privacy-policy",
+    "source": "https://kwalee.com/legal/privacy-policy",
+    "text": "Adaction"
   },
   {
     "url": "https://developer.kwalee.com/",
@@ -1485,54 +1485,89 @@
     "text": "https://developer.kwalee.com/"
   },
   {
+    "url": "https://www.kwalee.com/contact-us/",
+    "source": "https://kwalee.com/legal/terms-of-use",
+    "text": "https://www.kwalee.com/contact-us/"
+  },
+  {
+    "url": "https://www.kwalee.com/privacy-policy/",
+    "source": "https://kwalee.com/legal/terms-of-use",
+    "text": "here"
+  },
+  {
+    "url": "https://kwalee-optimization-team.s3.us-west-2.amazonaws.com/Kwalee+Game+Jam+Challenge++Kwalee+Developer+Portal+Submission+Terms+and+Conditions+Terms+and+Conditions(43143402.2)(44162751.2).pdf?op-61",
+    "source": "https://kwalee.com/legal/terms-of-use",
+    "text": "terms and conditions"
+  },
+  {
     "url": "https://kwalee.com/blog/author/adrika-swaminathan",
     "source": "https://kwalee.com/blog/author/adrika-swaminathan",
     "text": "Work at Kwalee"
   },
   {
+    "url": "https://kwalee.com/blog/author/alex-burnett",
+    "source": "https://kwalee.com/blog/author/alex-burnett",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/author/berkan-kirmit",
     "source": "https://kwalee.com/blog/author/berkan-kirmit",
-    "text": "About Us"
+    "text": "Mobile Games"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/bruno-balistrieri",
+    "source": "https://kwalee.com/blog/author/bruno-balistrieri",
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/author/connor-taylor",
     "source": "https://kwalee.com/blog/author/connor-taylor",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/david-darling",
     "source": "https://kwalee.com/blog/author/david-darling",
-    "text": "About Us"
+    "text": "PC & Console Games"
   },
   {
     "url": "https://kwalee.com/blog/author/georgina-venman",
     "source": "https://kwalee.com/blog/author/georgina-venman",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/harouna-camara-and-christophe-chocho",
     "source": "https://kwalee.com/blog/author/harouna-camara-and-christophe-chocho",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/jack-griffin",
     "source": "https://kwalee.com/blog/author/jack-griffin",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/jack-richardson",
+    "source": "https://kwalee.com/blog/author/jack-richardson",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/jahnavi-gupta",
     "source": "https://kwalee.com/blog/author/jahnavi-gupta",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/jake-parker",
     "source": "https://kwalee.com/blog/author/jake-parker",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/jason-falcus",
     "source": "https://kwalee.com/blog/author/jason-falcus",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/joanna-mazur",
+    "source": "https://kwalee.com/blog/author/joanna-mazur",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/john-wright",
@@ -1540,9 +1575,14 @@
     "text": "PC & Console Games"
   },
   {
+    "url": "https://kwalee.com/blog/author/kwalee-team",
+    "source": "https://kwalee.com/blog/author/kwalee-team",
+    "text": "About Us"
+  },
+  {
     "url": "https://kwalee.com/blog/author/leon-paul-lynn",
     "source": "https://kwalee.com/blog/author/leon-paul-lynn",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/author/madison-plantier",
@@ -1552,12 +1592,32 @@
   {
     "url": "https://kwalee.com/blog/author/matthew-barter",
     "source": "https://kwalee.com/blog/author/matthew-barter",
-    "text": "PC & Console Games"
+    "text": "Mobile Games"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/meredith-stephenson",
+    "source": "https://kwalee.com/blog/author/meredith-stephenson",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/milly",
+    "source": "https://kwalee.com/blog/author/milly",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/nilay-patel",
     "source": "https://kwalee.com/blog/author/nilay-patel",
-    "text": "About Us"
+    "text": "Mobile Games"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/pedro-caria",
+    "source": "https://kwalee.com/blog/author/pedro-caria",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/author/rohit-yadav",
+    "source": "https://kwalee.com/blog/author/rohit-yadav",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/sena-bektas",
@@ -1567,22 +1627,22 @@
   {
     "url": "https://kwalee.com/blog/author/simon-platt",
     "source": "https://kwalee.com/blog/author/simon-platt",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/tom-cunliffe",
     "source": "https://kwalee.com/blog/author/tom-cunliffe",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/valery-martyniuk",
     "source": "https://kwalee.com/blog/author/valery-martyniuk",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/author/waqas-khan-and-sayeed-rahman",
     "source": "https://kwalee.com/blog/author/waqas-khan-and-sayeed-rahman",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/tag/gamedev",
@@ -1592,57 +1652,72 @@
   {
     "url": "https://kwalee.com/blog/tag/gaming",
     "source": "https://kwalee.com/blog/tag/gaming",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/tag/industry",
     "source": "https://kwalee.com/blog/tag/industry",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/tag/publishing",
     "source": "https://kwalee.com/blog/tag/publishing",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/tag/technology",
     "source": "https://kwalee.com/blog/tag/technology",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/tag/worklife",
+    "source": "https://kwalee.com/blog/tag/worklife",
     "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/100-team-members",
     "source": "https://kwalee.com/blog/100-team-members",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/5-profitable-game-development-technologies-rise",
     "source": "https://kwalee.com/blog/5-profitable-game-development-technologies-rise",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/5-tips-making-attractive-game-prototypes-game-publishers",
     "source": "https://kwalee.com/blog/5-tips-making-attractive-game-prototypes-game-publishers",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/500-million-downloads",
     "source": "https://kwalee.com/blog/500-million-downloads",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/9-reasons-why-you-should-work-mobile-gaming-industry",
     "source": "https://kwalee.com/blog/9-reasons-why-you-should-work-mobile-gaming-industry",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/Gamemasters-summit-digital-event",
     "source": "https://kwalee.com/blog/Gamemasters-summit-digital-event",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/Simon-Platt-Head-of-Development-Spotlight-Podcast",
+    "source": "https://kwalee.com/blog/Simon-Platt-Head-of-Development-Spotlight-Podcast",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/Wildmender-Game-Merchandise",
     "source": "https://kwalee.com/blog/Wildmender-Game-Merchandise",
     "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/adrian-garton",
+    "source": "https://kwalee.com/blog/adrian-garton",
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/ai-in-marketing-to-fear-or-to-embrace-it",
@@ -1652,26 +1727,41 @@
   {
     "url": "https://kwalee.com/blog/all-you-need-know-about-fail-ads",
     "source": "https://kwalee.com/blog/all-you-need-know-about-fail-ads",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/all-you-need-know-about-hypersims",
     "source": "https://kwalee.com/blog/all-you-need-know-about-hypersims",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/all-you-need-to-know-sunset-games",
     "source": "https://kwalee.com/blog/all-you-need-to-know-sunset-games",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/announcing-kwalee-game-jam",
     "source": "https://kwalee.com/blog/announcing-kwalee-game-jam",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/announcing-tens-nintendo-switch",
+    "source": "https://kwalee.com/blog/announcing-tens-nintendo-switch",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/another-celebration-one-special-day-kwalee-specialeffect",
+    "source": "https://kwalee.com/blog/another-celebration-one-special-day-kwalee-specialeffect",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/app-store-optimisation-for-mobile-games",
     "source": "https://kwalee.com/blog/app-store-optimisation-for-mobile-games",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/apprenticeship-at-kwalee",
+    "source": "https://kwalee.com/blog/apprenticeship-at-kwalee",
     "text": "Work at Kwalee"
   },
   {
@@ -1682,27 +1772,27 @@
   {
     "url": "https://kwalee.com/blog/becoming-a-video-game-story-writer",
     "source": "https://kwalee.com/blog/becoming-a-video-game-story-writer",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/best-gaming-countries",
     "source": "https://kwalee.com/blog/best-gaming-countries",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/best-indie-game-2024",
     "source": "https://kwalee.com/blog/best-indie-game-2024",
-    "text": "About Us"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/can-roguelikes-teach-us-what-indie-gamers-really-want",
     "source": "https://kwalee.com/blog/can-roguelikes-teach-us-what-indie-gamers-really-want",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/career-advice-with-william-cox",
     "source": "https://kwalee.com/blog/career-advice-with-william-cox",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/celebrating-qa-team-unsung-heroes-video-game-industry",
@@ -1715,9 +1805,14 @@
     "text": "About Us"
   },
   {
+    "url": "https://kwalee.com/blog/cozy-games-with-kwalee",
+    "source": "https://kwalee.com/blog/cozy-games-with-kwalee",
+    "text": "Mobile Games"
+  },
+  {
     "url": "https://kwalee.com/blog/creative-work-wednesdays",
     "source": "https://kwalee.com/blog/creative-work-wednesdays",
-    "text": "About Us"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/cross-platform-development",
@@ -1725,29 +1820,44 @@
     "text": "Work at Kwalee"
   },
   {
+    "url": "https://kwalee.com/blog/david-darling-on-kwalee-10-anniversary",
+    "source": "https://kwalee.com/blog/david-darling-on-kwalee-10-anniversary",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/difference-between-cover-letter-and-resume-and-how-make-them-better",
     "source": "https://kwalee.com/blog/difference-between-cover-letter-and-resume-and-how-make-them-better",
-    "text": "About Us"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/draw-it-soars-past-100-million-downloads-worldwide",
+    "source": "https://kwalee.com/blog/draw-it-soars-past-100-million-downloads-worldwide",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/essential-role-of-software-development-kit-sdk",
     "source": "https://kwalee.com/blog/essential-role-of-software-development-kit-sdk",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/eternal-hope-out-now-more-pc-console-titles-come",
     "source": "https://kwalee.com/blog/eternal-hope-out-now-more-pc-console-titles-come",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/explore-attraction-our-new-game-jam-buildbox-starting-now",
     "source": "https://kwalee.com/blog/explore-attraction-our-new-game-jam-buildbox-starting-now",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/facebook-unity-sdk-what-exactly-it",
+    "source": "https://kwalee.com/blog/facebook-unity-sdk-what-exactly-it",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/first-jobs-of-ceos",
     "source": "https://kwalee.com/blog/first-jobs-of-ceos",
-    "text": "Mobile Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/follow-these-3-simple-steps-make-enjoyable-hyper-casual-games",
@@ -1755,19 +1865,29 @@
     "text": "Work at Kwalee"
   },
   {
+    "url": "https://kwalee.com/blog/game-programming-guide",
+    "source": "https://kwalee.com/blog/game-programming-guide",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/gamebiz-recap-april-2022",
     "source": "https://kwalee.com/blog/gamebiz-recap-april-2022",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/games-industry-trends",
     "source": "https://kwalee.com/blog/games-industry-trends",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/gaming-for-good-wildmender-irc-kwalee-partnership",
+    "source": "https://kwalee.com/blog/gaming-for-good-wildmender-irc-kwalee-partnership",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/getting-started-on-twitch",
     "source": "https://kwalee.com/blog/getting-started-on-twitch",
-    "text": "Mobile Games"
+    "text": "PC & Console Games"
   },
   {
     "url": "https://kwalee.com/blog/green-gaming-sustainable-game-development",
@@ -1777,22 +1897,22 @@
   {
     "url": "https://kwalee.com/blog/happy-diwali-kwalee",
     "source": "https://kwalee.com/blog/happy-diwali-kwalee",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/hitseeker-by-kwalee",
     "source": "https://kwalee.com/blog/hitseeker-by-kwalee",
-    "text": "PC & Console Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/how-data-games-industry-game-changer-studios-today",
     "source": "https://kwalee.com/blog/how-data-games-industry-game-changer-studios-today",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-did-covid-19-pandemic-change-our-gaming-habits",
     "source": "https://kwalee.com/blog/how-did-covid-19-pandemic-change-our-gaming-habits",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-do-i-market-test-games-i-make",
@@ -1805,39 +1925,49 @@
     "text": "About Us"
   },
   {
+    "url": "https://kwalee.com/blog/how-make-great-game-trailer",
+    "source": "https://kwalee.com/blog/how-make-great-game-trailer",
+    "text": "Mobile Games"
+  },
+  {
     "url": "https://kwalee.com/blog/how-make-great-hyper-casual-game-prototype",
     "source": "https://kwalee.com/blog/how-make-great-hyper-casual-game-prototype",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-make-most-out-games-conference",
     "source": "https://kwalee.com/blog/how-make-most-out-games-conference",
-    "text": "About Us"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/how-to-be-successful-making-mobile-games",
     "source": "https://kwalee.com/blog/how-to-be-successful-making-mobile-games",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-to-become-a-game-developer-in-6-months",
     "source": "https://kwalee.com/blog/how-to-become-a-game-developer-in-6-months",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-to-make-a-game-in-two-days",
     "source": "https://kwalee.com/blog/how-to-make-a-game-in-two-days",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-to-make-music-for-video-games",
     "source": "https://kwalee.com/blog/how-to-make-music-for-video-games",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/how-turn-game-prototype-hit-hyper-casual-mobile-game",
     "source": "https://kwalee.com/blog/how-turn-game-prototype-hit-hyper-casual-mobile-game",
-    "text": "Work at Kwalee"
+    "text": "PC & Console Games"
+  },
+  {
+    "url": "https://kwalee.com/blog/hybrid-games-guide",
+    "source": "https://kwalee.com/blog/hybrid-games-guide",
+    "text": "PC & Console Games"
   },
   {
     "url": "https://kwalee.com/blog/hyper-casual-lessons-from-draw-it",
@@ -1847,12 +1977,22 @@
   {
     "url": "https://kwalee.com/blog/ingenious-game-design-tips-tricks-save-time-enhance-fun",
     "source": "https://kwalee.com/blog/ingenious-game-design-tips-tricks-save-time-enhance-fun",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/inside-success-airport-security",
+    "source": "https://kwalee.com/blog/inside-success-airport-security",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/inside-success-build-your-vehicle",
+    "source": "https://kwalee.com/blog/inside-success-build-your-vehicle",
     "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/inside-success-perfect-coffee-3d",
     "source": "https://kwalee.com/blog/inside-success-perfect-coffee-3d",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/interview-product-marketing-manager-jack-richardson",
@@ -1860,9 +2000,14 @@
     "text": "About Us"
   },
   {
+    "url": "https://kwalee.com/blog/interview-with-tom-bromwich",
+    "source": "https://kwalee.com/blog/interview-with-tom-bromwich",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/introducing-die-blade-coming-pc-consoles-2022",
     "source": "https://kwalee.com/blog/introducing-die-blade-coming-pc-consoles-2022",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/introducing-hordes-of-hunger",
@@ -1872,57 +2017,82 @@
   {
     "url": "https://kwalee.com/blog/introducing-hypercasual-heroes",
     "source": "https://kwalee.com/blog/introducing-hypercasual-heroes",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/introducing-kwalee-bengaluru-our-new-studio",
     "source": "https://kwalee.com/blog/introducing-kwalee-bengaluru-our-new-studio",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/introducing-scathe-coming-pc-consoles-2022",
     "source": "https://kwalee.com/blog/introducing-scathe-coming-pc-consoles-2022",
-    "text": "Mobile Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/introducing-your-top-mobile-game-publisher-worldwide-us",
     "source": "https://kwalee.com/blog/introducing-your-top-mobile-game-publisher-worldwide-us",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/is-hyper-casual-hyper-different",
+    "source": "https://kwalee.com/blog/is-hyper-casual-hyper-different",
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/join-our-hyper-casual-game-jam-buildbox",
     "source": "https://kwalee.com/blog/join-our-hyper-casual-game-jam-buildbox",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/jolly-good-fellow-our-ceo-earned-fellowship",
+    "source": "https://kwalee.com/blog/jolly-good-fellow-our-ceo-earned-fellowship",
     "text": "About Us"
+  },
+  {
+    "url": "https://kwalee.com/blog/kwalee-accelerated-development-cycles-and-grew-arpdau-using-balancys-liveops-tools",
+    "source": "https://kwalee.com/blog/kwalee-accelerated-development-cycles-and-grew-arpdau-using-balancys-liveops-tools",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/kwalee-and-covid-19-how-are-we-adapting",
     "source": "https://kwalee.com/blog/kwalee-and-covid-19-how-are-we-adapting",
-    "text": "PC & Console Games"
+    "text": "About Us"
+  },
+  {
+    "url": "https://kwalee.com/blog/kwalee-hits-1-billion-mobile-game-downloads-thanks-playing",
+    "source": "https://kwalee.com/blog/kwalee-hits-1-billion-mobile-game-downloads-thanks-playing",
+    "text": "Mobile Games"
+  },
+  {
+    "url": "https://kwalee.com/blog/kwalee-replaces-driving-tests-with-new-mobile-game",
+    "source": "https://kwalee.com/blog/kwalee-replaces-driving-tests-with-new-mobile-game",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/kwalee-shines-dataais-top-publisher-awards-2023",
     "source": "https://kwalee.com/blog/kwalee-shines-dataais-top-publisher-awards-2023",
-    "text": "Work at Kwalee"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/kwalee-top-40-mobile-game-makers-2024",
     "source": "https://kwalee.com/blog/kwalee-top-40-mobile-game-makers-2024",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/kwalee-top-mobile-game-makers-2023",
     "source": "https://kwalee.com/blog/kwalee-top-mobile-game-makers-2023",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/kwalee-tops-app-annie-uk-rankings",
     "source": "https://kwalee.com/blog/kwalee-tops-app-annie-uk-rankings",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/kwalee101-we-now-have-101-vacant-game-jobs",
     "source": "https://kwalee.com/blog/kwalee101-we-now-have-101-vacant-game-jobs",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/makeover-studio-3d-lessons",
@@ -1932,17 +2102,17 @@
   {
     "url": "https://kwalee.com/blog/marketing-games-social-media-guide-game-studios",
     "source": "https://kwalee.com/blog/marketing-games-social-media-guide-game-studios",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/master-push-notification-strategy",
     "source": "https://kwalee.com/blog/master-push-notification-strategy",
-    "text": "PC & Console Games"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/mastering-player-profiles",
     "source": "https://kwalee.com/blog/mastering-player-profiles",
-    "text": "PC & Console Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/maverick-marketing",
@@ -1955,18 +2125,38 @@
     "text": "Work at Kwalee"
   },
   {
+    "url": "https://kwalee.com/blog/meet-our-new-head-publishing-simon-prytherch",
+    "source": "https://kwalee.com/blog/meet-our-new-head-publishing-simon-prytherch",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/meet-our-new-vice-president-hr-adrian-garton",
     "source": "https://kwalee.com/blog/meet-our-new-vice-president-hr-adrian-garton",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/mena-games",
+    "source": "https://kwalee.com/blog/mena-games",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/mobile-and-video-game-accessories",
     "source": "https://kwalee.com/blog/mobile-and-video-game-accessories",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/mobile-game-design-tips",
     "source": "https://kwalee.com/blog/mobile-game-design-tips",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/mobile-game-monetisation-101-part-1",
+    "source": "https://kwalee.com/blog/mobile-game-monetisation-101-part-1",
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/mobile-game-monetisation-101-part-2",
+    "source": "https://kwalee.com/blog/mobile-game-monetisation-101-part-2",
     "text": "Work at Kwalee"
   },
   {
@@ -1975,24 +2165,34 @@
     "text": "About Us"
   },
   {
+    "url": "https://kwalee.com/blog/most-game-job-applicants-are-rejected-because-they-dont-do",
+    "source": "https://kwalee.com/blog/most-game-job-applicants-are-rejected-because-they-dont-do",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/our-expansion-continues-launch-kwalee-china",
     "source": "https://kwalee.com/blog/our-expansion-continues-launch-kwalee-china",
-    "text": "PC & Console Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/paid-to-play-games",
     "source": "https://kwalee.com/blog/paid-to-play-games",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/panel-discussion-whats-next-hyper-casual-games",
     "source": "https://kwalee.com/blog/panel-discussion-whats-next-hyper-casual-games",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/people-make-kwalee-adam-willis",
     "source": "https://kwalee.com/blog/people-make-kwalee-adam-willis",
-    "text": "Mobile Games"
+    "text": "About Us"
+  },
+  {
+    "url": "https://kwalee.com/blog/people-make-kwalee-andrew-graham",
+    "source": "https://kwalee.com/blog/people-make-kwalee-andrew-graham",
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/people-make-kwalee-carla-evans",
@@ -2005,14 +2205,19 @@
     "text": "Work at Kwalee"
   },
   {
+    "url": "https://kwalee.com/blog/people-make-kwalee-international-womens-day",
+    "source": "https://kwalee.com/blog/people-make-kwalee-international-womens-day",
+    "text": "About Us"
+  },
+  {
     "url": "https://kwalee.com/blog/people-make-kwalee-jen-koch",
     "source": "https://kwalee.com/blog/people-make-kwalee-jen-koch",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/people-make-kwalee-magda-mackiewicz",
     "source": "https://kwalee.com/blog/people-make-kwalee-magda-mackiewicz",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/people-make-kwalee-max-everingham",
@@ -2020,9 +2225,14 @@
     "text": "About Us"
   },
   {
+    "url": "https://kwalee.com/blog/people-make-kwalee-simon-platt",
+    "source": "https://kwalee.com/blog/people-make-kwalee-simon-platt",
+    "text": "Mobile Games"
+  },
+  {
     "url": "https://kwalee.com/blog/pet-power-at-kwalee",
     "source": "https://kwalee.com/blog/pet-power-at-kwalee",
-    "text": "PC & Console Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/portugal-kwalees-new-studio-here",
@@ -2032,22 +2242,22 @@
   {
     "url": "https://kwalee.com/blog/prototype-testing-launch",
     "source": "https://kwalee.com/blog/prototype-testing-launch",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/publishing-kwalee-interview-app-design-company",
     "source": "https://kwalee.com/blog/publishing-kwalee-interview-app-design-company",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/publishing-kwalee-pronetis-games-developer-overtake",
     "source": "https://kwalee.com/blog/publishing-kwalee-pronetis-games-developer-overtake",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/publishing-kwalee-tictales-developers-perfume-love",
     "source": "https://kwalee.com/blog/publishing-kwalee-tictales-developers-perfume-love",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/recap-of-2023-with-kwalee",
@@ -2055,34 +2265,44 @@
     "text": "Work at Kwalee"
   },
   {
+    "url": "https://kwalee.com/blog/register-for-kickstart-with-kwalee-bangalore",
+    "source": "https://kwalee.com/blog/register-for-kickstart-with-kwalee-bangalore",
+    "text": "Work at Kwalee"
+  },
+  {
     "url": "https://kwalee.com/blog/reward-videos-an-expert-guide-to-using-these-ads-in-your-mobile-game",
     "source": "https://kwalee.com/blog/reward-videos-an-expert-guide-to-using-these-ads-in-your-mobile-game",
-    "text": "Work at Kwalee"
+    "text": "About Us"
+  },
+  {
+    "url": "https://kwalee.com/blog/safe-in-our-world",
+    "source": "https://kwalee.com/blog/safe-in-our-world",
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/save-game-data",
     "source": "https://kwalee.com/blog/save-game-data",
-    "text": "PC & Console Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/scathe-our-bullet-hell-fps-is-now-out",
     "source": "https://kwalee.com/blog/scathe-our-bullet-hell-fps-is-now-out",
-    "text": "About Us"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/such-policy-many-dog-yay",
     "source": "https://kwalee.com/blog/such-policy-many-dog-yay",
-    "text": "Work at Kwalee"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/teacher-simulator-fareshare-partnership",
     "source": "https://kwalee.com/blog/teacher-simulator-fareshare-partnership",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/teacher-simulators-game-100-million-downloads",
     "source": "https://kwalee.com/blog/teacher-simulators-game-100-million-downloads",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/tens-launching-5th-november",
@@ -2092,52 +2312,52 @@
   {
     "url": "https://kwalee.com/blog/the-a-to-z-guide-to-getting-the-most-out-of-game-developers-conference",
     "source": "https://kwalee.com/blog/the-a-to-z-guide-to-getting-the-most-out-of-game-developers-conference",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/the-evolution-of-rpg",
     "source": "https://kwalee.com/blog/the-evolution-of-rpg",
-    "text": "About Us"
+    "text": "PC & Console Games"
   },
   {
     "url": "https://kwalee.com/blog/the-evolution-of-user-acquisition",
     "source": "https://kwalee.com/blog/the-evolution-of-user-acquisition",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/the-evolution-of-user-acquisition-part-two",
     "source": "https://kwalee.com/blog/the-evolution-of-user-acquisition-part-two",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/this-month-at-kwalee-june-2021",
     "source": "https://kwalee.com/blog/this-month-at-kwalee-june-2021",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/three-key-hyper-casual-principles-youll-need-make-great-games",
     "source": "https://kwalee.com/blog/three-key-hyper-casual-principles-youll-need-make-great-games",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/traffic-cop-chart-topping-launch",
     "source": "https://kwalee.com/blog/traffic-cop-chart-topping-launch",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/ukie-loot-box-regulation",
     "source": "https://kwalee.com/blog/ukie-loot-box-regulation",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/victory-tiga-awards-recognise-us-best-large-studio-exceptional-leadership",
     "source": "https://kwalee.com/blog/victory-tiga-awards-recognise-us-best-large-studio-exceptional-leadership",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/video-games-digital-happy-pill",
     "source": "https://kwalee.com/blog/video-games-digital-happy-pill",
-    "text": "Work at Kwalee"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/voidwrought-cosmic-horror-game",
@@ -2147,7 +2367,7 @@
   {
     "url": "https://kwalee.com/blog/we-hit-750-million-downloads",
     "source": "https://kwalee.com/blog/we-hit-750-million-downloads",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/welcome-kwalee-family-tictales",
@@ -2162,57 +2382,62 @@
   {
     "url": "https://kwalee.com/blog/were-now-official-publishing-partners-buildbox",
     "source": "https://kwalee.com/blog/were-now-official-publishing-partners-buildbox",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
+  },
+  {
+    "url": "https://kwalee.com/blog/were-taking-part-specialeffects-one-special-day",
+    "source": "https://kwalee.com/blog/were-taking-part-specialeffects-one-special-day",
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/were-tiga-2022s-publisher-year",
     "source": "https://kwalee.com/blog/were-tiga-2022s-publisher-year",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/weve-made-our-support-women-games-official",
     "source": "https://kwalee.com/blog/weve-made-our-support-women-games-official",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/what-are-arcade-games-and-more",
     "source": "https://kwalee.com/blog/what-are-arcade-games-and-more",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/what-are-creative-wednesdays",
     "source": "https://kwalee.com/blog/what-are-creative-wednesdays",
-    "text": "Mobile Games"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/what-are-mini-games-and-more",
     "source": "https://kwalee.com/blog/what-are-mini-games-and-more",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/what-are-story-driven-mobile-games",
     "source": "https://kwalee.com/blog/what-are-story-driven-mobile-games",
-    "text": "Mobile Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/what-does-game-publisher-do",
     "source": "https://kwalee.com/blog/what-does-game-publisher-do",
-    "text": "PC & Console Games"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/what-makes-hyper-casual-game",
     "source": "https://kwalee.com/blog/what-makes-hyper-casual-game",
-    "text": "Work at Kwalee"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/why-we-share-profit-our-entire-teams-kwalee",
     "source": "https://kwalee.com/blog/why-we-share-profit-our-entire-teams-kwalee",
-    "text": "Work at Kwalee"
+    "text": "About Us"
   },
   {
     "url": "https://kwalee.com/blog/why-were-embracing-remote-working-beyond-covid-19-pandemic",
     "source": "https://kwalee.com/blog/why-were-embracing-remote-working-beyond-covid-19-pandemic",
-    "text": "About Us"
+    "text": "Mobile Games"
   },
   {
     "url": "https://kwalee.com/blog/wildmender-game-now-available-steam-ps5-xbox",
@@ -2222,11 +2447,11 @@
   {
     "url": "https://kwalee.com/blog/winners-revealed",
     "source": "https://kwalee.com/blog/winners-revealed",
-    "text": "About Us"
+    "text": "Work at Kwalee"
   },
   {
     "url": "https://kwalee.com/blog/women-in-games-with-jen-flannery",
     "source": "https://kwalee.com/blog/women-in-games-with-jen-flannery",
-    "text": "PC & Console Games"
+    "text": "About Us"
   }
 ]
